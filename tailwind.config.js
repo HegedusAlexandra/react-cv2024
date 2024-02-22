@@ -10,6 +10,13 @@ module.exports = {
       backgroundImage: {
         'landing': "url('./assets/pictures/landing.jpg')",
       },
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'afacad':['Afacad', 'sans-serif'],
+        'playfair':['Playfair Display', 'serif'],
+        'opensans':['Open Sans', 'sans-serif'],
+        'roboto':['Roboto','sans-serif']
+      },
     },
   },
   plugins: [],

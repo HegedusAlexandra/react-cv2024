@@ -15,88 +15,109 @@ export default function ParallaxTops() {
     }
   }, []);
 
-  const a= screenWidth/8
-  const b= screenWidth/5
-  const c= screenWidth/5
+  const a = screenWidth / 8;
+  const b = screenWidth / 6;
+  const c = screenWidth / 7;
 
   return (
     <div className="container">
       <div className="layers" ref={sceneRef}>
+      <svg width="0" height="0">
+          <defs>
+            <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
+              <feOffset dx="0" dy="4" result="offsetblur" />
+              <feFlood floodColor="rgba(0,0,0,0.5)" />
+              <feComposite in2="offsetblur" operator="in" />
+              <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+        </svg>
+
         <svg
-          className="layer "
+          className="layer"
           data-depth="0.1"
-          viewBox={`0 0 ${screenWidth} ${screenHeight*2}`}
-          style={{ filter: "url(#shadow)" }}
-        >
+          viewBox={`0 0 ${screenWidth} ${screenHeight * 2}`}
+        >  
           <circle
-            cx={`${screenWidth-a*0.7}`}
+            cx={`${screenWidth - a * 0.4}`}
             cy={`${a}`}
             r={a}
             fill="#FBB07F"
+            style={{ filter: "url(#shadow)" }}
           />
           <circle
-            cx={`${screenWidth-a*1.7}`}
-            cy={`${a+b}`}
+            cx={`${screenWidth - a * 1.4}`}
+            cy={`${a/12*7 + b}`}
             r={b}
             fill="#FBB07F"
+            style={{ filter: "url(#shadow)" }}
           />
           <circle
-            cx={`${screenWidth-a}`}
-            cy={`${a+b+c}`}
+            cx={`${screenWidth - a*0.9}`}
+            cy={`${a/12*7 + b + c}`}
             r={c}
             fill="#FBB07F"
-          /> 
-        </svg>        
-       <svg
-          className="layer "
-          data-depth="0.2"
-          viewBox={`0 0 ${screenWidth} ${screenHeight*2}`}
-          style={{ filter: "url(#shadow)" }}
-        >
-          <circle
-            cx={`${screenWidth-a*0.7}`}
-            cy={`${a}`}
-            r={a*0.8}
-            fill="#BABAC5"
+            style={{ filter: "url(#shadow)" }}
           />
-          <circle
-            cx={`${screenWidth-a*1.7}`}
-            cy={`${a+b}`}
-            r={b*0.9}
-            fill="#BABAC5"
-          />
-          <circle
-            cx={`${screenWidth-a}`}
-            cy={`${a+b+c}`}
-            r={c*0.8}
-            fill="#BABAC5"
-          /> 
-        </svg>   
+        </svg>
         <svg
-          className="layer "
-          data-depth="0.3"
-          viewBox={`0 0 ${screenWidth} ${screenHeight*2}`}
-          style={{ filter: "url(#shadow)" }}
+          className="layer"
+          data-depth="0.2"
+          viewBox={`0 0 ${screenWidth} ${screenHeight * 2}`}
         >
           <circle
-            cx={`${screenWidth-a*0.2}`}
-            cy={`${a*1.4}`}
-            r={a*0.6}
-            fill="#F9E3D5"
+            cx={`${screenWidth - a * 0.35}`}
+            cy={`${a}`}
+            r={a * 0.8}
+            fill="#BABAC5"
+            style={{ filter: "url(#shadow)" }}
           />
           <circle
-            cx={`${screenWidth-a}`}
-            cy={`${(a+b)*1.1}`}
-            r={b*0.8}
-            fill="#F9E3D5"
+            cx={`${screenWidth - a * 1.25}`}
+            cy={`${a/12*7 + b}`}
+            r={b * 0.9}
+            fill="#BABAC5"
+            style={{ filter: "url(#shadow)" }}
           />
           <circle
-            cx={`${screenWidth-a}`}
-            cy={`${(a+b+c)}`}
-            r={c*0.4}
+            cx={`${screenWidth - a}`}
+            cy={`${a/12*7 + b + c}`}
+            r={c * 0.8}
+            fill="#BABAC5"
+            style={{ filter: "url(#shadow)" }}
+          />
+        </svg>
+        <svg
+          className="layer"
+          data-depth="0.3"
+          viewBox={`0 0 ${screenWidth} ${screenHeight * 2}`}
+        >
+          <circle
+            cx={`${screenWidth - a * 0.2}`}
+            cy={`${a * 1.4}`}
+            r={a * 0.6}
             fill="#F9E3D5"
-          /> 
-        </svg>           
+            style={{ filter: "url(#shadow)" }}
+          />
+          <circle
+            cx={`${screenWidth - a}`}
+            cy={`${(a/12*7 + b)}`}
+            r={b * 0.8}
+            fill="#F9E3D5"
+            style={{ filter: "url(#shadow)" }}
+          />
+          <circle
+            cx={`${screenWidth - a}`}
+            cy={`${a/12*7 + b + c}`}
+            r={c * 0.6}
+            fill="#F9E3D5"
+            style={{ filter: "url(#shadow)" }}
+          />
+        </svg>
       </div>
     </div>
   );
