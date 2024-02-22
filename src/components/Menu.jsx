@@ -17,7 +17,7 @@ function Menu() {
         key={str}
         className="text-black uppercase font-bold text-[2vh] invisible md:visible mx-auto"
       >
-        <a>{t(str)}</a>
+        <a href="">{t(str)}</a>
       </motion.li>
     ),
     [t]
@@ -25,30 +25,21 @@ function Menu() {
 
   return (
     <div
-      className={`invisible md:visible flex flex-row fixed z-10 top-0 w-full h-[8%] backdrop-blur-md bg-white-50/500 py-[1%] font-montserrat items-center px-[4%]`}
+      className={`invisible md:visible flex flex-row fixed z-10 top-0 w-full h-[8%] backdrop-blur-md bg-white-50/500 py-[1%] font-roboto items-center px-[4%]`}
     >
-      <div className="w-[20%] h-[100%]">
-        {/*  <img
-        title="logo"
-          className="h-[8vh] border border-black -translate-y-3"
-          src={moxa_logo}
-          alt={"logo"}
-          loading="eager"
-          width={'20%'}
-          height={'10%'}
-        /> */}
-      </div>
+      <div className="w-[30%] h-[100%] flex items-center">
+       <h2>web developer portfolio</h2>
+      </div>      
       <ul
-        className={`flex flex-row justify-center items-center w-[60%] text-[3vw] md:text-[2vw] list-none`}
+        className={`flex flex-row justify-center items-center w-[30%] text-[3vw] md:text-[2vw] list-none`}
       >
-        {edge("home")}
         {edge("about me")}
         {edge("projects")}
         {edge("contact")}
       </ul>
-      <div className="w-[20%] flex justify-end">
+      <div className="w-[40%] flex justify-end">
         <LanguageDropdown />
-      </div>
+      </div>      
     </div>
   );
 }
