@@ -11,9 +11,9 @@ function Main() {
     <div className="w-[100%] h-[400vh]">
       {window.innerWidth > 780 ? <Menu/> : <CircularMenu/>}
       <FlipPic/>
-      <div className="absolute w-[100%] h-[200vh] overflow-hidden">
+       <div className="absolute w-[100%] h-[200vh] overflow-hidden">
         <ParallaxTops />
-      </div>
+      </div> 
       <Landing />
       <Skills />
     </div>
