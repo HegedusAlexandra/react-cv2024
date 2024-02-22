@@ -129,6 +129,12 @@ export default function ParallaxTops() {
             <circle
               cx={`${0}`}
               cy={`${screenHeight}`}
+              r={b * 0.8}
+              fill="#BABAC5"
+            />
+            <circle
+              cx={`${0}`}
+              cy={`${screenHeight+b}`}
               r={b * 0.6}
               fill="#BABAC5"
             />
