@@ -11,7 +11,6 @@ module.exports = {
         'landing': "url('./assets/pictures/landing.jpg')",
         'LH': "url('./assets/pictures/LH.png')",
         'GF': "url('./assets/pictures/GF.png')",
-        'leaves': "url('./assets/pictures/leaves.jpg')",
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],

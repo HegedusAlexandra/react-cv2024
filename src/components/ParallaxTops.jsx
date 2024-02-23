@@ -72,19 +72,19 @@ export default function ParallaxTops() {
               cx={`${screenWidth - a * 0.35}`}
               cy={`${a}`}
               r={a * 0.8}
-              fill="#BABAC5"
+              fill="#CFC7B9"
             />
             <circle
               cx={`${screenWidth - a * 1.25}`}
               cy={`${(a / 12) * 7 + b}`}
               r={b * 0.9}
-              fill="#BABAC5"
+              fill="#CFC7B9"
             />
             <circle
               cx={`${screenWidth - a}`}
               cy={`${(a / 12) * 7 + b + c}`}
               r={c * 0.8}
-              fill="#BABAC5"
+              fill="#CFC7B9"
             />
           </g>
         </svg>
@@ -124,19 +124,45 @@ export default function ParallaxTops() {
               cx={`${-a/4}`}
               cy={`${screenHeight-a*0.9}`}
               r={a * 0.55}
-              fill="#BABAC5"
+              fill="#FBB07F"
             />
             <circle
               cx={`${0}`}
               cy={`${screenHeight}`}
               r={b * 0.8}
-              fill="#BABAC5"
+              fill="#FBB07F"
             />
             <circle
               cx={`${0}`}
               cy={`${screenHeight+b}`}
               r={b * 0.6}
-              fill="#BABAC5"
+              fill="#FBB07F"
+            />
+          </g>
+        </svg>
+        <svg
+          className="layer"
+          data-depth="0.1"
+          viewBox={`0 0 ${screenWidth} ${screenHeight * 3.5}`}
+        >
+          <g style={{ filter: "url(#shadow)" }}>
+            <circle
+              cx={`${-screenWidth/2}`}
+              cy={`${screenHeight*2-b}`}
+              r={a }
+              fill="#CFC7B9"
+            />
+            <circle
+              cx={`${-screenWidth/2}`}
+              cy={`${screenHeight*2+b}`}
+              r={b}
+              fill="#CFC7B9"
+            />
+            <circle
+              cx={`${-screenWidth/2}`}
+              cy={`${screenHeight*2+b+c*1.5}`}
+              r={b * 0.7}
+              fill="#CFC7B9"
             />
           </g>
         </svg>

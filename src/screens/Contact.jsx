@@ -24,7 +24,7 @@ export default function Contact() {
     }
 
   return (
-    <div className="flex items-center justify-center w-[100%] h-[100vh] bg-gradient-to-b from-gray-200 to-gray-400 ">
+    <div className="flex flex-col items-center justify-center w-[100%]">
       <Form handleData={handleData} />
     </div>
   );

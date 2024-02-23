@@ -112,10 +112,10 @@ const Form = ({ handleData }) => {
   }
 
   return (
-    <div className="absolute z-2 flex flex-col w-[100%] h-[100vh] backdrop-blur-md bg-white_op justify-center items-center content-center pt-[10vh]">
+    <div className="flex flex-col w-[100%] h-[80vh] justify-center items-center content-center">
       <ContactHead visible={!isAgreed || recaptchaValue} />
       <div
-        className="relative z-10 md:w-[50%] w-[90%] px-2 pl-3 bg-white rounded-xl  -translate-y-3"
+        className="relative z-10 md:w-[40%] w-[90%] px-2 pl-3 bg-white rounded-xl  -translate-y-3"
         style={shadow}
       >
         <form onSubmit={handleSubmit(onSubmit)} className="w-[100%] bg-sky2">

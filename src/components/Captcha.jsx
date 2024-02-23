@@ -24,7 +24,7 @@ console.log(selectedLanguage)
       animate={visible ? "visible" : "hidden"}
       variants={variants}
       transition={{ duration: 0.5 }}
-      className="flex justify-center items-center relative z-0 md:w-[50%] w-[90%] bg-background_light rounded-b-xl px-6 pt-8 pb-4"
+      className="flex justify-center items-center relative z-0 md:w-[40%] w-[90%] bg-background_light rounded-b-xl px-6 pt-8 pb-4"
       style={shadow}
     >
       <ReCAPTCHA
