@@ -14,19 +14,19 @@ import tailwindcss from '../assets/simple_icon/tailwindcss.svg'
 
 export default function Skills() {
   return (
-    <div className='flex flex-row flex-wrap justify-between w-[100%] h-[60vh] bg-[#CFC7B9] px-[30%] py-[10%] gap-12 snapc'>
-      <img className='size-[8vh]' alt='amazon' src={amazon}/>
-      <img className='size-[8vh]' alt='apollo' src={apollo}/>
-      <img className='size-[8vh]' alt='docker' src={docker}/>
-      <img className='size-[8vh]' alt='figma' src={figma}/>
-      <img className='size-[8vh]' alt='github' src={github}/>
-      <img className='size-[8vh]' alt='html5' src={html5}/>
-      <img className='size-[8vh]' alt='javascript' src={javascript}/>
-      <img className='size-[8vh]' alt='nextdotjs' src={nextdotjs}/>
-      <img className='size-[8vh]' alt='nodedotjs' src={nodedotjs}/>
-      <img className='size-[8vh]' alt='react' src={react}/>    
-      <img className='size-[8vh]' alt='sass' src={sass}/>    
-      <img className='size-[8vh]' alt='tailwindcss' src={tailwindcss}/>    
+    <div className='flex flex-row flex-wrap justify-between w-[100%] h-[60vh] bg-[#CFC7B9] md:px-[30%] px-[4%] py-[10%] gap-12 snapc'>
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='amazon' src={amazon}/>
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='apollo' src={apollo}/>
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='docker' src={docker}/>
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='figma' src={figma}/>
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='github' src={github}/>
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='html5' src={html5}/>
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='javascript' src={javascript}/>
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='nextdotjs' src={nextdotjs}/>
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='nodedotjs' src={nodedotjs}/>
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='react' src={react}/>    
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='sass' src={sass}/>    
+      <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='tailwindcss' src={tailwindcss}/>    
     </div>
   )
 }

@@ -8,7 +8,7 @@ export default function Introduction() {
       
       <div className="flex flex-row justify-center w-[100%]">
         <div className="flex flex-col items-end w-[50%] bg-gradient-to-b from-[#f2be0300] to-[30%] to-[#FEE946]">
-          <div className="absolute w-[20vw] py-[10vh] pr-[2vw] font-roboto text-[2vh]">
+          <div className="absolute md:w-[20vw] py-[10vh] pr-[2vw] font-roboto text-[2vh]">
               Szia! A nevem Alexandra, és lelkes kezdő frontend fejlesztőként
               több mint egy éves tapasztalattal rendelkezem a webes technológiák
               világában. Jelenleg aktívan bővítem tudásomat mind a gyakorlati,
@@ -18,11 +18,11 @@ export default function Introduction() {
               responsív weboldalakat létrehozni, amelyek nem csak esztétikailag
               vonzóak, hanem a felhasználói igényekhez is igazodnak.
           </div>
-          <img className="w-[100%]" src={lemon} alt="lemon" />
+          <img className="md:w-[100%] h-[100vh] md:h-auto object-cover" src={lemon} alt="lemon" />
         </div>
         <div className="flex flex-col items-start w-[50%] bg-[#CFC7B9]">
-          <img className="w-[100%] " src={arrow} alt="arrow" />
-          <div className="w-[40%] font-roboto py-[8vh] pl-[1vw] text-[2vh]">
+          <img className="md:w-[100%] h-[100vh] md:h-auto object-cover object-left" src={arrow} alt="arrow" />
+          <div className="absolute md:static w-[40%] font-roboto py-[8vh] pl-[1vw] text-[2vh]">
             <p>
               Folyamatosan törekszem arra, hogy naprakész maradjak a legújabb
               frontend technológiák és trendek terén, és rendszeresen részt
