@@ -8,11 +8,6 @@ function Captcha({setRecaptchaValue,visible}) {
    
 console.log(selectedLanguage)
 
-  const shadow = {
-      boxShadow:
-        " rgba(30, 50, 50, 0.38) 6px 4px 6px 0px, rgba(25, 55, 55, 0.3) -6px -2px 10px 0px",
-    };
-
   const variants = {
     hidden: { opacity: 0, y: "-50vh" },
     visible: { opacity: 1, y: "-3vh" },

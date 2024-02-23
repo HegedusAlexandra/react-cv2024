@@ -17,7 +17,7 @@ function Menu() {
         key={str}
         className="text-black uppercase font-bold text-[2vh] invisible md:visible mx-auto"
       >
-        <a href="">{t(str)}</a>
+        <a href={`#${str}`}>{t(str)}</a>
       </motion.li>
     ),
     [t]

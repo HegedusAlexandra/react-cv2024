@@ -24,7 +24,10 @@ export default function Contact() {
     }
 
   return (
-    <div className="flex flex-col items-center justify-center w-[100%] ">
+    <div className="flex flex-col items-center justify-center w-[100%]">
+      <h2 className="w-[40%] text-red-600 md:text-[7vh] text-[6.5vw] font-semibold font-roboto uppercase tracking-wide text-left">
+        {"Let's speak!"}
+      </h2>
       <Form handleData={handleData} />
     </div>
   );
