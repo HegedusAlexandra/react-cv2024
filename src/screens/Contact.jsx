@@ -24,7 +24,7 @@ export default function Contact() {
     }
 
   return (
-    <div className="flex flex-col items-center justify-center w-[100%]">
+    <div className="flex flex-col items-center justify-center w-[100%] ">
       <Form handleData={handleData} />
     </div>
   );

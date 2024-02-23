@@ -115,8 +115,7 @@ const Form = ({ handleData }) => {
     <div className="flex flex-col w-[100%] h-[80vh] justify-center items-center content-center">
       <ContactHead visible={!isAgreed || recaptchaValue} />
       <div
-        className="relative z-10 md:w-[40%] w-[90%] px-2 pl-3 bg-white rounded-xl  -translate-y-3"
-        style={shadow}
+        className="relative z-10 md:w-[40%] w-[90%] px-2 pl-3 bg-white rounded-xl -translate-y-3"
       >
         <form onSubmit={handleSubmit(onSubmit)} className="w-[100%] bg-sky2">
           <div className="flex flex-col mt-2 w-[100%] h-[60%]">

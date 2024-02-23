@@ -25,10 +25,9 @@ console.log(selectedLanguage)
       variants={variants}
       transition={{ duration: 0.5 }}
       className="flex justify-center items-center relative z-0 md:w-[40%] w-[90%] bg-background_light rounded-b-xl px-6 pt-8 pb-4"
-      style={shadow}
     >
       <ReCAPTCHA
-        sitekey={'process.env.REACT_APP_GOOGLE_RECAPTCHA_CLIENTKEY'}
+        sitekey={process.env.REACT_APP_GOOGLE_RECAPTCHA_CLIENTKEY}
         onChange={(value) => setRecaptchaValue(value)}
         className="md:m-auto"
         hl={selectedLanguage}

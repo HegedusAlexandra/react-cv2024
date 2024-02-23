@@ -51,6 +51,8 @@ function Main() {
       </h2>
         <Contact />
       </div>
+      <footer><div className="w-[100%] h-[6vh] bg-stone-600 text-center p-4">&copy; Copyright 2024</div></footer>
+      
     </div>
   );
 }
