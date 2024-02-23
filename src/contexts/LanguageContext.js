@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Language } from '../utils/enum';
+import i18next from 'i18next';
 
 const LanguageContext = createContext();
 

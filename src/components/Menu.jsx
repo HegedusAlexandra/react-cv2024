@@ -1,7 +1,4 @@
 import React, { memo, useCallback } from "react";
-/* import { Link } from "react-router-dom"; 
-import colors from "../utils/colors";
-import moxa_logo from "../assets/icons_images/ec_logo.png";*/
 import { motion } from "framer-motion";
 import LanguageDropdown from "./LanguageDropdown";
 import { useTranslation } from "react-i18next";

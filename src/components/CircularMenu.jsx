@@ -5,23 +5,23 @@ import LanguageDropdown from "./LanguageDropdown";
 
 function CircularMenu({screen}) {
   const [isVisible, setIsVisible] = useState(false);
-  const { t } = useTranslation();
+
 
   const edge = useCallback(
     (str) => (
-      {/* <Link
-        to={str === "home" ? "/" : str === "steps" ? "/steps/1/" : `/${str}/`}
+     <a
+        href={`#${str}`}
         className="menu-item"
         key={str}
       >
-        <p className="text-xs">{t(str)}</p>
-      </Link> */}
+        <p className="text-xs">{str}</p>
+      </a> 
     ),
-    [t]
+    []
   );
 
   return (
-    <div className={`flex ${screen === 'steps' ? 'flex-col' : 'flex-row'} w-[100%] justify-between md:hidden`}>
+    <div className={`flex flex-row w-[100%] justify-between items-center md:hidden`}>
       <div
         id="circularMenu1"
         className={`circular-menu md:hidden ${isVisible && "visible"}`}
@@ -43,26 +43,25 @@ function CircularMenu({screen}) {
           <div
             className={
               isVisible
-                ? "absolute h-[10%] w-[70%]  mx-[5%] bg-background rounded-lg rotate-45"
-                : "h-[10%] w-[70%] my-[10%] mx-[16px] bg-background rounded-lg"
+                ? "absolute h-[10%] w-[70%] mx-[5%] bg-black rounded-lg rotate-45"
+                : "h-[10%] w-[70%] my-[10%] mx-[16px] bg-black rounded-lg"
             }
           />
           {!isVisible && (
-            <div className="h-[10%] w-[70%] my-[10%] mx-[5%] bg-background rounded-lg " />
+            <div className="h-[10%] w-[70%] my-[10%] mx-[5%] bg-black rounded-lg " />
           )}
           <div
             className={
               isVisible
-                ? "absolute h-[10%] w-[70%]  mx-[5%] bg-background rounded-lg -rotate-45"
-                : "h-[10%] w-[70%] my-[1%] mx-[16px] bg-background rounded-lg"
+                ? "absolute h-[10%] w-[70%] mx-[5%] bg-black rounded-lg -rotate-45"
+                : "h-[10%] w-[70%] my-[1%] mx-[16px] bg-black rounded-lg"
             }
           />
         </motion.button>
         <menu className="items-wrapper">
-          {edge("home")}
-          {edge("steps")}
+          {edge("about me")}
+          {edge("projects")}
           {edge("contact")}
-          {edge("blog")}
         </menu>
       </div>
       <LanguageDropdown screen={screen} />

@@ -8,7 +8,7 @@ import Captcha from "./Captcha";
 import { useTranslation } from "react-i18next";
 import { ContactMode } from "../utils/enum";
 
-const Form = ({ handleData }) => {
+const Form = ({ handleData,setSent }) => {
   const [isAgreed, setIsAgreed] = useState(false);
   const [contactPref, setContactPref] = useState("email");
   const [recaptchaValue, setRecaptchaValue] = useState(false);
@@ -20,7 +20,7 @@ const Form = ({ handleData }) => {
       .required("Name is required")
       .min(8, "Name is too short")
       .matches(
-        /^[a-zA-Z0-9 .]*$/,
+        /^[a-zA-Z0-9À-ÖØ-öø-ÿĀ-ſŒœŸƒ-ɏ-' .]*$/,
         "Only alphanumeric characters and spaces are allowed in the name"
       ),
     email: Yup.string()
@@ -39,7 +39,7 @@ const Form = ({ handleData }) => {
     message: Yup.string()
       .trim()
       .matches(
-        /^[a-zA-Z0-9 .-:?!@#()]*$/,
+        /^[a-zA-Z0-9À-ÖØ-öø-ÿĀ-ſŒœŸƒ-ɏ-' .-:?!@#()]*$/,
         "Only regular characters are allowed in the message"
       )
   });
@@ -72,6 +72,9 @@ const Form = ({ handleData }) => {
         language: "EN",
         contactMode: ContactMode[contactPref] || ContactMode.email
       };
+      console.log("====================================");
+      console.log("dataSum", dataSum);
+      console.log("====================================");
 
       handleData(dataSum)
         .then((result) => {
@@ -86,7 +89,7 @@ const Form = ({ handleData }) => {
           );
           alert(t("Submission failed, please try again."));
         })
-        .finally(console.log(t("the spinner shold be hidden"), dataSum));
+        .finally(setSent(true));
     },
     [contactPref, handleData, isAgreed, recaptchaValue, t]
   );
@@ -100,7 +103,7 @@ const Form = ({ handleData }) => {
   };
 
   return (
-    <div className="flex flex-col w-[100%] h-[60vh] justify-center items-center content-center">
+    <div className="flex flex-col w-[100%] h-[58vh] justify-center items-center content-center">
       <div className="relative z-10 md:w-[40%] w-[90%] bg-white rounded-xl -translate-y-3">
         <form onSubmit={handleSubmit(onSubmit)} className="w-[100%]">
           <div className="flex flex-col mt-2 w-[100%] h-[60%]">
@@ -118,7 +121,7 @@ const Form = ({ handleData }) => {
                     className="md:text-[2vh] "
                   />
                   {fieldState.error && (
-                    <div className="text-red">{fieldState.error.message}</div>
+                    <div className="text-red-500">{fieldState.error.message}</div>
                   )}
                 </div>
               )}
@@ -137,7 +140,7 @@ const Form = ({ handleData }) => {
                     className="md:text-[2vh] "
                   />
                   {fieldState.error && (
-                    <div className="text-red">{fieldState.error.message}</div>
+                    <div className="text-red-500">{fieldState.error.message}</div>
                   )}
                 </div>
               )}
@@ -157,7 +160,7 @@ const Form = ({ handleData }) => {
                       className="md:text-[2vh]"
                     />
                     {fieldState.error && (
-                      <div className="text-red">{fieldState.error.message}</div>
+                      <div className="text-red-500">{fieldState.error.message}</div>
                     )}
                   </div>
                 )}
@@ -171,7 +174,7 @@ const Form = ({ handleData }) => {
               render={({ field, fieldState }) => (
                 <div className="w-[100%] h-[32%] mb-2 py-2 px-6 mb:py-[1vw] mb:px-[1vw] rounded-lg leftShadow">
                   <textarea
-                    className="w-[100%] text-[2vh] "
+                    className="w-[100%] text-[2vh]"
                     placeholder={t("message").toUpperCase()}
                     rows={3}
                     id="message"
@@ -226,12 +229,12 @@ const Form = ({ handleData }) => {
                 </button>
                 <p className="w-[90%]">
                   {t("I understand and agree to the")}
-                  {/* <Link
+                  <a
                     className="h-[4vh] px-2 rounded-xl font-roboto text-text font-bold"
                     to="/privacy-policy"
                   >
-                    {t("the privacy policy")}
-                  </Link> */}
+                    {t("privacy policy")}
+                  </a>
                 </p>
               </div>
             </div>

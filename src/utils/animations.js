@@ -71,7 +71,7 @@ export const variants = {
     zoom: { scale: [null, 2, 1], rotate: [0, 90, 0] },
     email: { x: 0, backgroundColor: "#CFC7B9",border: 'solid 1px black'}, 
     call: { x: '2.3vh' ,backgroundColor: "#CFC7B9",border: 'solid 1px black'}, 
-    left: { x: 0, backgroundColor: "#990000" },
+    left: { x: 0, backgroundColor: "#E03D3D" },
     right: { x: '2.3vh' ,backgroundColor: "#14532d"}, 
   }
   
