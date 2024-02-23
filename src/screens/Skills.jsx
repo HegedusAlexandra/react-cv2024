@@ -14,7 +14,7 @@ import tailwindcss from '../assets/simple_icon/tailwindcss.svg'
 
 export default function Skills() {
   return (
-    <div className='flex flex-row flex-wrap justify-between w-[100%] h-[60vh] bg-[#CFC7B9] md:px-[30%] px-[4%] py-[10%] gap-12 snapc'>
+    <div className='flex flex-row flex-wrap justify-between w-[100%] h-[60vh] bg-transparent md:bg-[#CFC7B9] md:px-[30%] px-[4%] py-[10%] gap-12 snapc'>
       <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='amazon' src={amazon}/>
       <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='apollo' src={apollo}/>
       <img className='md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]' alt='docker' src={docker}/>
