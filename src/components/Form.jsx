@@ -8,7 +8,7 @@ import Captcha from "./Captcha";
 import { useTranslation } from "react-i18next";
 import { ContactMode } from "../utils/enum";
 
-const Form = ({ handleData,setSent }) => {
+const Form = ({ handleData, setSent }) => {
   const [isAgreed, setIsAgreed] = useState(false);
   const [contactPref, setContactPref] = useState("email");
   const [recaptchaValue, setRecaptchaValue] = useState(false);
@@ -17,30 +17,30 @@ const Form = ({ handleData,setSent }) => {
   const validationSchema = Yup.object().shape({
     name: Yup.string()
       .trim()
-      .required("Name is required")
-      .min(8, "Name is too short")
+      .required(t('nameshort'))
+      .min(8, t("nameshort"))
       .matches(
         /^[a-zA-Z0-9À-ÖØ-öø-ÿĀ-ſŒœŸƒ-ɏ-' .]*$/,
-        "Only alphanumeric characters and spaces are allowed in the name"
+        t("onlyalpha")
       ),
     email: Yup.string()
       .trim()
-      .email("Invalid email")
-      .required("Email is required"),
+      .email(t("invalidemail"))
+      .required(t("emailmust")),
     phone: Yup.string()
       .trim()
-      .matches(/^\+?[0-9]+$/, "Invalid telephone number")
-      .min(10, "Telephone number is too short")
-      .max(15, "Telephone number is too long")
+      .matches(/^\+?[0-9]+$/, t("invalidtelephone"))
+      .min(10, t("telephoneshort"))
+      .max(15, t("telephonelong"))
       .when("actionType", {
         is: "call",
-        then: Yup.string().required("Telephone is required for call preference")
+        then: Yup.string().required(t("telephonemust"))
       }),
     message: Yup.string()
       .trim()
       .matches(
         /^[a-zA-Z0-9À-ÖØ-öø-ÿĀ-ſŒœŸƒ-ɏ-' .-:?!@#()]*$/,
-        "Only regular characters are allowed in the message"
+        t("onlyreg")
       )
   });
 
@@ -72,9 +72,6 @@ const Form = ({ handleData,setSent }) => {
         language: "EN",
         contactMode: ContactMode[contactPref] || ContactMode.email
       };
-      console.log("====================================");
-      console.log("dataSum", dataSum);
-      console.log("====================================");
 
       handleData(dataSum)
         .then((result) => {
@@ -87,7 +84,7 @@ const Form = ({ handleData,setSent }) => {
             ex,
             dataSum
           );
-          alert(t("Submission failed, please try again."));
+          alert(t("submission failed, please try again."));
         })
         .finally(setSent(true));
     },
@@ -114,14 +111,16 @@ const Form = ({ handleData,setSent }) => {
                 <div className="w-[100%] h-[100%] bg-background_light mb-2 py-2 px-6 mb:py-[1vw] mb:px-[1vw] rounded-lg leftShadow">
                   <input
                     type="text"
-                    placeholder={t("name").toUpperCase()}
+                    placeholder={t("contact.name").toUpperCase()}
                     {...field}
                     id="name"
                     required
                     className="md:text-[2vh] "
                   />
                   {fieldState.error && (
-                    <div className="text-red-500">{fieldState.error.message}</div>
+                    <div className="text-red-500">
+                      {t(`contact.${fieldState.error.message}`)}
+                    </div>
                   )}
                 </div>
               )}
@@ -133,14 +132,16 @@ const Form = ({ handleData,setSent }) => {
                 <div className="w-[100%] h-[100%] mb-2 py-2 px-6 mb:py-[1vw] mb:px-[1vw] rounded-lg leftShadow">
                   <input
                     type="email"
-                    placeholder={t("email").toUpperCase()}
+                    placeholder={t("contact.email").toUpperCase()}
                     {...field}
                     id="email"
                     required
                     className="md:text-[2vh] "
                   />
                   {fieldState.error && (
-                    <div className="text-red-500">{fieldState.error.message}</div>
+                    <div className="text-red-500">
+                      {t(`contact.${fieldState.error.message}`)}
+                    </div>
                   )}
                 </div>
               )}
@@ -153,14 +154,16 @@ const Form = ({ handleData,setSent }) => {
                   <div className="w-[100%] h-[100%] mb-2 py-2 px-6 mb:py-[1vw] mb:px-[1vw] rounded-lg leftShadow">
                     <input
                       type="tel"
-                      placeholder={t("mobile").toUpperCase()}
+                      placeholder={t("contact.mobile").toUpperCase()}
                       {...field}
                       id="phone"
                       required
                       className="md:text-[2vh]"
                     />
                     {fieldState.error && (
-                      <div className="text-red-500">{fieldState.error.message}</div>
+                      <div className="text-red-500">
+                        {t(`contact.${fieldState.error.message}`)}
+                      </div>
                     )}
                   </div>
                 )}
@@ -175,14 +178,14 @@ const Form = ({ handleData,setSent }) => {
                 <div className="w-[100%] h-[32%] mb-2 py-2 px-6 mb:py-[1vw] mb:px-[1vw] rounded-lg leftShadow">
                   <textarea
                     className="w-[100%] text-[2vh]"
-                    placeholder={t("message").toUpperCase()}
+                    placeholder={t("contact.message").toUpperCase()}
                     rows={3}
                     id="message"
                     {...field}
                   />
                   {fieldState.error && (
                     <div className="text-red-500 w-[100%]">
-                      {fieldState.error.message}
+                      {t(`contact.${fieldState.error.message}`)}
                     </div>
                   )}
                 </div>
@@ -207,7 +210,7 @@ const Form = ({ handleData,setSent }) => {
                   </motion.div>
                 </button>
                 <p className="w-[90%]">
-                  {t("Please let me know how you'd prefer to be contacted")}
+                  {t("contact.pref")}
                 </p>
               </div>
               <div className="flex flex-row">
@@ -228,12 +231,12 @@ const Form = ({ handleData,setSent }) => {
                   </motion.div>
                 </button>
                 <p className="w-[90%]">
-                  {t("I understand and agree to the")}
+                  {t("contact.understand")}
                   <a
                     className="h-[4vh] px-2 rounded-xl font-roboto text-text font-bold"
                     to="/privacy-policy"
                   >
-                    {t("privacy policy")}
+                    {t("contact.the privacy policy")}
                   </a>
                 </p>
               </div>
@@ -242,7 +245,7 @@ const Form = ({ handleData,setSent }) => {
               type="submit"
               className="md:h-[8vh] bg-[#F7C003] mt-2 px-6 py-2 rounded-xl border-text font-roboto text-text font-bold uppercase"
             >
-              {t("Submit")}
+              {t("contact.submit")}
             </button>
           </div>
         </form>

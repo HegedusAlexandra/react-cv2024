@@ -9,12 +9,12 @@ function Menu() {
   const edge = useCallback(
     (str) => (
       <motion.li
-        whileHover={{ scale: 1.1, color: "#b4b4b4" }}
+        whileHover={{ scale: 1.2, color: "#B91C1C" }}
         transition={{ type: "spring", stiffness: 400, damping: 20 }}
         key={str}
         className="text-black uppercase font-bold text-[2vh] invisible md:visible mx-auto"
       >
-        <a href={`#${str}`}>{t(str)}</a>
+        <a href={`#${str}`}>{t(`menu.${str}`)}</a>
       </motion.li>
     ),
     [t]
@@ -25,10 +25,10 @@ function Menu() {
       className={`invisible md:visible flex flex-row fixed z-10 top-0 w-full h-[8%] backdrop-blur-md bg-white-50/500 py-[1%] font-roboto items-center px-[4%]`}
     >
       <div className="w-[26%] h-[100%] flex items-center">
-       <h2>web developer portfolio</h2>
+       <h2>{t('menu.wdp')}</h2>
       </div>      
       <ul
-        className={`flex flex-row w-[30%] text-[3vw] md:text-[2vw] list-none`}
+        className={`flex flex-row w-[30%] text-[3vw] md:text-[2vw] list-none `}
       >
         {edge("about me")}
         {edge("projects")}

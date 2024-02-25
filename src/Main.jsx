@@ -9,8 +9,11 @@ import FlipPic from "./components/FlipPic";
 import Introduction from "./screens/Introduction";
 import Projects from "./screens/Projects";
 import Contact from "./screens/Contact";
+import { useTranslation } from "react-i18next";
 
 function Main() {
+const {t}= useTranslation()
+
   return (
     <div className="w-[100%]">
       {window.innerWidth > 780 ? <Menu /> : <CircularMenu />}
@@ -23,32 +26,32 @@ function Main() {
       </div>
       <div id="skills">
         <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] pt-[10vh] pb-[2vh]">
-          <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold">
-            // Skills
+          <p className="md:w-[100%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold capitalize">
+            // {t('menu.skills')}
           </p>
         </h2>
         <Skills />
       </div>
       <div id="about me">
       <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] pt-[10vh] pb-[2vh]">
-          <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold">
-            // Introduction
+          <p className="md:w-[100%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold capitalize">
+            // {t('menu.introduction')}
           </p>
         </h2>
         <Introduction />
       </div>
       <div id="projects">
       <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] pt-[10vh] pb-[2vh]">
-          <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold">
-            // Projects
+          <p className="md:w-[100%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold capitalize">
+            // {t('menu.projects')}
           </p>
         </h2>
         <Projects />
       </div>
       <div id="contact">
       <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[6vh] pt-[10vh] pb-[2vh]">
-          <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold">
-            // Contact
+          <p className="md:w-[100%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold capitalize">
+            // {t('menu.contact')}
           </p>
         </h2>
         <Contact />
