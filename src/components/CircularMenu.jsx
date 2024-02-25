@@ -1,11 +1,14 @@
-import React, { useState, useCallback, memo } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useCallback, memo, useEffect } from "react";
+import { motion, useScroll } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import LanguageDropdown from "./LanguageDropdown";
+import { useScrollPosition } from "../hooks/position";
 
-function CircularMenu({screen}) {
+function CircularMenu() {
   const [isVisible, setIsVisible] = useState(false);
+  const scroll = useScrollPosition()
 
+  useEffect(() => setIsVisible(false),[scroll])
 
   const edge = useCallback(
     (str) => (
@@ -13,6 +16,7 @@ function CircularMenu({screen}) {
         href={`#${str}`}
         className="menu-item"
         key={str}
+        onClick={console.log('not visible')}
       >
         <p className="text-xs">{str}</p>
       </a> 
@@ -58,13 +62,13 @@ function CircularMenu({screen}) {
             }
           />
         </motion.button>
-        <menu className="items-wrapper">
+        <menu onClick={() => setIsVisible(!isVisible)} className="items-wrapper">
           {edge("about me")}
           {edge("projects")}
           {edge("contact")}
         </menu>
       </div>
-      <LanguageDropdown screen={screen} />
+      <LanguageDropdown />
     </div>
   );
 }

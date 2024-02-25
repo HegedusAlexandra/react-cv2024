@@ -23,7 +23,7 @@ function Main() {
       </div>
       <div id="skills">
         <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] pt-[10vh] pb-[2vh]">
-          <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[6vh] font-roboto font-semibold">
+          <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold">
             // Skills
           </p>
         </h2>
@@ -31,7 +31,7 @@ function Main() {
       </div>
       <div id="about me">
       <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] pt-[10vh] pb-[2vh]">
-          <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[6vh] font-roboto font-semibold">
+          <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold">
             // Introduction
           </p>
         </h2>
@@ -48,7 +48,7 @@ function Main() {
       <div id="contact">
       <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[6vh] pt-[10vh] pb-[2vh]">
           <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold">
-            // Skills
+            // Contact
           </p>
         </h2>
         <Contact />
