@@ -9,7 +9,7 @@ export default function Introduction() {
     <div className="flex flex-col">
       <div className="flex md:flex-row flex-col justify-center w-[100%]">
         <div className="flex flex-col items-end md:w-[50%] w-[100%] bg-[#ffffff14] backdrop-blur-sm md:bg-gradient-to-b from-[#f2be0300] to-[30%] to-[#FEE946]">
-          <div className="md:absolute static md:w-[20vw] md:py-[10vh] py-[2vh] px-[4%] md:pl-[0.5vw] md:pr-[1vw] font-roboto text-[2vh] bg-[#ffffff63] md:bg-transparent backdrop-blur-sm">
+          <div className="md:absolute static md:w-[20vw] md:py-[2vh] py-[2vh] px-[4%] md:pl-[0.5vw] md:pr-[1vw] font-roboto text-[2vh] bg-[#ffffff63] md:bg-transparent backdrop-blur-sm">
             {t("introduction.1")}
             {window.innerWidth < 780 && <p>{t("introduction.2")}</p>}
           </div>
@@ -30,7 +30,8 @@ export default function Introduction() {
               alt="arrow"
               loading="eager"
             />
-            <div className="w-[40%] font-roboto py-[8vh] pl-[1vw] text-[2vh]">
+            {/* <h2 className="absolute w-[30%] py-[2vh] mt-10 ml-4 text-[8vh] font-bold font-roboto">In the midst of chaos, there is also opportunity. - Sun Tzu</h2> */}
+            <div className="w-[40%] font-roboto py-[2vh] pl-[1vw] text-[2vh]">
               <p>{t("introduction.2")}</p>
             </div>
           </div>

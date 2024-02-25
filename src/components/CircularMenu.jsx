@@ -17,7 +17,6 @@ function CircularMenu() {
         href={`#${str}`}
         className="menu-item"
         key={str}
-        onClick={console.log('not visible')}
       >
         <p className="text-xs">{str}</p>
       </a> 

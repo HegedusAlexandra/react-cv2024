@@ -29,7 +29,7 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col items-center justify-center w-[100%]">
-      <h2 className={`md:w-[40%] w-[90%] mx-[5%] md:mx-0 text-red-600 md:text-[6vh] text-[6.5vw] font-semibold font-roboto uppercase tracking-wide text-left ${isSent && "h-[40vh]"}`}>
+      <h2 className={`md:w-[40%] w-[90%] mx-[5%] md:mx-0 my-[2vh] text-red-600 md:text-[6vh] text-[6.5vw] font-semibold font-roboto uppercase tracking-wide text-left ${isSent && "h-[40vh]"}`}>
         {isSent ? `${t('contact.thank')}` : `${t('contact.lets')}`}
       </h2>
       {!isSent && <Form handleData={handleData} setSent={setSent}/>}

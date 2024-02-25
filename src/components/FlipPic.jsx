@@ -11,6 +11,7 @@ export default function FlipPic() {
             className="absolute w-full h-full rounded-full object-cover"
             src={me}
             alt="Front"
+            loading='eager'
           />
           {/* <img
             className="absolute w-full h-full rounded-full object-cover"
