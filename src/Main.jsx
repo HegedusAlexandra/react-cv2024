@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import "./Main.css";
 import Landing from "./screens/Landing";
 import Skills from "./screens/Skills";
@@ -21,7 +22,7 @@ function Main() {
         <Landing />
       </div>
       <div id="skills">
-        <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] ">
+        <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] pt-[10vh] pb-[2vh]">
           <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[6vh] font-roboto font-semibold">
             // Skills
           </p>
@@ -29,7 +30,7 @@ function Main() {
         <Skills />
       </div>
       <div id="about me">
-      <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] ">
+      <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] pt-[10vh] pb-[2vh]">
           <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[6vh] font-roboto font-semibold">
             // Introduction
           </p>
@@ -37,7 +38,7 @@ function Main() {
         <Introduction />
       </div>
       <div id="projects">
-      <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] ">
+      <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] pt-[10vh] pb-[2vh]">
           <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold">
             // Projects
           </p>
@@ -45,14 +46,14 @@ function Main() {
         <Projects />
       </div>
       <div id="contact">
-      <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[6vh] ">
+      <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[6vh] pt-[10vh] pb-[2vh]">
           <p className="md:w-[40%] w-[92%] md:text-[5vh] text-[7vh] font-roboto font-semibold">
             // Skills
           </p>
         </h2>
         <Contact />
       </div>
-      <footer>
+      <footer className="bg-stone-600">
         <div className="w-[100%] h-[2vh] bg-stone-600 text-center p-4 font-bold text-[2vh]">
           h.alexa.dev@gmail.com
         </div>

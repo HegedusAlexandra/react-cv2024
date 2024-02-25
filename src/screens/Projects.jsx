@@ -2,25 +2,44 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col w-[100%] px-[30%]">
-      <div className="flex flex-row w-[100%] h-[70vh] gap-[10px]">
-        <a
-          href="https://leohunts.com/"
-          className="flex-1 h-[100%] bg-LH bg-top bg-cover rounded-full"
-        ></a>
-        <a
-          href="https://www.golfracks.club/"
-          className="flex-1 h-[100%] bg-GF bg-center bg-cover rounded-full"
-        ></a>
-        <a
-          href="https://www.golfracks.club/"
-          className="flex-1 h-[100%] bg-LH bg-center rounded-full"
-        ></a>
-        <a
-          href="https://www.golfracks.club/"
-          className="flex-1 h-[100%] bg-GF bg-center rounded-full"
-        ></a>
-      </div>
+    <div className="flex flex-col w-[100%] h-[200vh] gap-[10px] md:px-[30%] px-[4%] py-[4%] md:py-0 md:bg-transparent bg-stone-200">
+      <a href="https://leohunts.com/" className="flex-1 mb-[6vh]">
+        <div className="w-[100%] h-[70%] bg-LH bg-top bg-cover rounded-2xl "></div>
+        <div className="w-[100%] h-[30%]">
+          <h2 className="font-opensans uppercase font-bold mt-[2vh]">
+            LEOHUNTS
+          </h2>
+          <p>valami leirás az oldalhoz majd utána názek</p>
+        </div>
+      </a>
+      <a href="https://leohunts.com/" className="flex-1 mb-[6vh]">
+        <div className="w-[100%] h-[70%] bg-GF bg-top bg-cover rounded-2xl"></div>
+        <div className="w-[100%] h-[30%]">
+          <h2 className="font-opensans uppercase font-bold mt-[2vh]">
+            Golfracks
+          </h2>
+          <p>valami leirás az oldalhoz majd utána názek</p>
+        </div>
+      </a>
+      <a href="https://leohunts.com/" className="flex-1 mb-[6vh]">
+        <div className="w-[100%] h-[70%] bg-LH bg-top bg-cover rounded-2xl"></div>
+        <div className="w-[100%] h-[30%]">
+          <h2 className="font-opensans uppercase font-bold mt-[2vh]">
+            LEOHUNTS
+          </h2>
+          <p>valami leirás az oldalhoz majd utána názek</p>
+        </div>
+      </a>
+      <a href="https://leohunts.com/" className="flex-1 mb-[6vh]">
+        <div className="w-[100%] h-[70%] bg-LH bg-top bg-cover rounded-2xl"></div>
+        <div className="w-[100%] h-[30%]">
+          <h2 className="font-opensans uppercase font-bold mt-[2vh]">
+            LEOHUNTS
+          </h2>
+          <p>valami leirás az oldalhoz majd utána názek</p>
+        </div>
+      </a>
+      
     </div>
   );
 }
