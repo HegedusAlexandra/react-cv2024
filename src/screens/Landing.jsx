@@ -1,8 +1,9 @@
 import React from "react";
 import globe from "../assets/simple_icon/globe.svg";
+import { useTranslation } from "react-i18next";
 
 export default function Landing() {
-
+const {t} = useTranslation()
 const language = 'en'
 
   return (
@@ -13,7 +14,7 @@ const language = 'en'
       </div>
       <h1 className="flex flex-col items-start md:w-[40%] w-[90%] p-[1%] md:bg-transparent bg-[#ffffff46] rounded-md">
         <p className="md:w-[80%] w-[100%] md:text-[5vh] text-[4vh] font-roboto font-semibold leading-[5vh] md:leading-[7vh]">
-          Hello dear visitor!
+          {t('landing.hello')}
         </p>
         <p className="md:w-[80%] w-[100%] md:text-[5vh] text-[4vh] font-roboto font-semibold leading-[5vh] md:leading-[7vh]">
           I am Alexandra a passionate frontend{" "}

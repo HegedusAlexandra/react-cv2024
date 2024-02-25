@@ -240,7 +240,7 @@ const Form = ({ handleData,setSent }) => {
             </div>
             <button
               type="submit"
-              className="md:h-[8vh] mt-2 px-6 py-2 rounded-xl border-4 border-solid border-text font-roboto text-text font-bold uppercase"
+              className="md:h-[8vh] bg-[#F7C003] mt-2 px-6 py-2 rounded-xl border-text font-roboto text-text font-bold uppercase"
             >
               {t("Submit")}
             </button>

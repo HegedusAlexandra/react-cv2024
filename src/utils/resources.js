@@ -10,6 +10,9 @@ const resources = {
           'about':"about me",
           'projects':"projects",
           'contact':"contact"
+        },
+        'landing':{
+          'hello':'Hello dear visitor!'
         }
       }
     },
@@ -19,6 +22,9 @@ const resources = {
           'about':"rólam",
           'projects':"projektek",
           'contact':"kontakt"
+        },
+        'landing':{
+          'hello':'Üdvözöllek az oldalon!'
         }
       }
     },
@@ -28,6 +34,9 @@ const resources = {
           "about": "su di me",
           "projects": "progetti",
           "contact": "contatto"
+        },
+        'landing':{
+          'hello':'Hello dear visitor!'
         }
       }
     },
