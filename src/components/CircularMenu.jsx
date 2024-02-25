@@ -1,5 +1,5 @@
 import React, { useState, useCallback, memo, useEffect } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import LanguageDropdown from "./LanguageDropdown";
 import { useScrollPosition } from "../hooks/position";
@@ -7,6 +7,7 @@ import { useScrollPosition } from "../hooks/position";
 function CircularMenu() {
   const [isVisible, setIsVisible] = useState(false);
   const scroll = useScrollPosition()
+  const { t } = useTranslation();
 
   useEffect(() => setIsVisible(false),[scroll])
 

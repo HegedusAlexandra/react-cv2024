@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Language } from '../utils/enum';
-import i18next from 'i18next';
 
 const LanguageContext = createContext();
 
@@ -21,9 +20,9 @@ export const LanguageProvider = ({ children }) => {
 
   useEffect(() =>findMatchingLanguage && setSelectedLanguage(findMatchingLanguage()),[])
 
-/*   useEffect(() => {
+ useEffect(() => {
     i18n.changeLanguage(selectedLanguage);
-  }, [i18n, selectedLanguage]); */
+  }, [i18n, selectedLanguage]); 
 
   return (
     <LanguageContext.Provider value={{ selectedLanguage, setSelectedLanguage }}>

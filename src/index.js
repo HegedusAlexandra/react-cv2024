@@ -4,6 +4,7 @@ import './index.css';
 import Main from './Main';
 import reportWebVitals from './reportWebVitals';
 import { LanguageProvider } from './contexts/LanguageContext';
+import './utils/i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
