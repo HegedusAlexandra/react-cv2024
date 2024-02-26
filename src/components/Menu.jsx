@@ -24,7 +24,7 @@ function Menu() {
 
   return (
     <div
-      className={`invisible md:visible flex flex-row fixed z-10 top-0 w-full h-[8%] backdrop-blur-md bg-white-50/500 py-[1%] font-roboto items-center px-[4%]`}
+      className={`invisible md:visible flex flex-row fixed z-10 top-0 w-full h-[8%] bg-[#ECB501] py-[1%] font-roboto items-center px-[4%]`}
     >
       <div className="w-[26%] h-[100%] flex items-center">
         <h2>{t("menu.wdp")}</h2>

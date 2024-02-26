@@ -1,7 +1,7 @@
 const Language = Object.freeze({
-    En: "en",
-    Hu: "hu",
-    It: "it"
+    en: "EN",
+    hu: "HU",
+    it: "IT"
   });
   
   const ContactMode = Object.freeze({

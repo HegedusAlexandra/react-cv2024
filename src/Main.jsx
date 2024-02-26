@@ -18,7 +18,7 @@ console.log("In the midst of chaos, there is also opportunity. - Sun Tzu");
 console.log('====================================');
 
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%]ts">
       {window.innerWidth > 780 ? <Menu /> : <CircularMenu />}
       <FlipPic />
       <div className="absolute w-[100%] h-[200vh] overflow-hidden">

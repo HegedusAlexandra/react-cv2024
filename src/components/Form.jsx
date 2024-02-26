@@ -7,12 +7,15 @@ import { variants } from "../utils/animations";
 import Captcha from "./Captcha";
 import { useTranslation } from "react-i18next";
 import { ContactMode } from "../utils/enum";
+import { useLanguage } from "../contexts/LanguageContext";
+import { Language } from "../utils/enum";
 
 const Form = ({ handleData, setSent }) => {
   const [isAgreed, setIsAgreed] = useState(false);
   const [contactPref, setContactPref] = useState("email");
   const [recaptchaValue, setRecaptchaValue] = useState(false);
   const { t } = useTranslation();
+  const {selectedLanguage} = useLanguage()
 
   const validationSchema = Yup.object().shape({
     name: Yup.string()
@@ -69,7 +72,7 @@ const Form = ({ handleData, setSent }) => {
         email: data.email,
         name: data.name,
         message: data.message,
-        language: "EN",
+        language: Language.selectedLanguage,
         contactMode: ContactMode[contactPref] || ContactMode.email
       };
 

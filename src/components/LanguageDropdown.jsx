@@ -17,7 +17,7 @@ const LanguageDropdown = () => {
       onChange={handleChange}
     >
       {Object.entries(Language).map(([key, value]) => (
-        <option key={key} value={value}>{key}</option>
+        <option key={value} value={key}>{key}</option>
       ))}
     </select>
   );

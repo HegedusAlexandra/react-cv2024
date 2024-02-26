@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "HegedusAlexandra",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}

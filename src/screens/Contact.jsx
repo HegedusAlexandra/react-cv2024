@@ -1,16 +1,20 @@
-import React,{useState} from "react";
+import React,{useState,useCallback} from "react";
 import Form from "../components/Form";
 import { useTranslation } from "react-i18next";
-/* import { generateClient } from "aws-amplify/api"; 
-import { createContactMe } from "../graphql/mutations";*/
+import { Amplify } from 'aws-amplify';
+import config from '../amplifyconfiguration.json';
+import { generateClient } from "aws-amplify/api"; 
+import { createContactMe } from "../graphql/mutations";
+Amplify.configure(config);
+
 
 export default function Contact() {
   const [isSent, setSent] = useState(false);
   const {t} = useTranslation()
 
-/*     const client = generateClient(); */
+    const client = generateClient(); 
 
-/*     const handleData = useCallback(
+    const handleData = useCallback(
       async (submittedData) => {
         
         await client.graphql({
@@ -21,11 +25,7 @@ export default function Contact() {
         });
       },
       [client]
-    );  */
-
-  const handleData = (data) => {
-      console.log(data)
-  }
+    ); 
 
   return (
     <div className="flex flex-col items-center justify-center w-[100%]">

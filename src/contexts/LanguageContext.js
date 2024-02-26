@@ -9,14 +9,16 @@ export const LanguageProvider = ({ children }) => {
 
   const findMatchingLanguage = () => {
     const browserLanguages = navigator.languages;
-    const availableLanguages = Object.values(Language);
+    const availableLanguages = Object.keys(Language);
     const match = browserLanguages.find((lang) =>
       availableLanguages.includes(lang)
     );
-    return match || Language.En;
+    return match || Language.en;
   };
 
-  const [selectedLanguage, setSelectedLanguage] = useState(Language.En);
+  console.log("lang",navigator.languages,Object.keys(Language));
+
+  const [selectedLanguage, setSelectedLanguage] = useState(Language.en);
 
   useEffect(
     () => findMatchingLanguage && setSelectedLanguage(findMatchingLanguage()),

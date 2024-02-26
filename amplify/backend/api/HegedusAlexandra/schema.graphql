@@ -1,0 +1,23 @@
+enum ContactModeEnum {
+  PHONE
+  EMAIL
+}
+
+enum LanguageEnum {
+  EN
+  HU
+  IT
+}
+
+type ContactMe @model @auth(rules: [{allow: public, operations: [create]}]) {
+  id: ID!
+  phone: String
+  email: AWSEmail!
+  message: String!
+  language: LanguageEnum
+  notified: Boolean
+  name: String
+  subject: String
+  marketing: Boolean
+  contactMode: ContactModeEnum
+}
