@@ -21,7 +21,7 @@ const {selectedLanguage} = useLanguage();
           {t('landing.iam')}
           <span className="text-red-700 font-bold">{t('landing.developer')}</span>
         </p>
-        <p className="md:text-[2vh] font-opensans md:text-gray-600 text-black">
+        <p className="md:text-[2vh] font-opensans md:text-stone-600 text-black">
           {t('landing.long')}
         </p>
       </h1>

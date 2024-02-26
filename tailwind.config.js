@@ -14,6 +14,8 @@ module.exports = {
         'WA': "url('./assets/pictures/WA.png')",
         'PCT': "url('./assets/pictures/PCT.png')",
         'BANK': "url('./assets/pictures/BANK.png')",
+        'OKS': "url('./assets/pictures/OKS.png')",
+        'SP': "url('./assets/pictures/SP.png')",
         'abstract': "url('./assets/pictures/abstract.jpg')",
         'lemoncoconut': "url('./assets/pictures/lemon_coconut.jpg')"
       },
