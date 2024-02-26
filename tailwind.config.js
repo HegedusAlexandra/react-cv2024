@@ -11,6 +11,7 @@ module.exports = {
         'landing': "url('./assets/pictures/landing.jpg')",
         'LH': "url('./assets/pictures/LH.png')",
         'GF': "url('./assets/pictures/GF.png')",
+        'WA': "url('./assets/pictures/WA.png')",
         'abstract': "url('./assets/pictures/abstract.jpg')",
         'lemoncoconut': "url('./assets/pictures/lemon_coconut.jpg')"
       },
