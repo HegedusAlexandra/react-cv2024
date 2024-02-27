@@ -17,10 +17,16 @@ const {selectedLanguage} = useLanguage();
         <p className="md:w-[80%] w-[100%] md:text-[5vh] text-[4vh] font-roboto font-semibold leading-[5vh] md:leading-[7vh]">
           {t('landing.hello')}
         </p>
+        
         <p className="w-[100%] md:text-[5vh] text-[4vh] font-roboto font-semibold leading-[5vh] md:leading-[7vh]">
           {t('landing.iam')}
-          <span className="text-red-700 font-bold">{t('landing.developer')}</span>
         </p>
+        
+        <p className="w-[100%] md:text-[5vh] text-red-700 text-[4vh] font-roboto font-semibold leading-[5vh] md:leading-[7vh]">
+          {t('landing.developer')}
+        </p>
+        
+        
         <p className="md:text-[2vh] font-opensans md:text-stone-600 text-black">
           {t('landing.long')}
         </p>

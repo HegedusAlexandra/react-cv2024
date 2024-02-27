@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Amplify } from 'aws-amplify'
 import './index.css';
 import Main from './Main';
 import reportWebVitals from './reportWebVitals';
+import config from './aws-exports';
 import { LanguageProvider } from './contexts/LanguageContext';
 import './utils/i18n';
+
+Amplify.configure(config);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,11 +1,8 @@
 import React,{useState,useCallback} from "react";
 import Form from "../components/Form";
 import { useTranslation } from "react-i18next";
-import { Amplify } from 'aws-amplify';
-import config from '../amplifyconfiguration.json';
 import { generateClient } from "aws-amplify/api"; 
 import { createContactMe } from "../graphql/mutations";
-Amplify.configure(config);
 
 
 export default function Contact() {
