@@ -2,18 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Amplify } from 'aws-amplify'
 import './index.css';
-import Main from './Main';
 import reportWebVitals from './reportWebVitals';
 import config from './aws-exports';
 import { LanguageProvider } from './contexts/LanguageContext';
 import './utils/i18n';
+import {
+  RouterProvider,
+} from "react-router-dom";
+import { router } from './Navigator';
 
 Amplify.configure(config);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <LanguageProvider>
-    <Main />
+    <RouterProvider router={router} />
   </LanguageProvider>
 );
 

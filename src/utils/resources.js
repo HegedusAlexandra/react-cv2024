@@ -7,6 +7,7 @@ const resources = {
     en: {
       translation: { 
         'menu':{
+          'home':'home',
           'about me':"about me",
           'projects':"projects",
           'contact':"contact",
@@ -60,6 +61,7 @@ const resources = {
     hu: {
       translation: { 
         'menu':{
+          'home':'főoldal',
           'about me':"rólam",
           'projects':"projektek",
           'contact':"kontakt",
@@ -113,6 +115,7 @@ const resources = {
     it: {
       translation: { 
         "menu": {
+          'home':'home',
           "about me": "su di me",
           "projects": "progetti",
           "contact": "contatto",

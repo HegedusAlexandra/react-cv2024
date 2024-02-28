@@ -104,21 +104,21 @@ const Form = ({ handleData, setSent }) => {
 
   return (
     <div className="flex flex-col w-[100%] justify-center items-center content-center">
-      <div className="relative z-10 md:w-[40%] w-[90%] bg-white rounded-xl -translate-y-3">
+      <div className="relative z-10 md:w-[40%] w-[90%]  rounded-xl -translate-y-3">
         <form onSubmit={handleSubmit(onSubmit)} className="w-[100%]">
           <div className="flex flex-col mt-2 w-[100%] h-[60%]">
             <Controller
               name="name"
               control={control}
               render={({ field, fieldState }) => (
-                <div className="w-[100%] h-[100%] bg-background_light mb-2 py-2 px-6 mb:py-[1vw] mb:px-[1vw] rounded-lg leftShadow">
+                <div className="w-[100%] h-[100%] mb-2 py-2 px-6 mb:py-[1vw] mb:px-[1vw] rounded-lg leftShadow">
                   <input
                     type="text"
                     placeholder={t("contact.name").toUpperCase()}
                     {...field}
                     id="name"
                     required
-                    className="md:text-[2vh] "
+                    className="md:text-[2vh]"
                   />
                   {fieldState.error && (
                     <div className="text-red-500">
@@ -205,7 +205,7 @@ const Form = ({ handleData, setSent }) => {
                   className="flex w-[8vh] h-[3.4vh] rounded-3xl border-2 border-solid border-text font-roboto text-text font-bold items-center mr-[2vh]"
                 >
                   <motion.div
-                    className="h-[92%] md:w-[62%] w-[58%] ml-[3%] rounded-full text-sky2 flex justify-center items-center"
+                    className="h-[92%] md:w-[62%] w-[58%] ml-[3%] rounded-full flex justify-center items-center"
                     animate={variants[contactPref]}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
@@ -224,7 +224,7 @@ const Form = ({ handleData, setSent }) => {
                   className={`flex w-[8vh] h-[3.4vh] rounded-3xl border-2 border-solid border-text font-roboto text-text font-bold items-center mr-[2vh]`}
                 >
                   <motion.div
-                    className="h-[92%] md:w-[62%] w-[58%] ml-[3%] rounded-full text-sky2 flex justify-center items-center"
+                    className="h-[92%] md:w-[62%] w-[58%] ml-[3%] rounded-full flex justify-center items-center"
                     animate={variants[!isAgreed ? "left" : "right"]}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
