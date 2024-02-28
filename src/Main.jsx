@@ -34,24 +34,25 @@ function Main() {
   };
 
   return (
-    <div className="w-[100%] ">
+    <div className="w-[100%] h-[100vh]">
       {window.innerWidth > 780 ? <Menu /> : <CircularMenu />}
       <FlipPic />
       <div className="absolute w-[100%] h-[200vh] overflow-hidden">
         {window.innerWidth > 780 && <ParallaxTops />}
       </div>
+      <div>
       <div id="landing">
         <Landing />
       </div>
-      <div id="skills">
-        <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] pt-[10vh] pb-[2vh]">
+      <div id="skills" >
+        <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[0vh] pt-[10vh] pb-[2vh] bg-stone-200">
           <p className="md:w-[100%] w-[92%] md:text-[5vh] text-[6vh] font-roboto font-semibold capitalize">
             // {t("menu.skills")}
           </p>
         </h2>
         <Skills />
       </div>
-      <div id="about me">
+      <div id="about me" >
         <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] pt-[10vh] pb-[2vh]">
           <p className="md:w-[100%] w-[92%] md:text-[5vh] text-[6vh] font-roboto font-semibold capitalize">
             // {t("menu.introduction")}
@@ -59,8 +60,8 @@ function Main() {
         </h2>
         <Introduction />
       </div>
-      <div id="projects">
-        <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[10vh] pt-[10vh] pb-[2vh]">
+      <div id="projects" >
+        <h2 className="flex flex-col w-[100%] md:px-[30%] px-[4%] md:pt-[20vh] md:pb-[0vh] pt-[10vh] pb-[2vh] bg-stone-600">
           <p className="md:w-[100%] w-[92%] md:text-[5vh] text-[6vh] font-roboto font-semibold capitalize">
             // {t("menu.projects")}
           </p>
@@ -83,6 +84,7 @@ function Main() {
           &copy; Copyright 2024
         </div>
       </footer>
+      </div>
     </div>
   );
 }

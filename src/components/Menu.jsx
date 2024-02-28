@@ -9,14 +9,11 @@ import { NavLink, useLocation } from "react-router-dom";
 
 function Menu() {
   const { t } = useTranslation();
-  const scrollY = useScrollPosition();
-  const bgcolor =
-    scrollY < 1 ? "bg-transparent" : "backdrop-blur-md bg-white/10";
   const location = useLocation();
 
   return (
     <div
-      className={`invisible md:visible flex flex-row fixed z-10 top-0 w-full h-[8%] py-[1%] font-roboto items-center px-[4%] ${bgcolor}`}
+      className={`invisible md:visible fixed flex flex-row z-10 top-0 left-0 w-full h-[8%] py-[1%] font-roboto items-center px-[4%] backdrop-blur-md bg-white/10`}
     >
       <div className="w-[26%] h-[100%] flex items-center">
         <h2>{t("menu.wdp")}</h2>

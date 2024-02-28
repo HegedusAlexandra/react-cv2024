@@ -23,4 +23,3 @@ export default function FlipPic() {
     </div>
   )
 }
-{/* <img className="absolute z-10 size-[30vh] rounded-full shadow-xl border-dashed border-[14px] border-stone-900 right-[24%] top-[14%]" alt="me" src={me}/> */}

@@ -201,3 +201,18 @@ svg {
    .circular-menu.visible .menu-item:nth-child(4) {
     transform: rotate(80deg) translate(12em) rotate(-80deg);
   }  
+
+  /* scroll snap*/
+
+  .snap-parent {
+    scroll-snap-type: y mandatory;
+    height: 800vh;
+    overflow-y: scroll;
+  }
+   /*
+    * Mark the child of a snap-parent element as a checkpoint for the scrolling
+    */
+  .snap-child {
+    scroll-snap-align: center;
+  }
+  
