@@ -206,7 +206,6 @@ svg {
 
   .snap-parent {
     scroll-snap-type: y mandatory;
-    height: 800vh;
     overflow-y: scroll;
   }
    /*

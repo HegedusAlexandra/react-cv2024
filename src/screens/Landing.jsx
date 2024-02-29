@@ -3,12 +3,13 @@ import globe from "../assets/simple_icon/globe.svg";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "../contexts/LanguageContext";
 
-export default function Landing() {
+
+export default function Landing({id}) {
 const {t} = useTranslation()
 const {selectedLanguage} = useLanguage();
 
   return (
-    <div className="flex flex-col justify-center items-center w-[100%] h-[100vh] bg-landing bg-cover bg-no-repeat">
+    <div id={id} className="flex flex-col justify-center items-center w-[100%] h-[100vh] bg-landing bg-cover bg-no-repeat snap-child">
       <div className="flex flex-row justify-start items-center md:w-[40%] w-[90%] md:bg-transparent bg-[#ffffff46] rounded-md p-[1%] md:p-[0%] font-roboto font-semibold mb-[2vh] md:-translate-y-[8vh]">
         <img className="size-[3vh]" width={24}
       height={24} alt="globe" src={globe} loading='eager'/>

@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <div className="flex flex-col w-[100%] h-[100vh] bg-stone-900 ">
      <HelmetComp title={'helmet.projects'} url="projects" content={'helmet.pro_desc'}/>
-      <div className="flex flex-col w-[100%] px-[4%] md:px-[20%] pb-[20vh] bg-stone-800 snap-parent">
+      <div className="flex flex-col w-[100%] px-[4%] md:px-[20%] pb-[20vh] bg-stone-800 h-[800vh] snap-parent">
         <h1 className="w-[100%]">{t('helmet.h1')}</h1>
         {window.innerWidth > 0 ? <Menu /> : <CircularMenu />}
         {allCardDetails.map((el) => (

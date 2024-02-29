@@ -11,10 +11,11 @@ import nodedotjs from "../assets/simple_icon/nodedotjs.svg";
 import react from "../assets/simple_icon/react.svg";
 import sass from "../assets/simple_icon/sass.svg";
 import tailwindcss from "../assets/simple_icon/tailwindcss.svg";
+import ScreenHeader from '../components/SreenHeader'
 
-export default function Skills() {
+export default function Skills({id}) {
   return (
-    <div className="flex flex-row flex-wrap justify-between w-[100%] h-[50vh] bg-transparent md:bg-stone-200 md:px-[30%] px-[4%] py-[6%] md:gap-12">
+    <div id={id} className="flex flex-row flex-wrap justify-between w-[100%] h-[100vh] bg-transparent md:bg-stone-200 md:px-[30%] px-[4%] py-[6%] md:gap-12 snap-child">
       <img
       width={150}
       height={150}

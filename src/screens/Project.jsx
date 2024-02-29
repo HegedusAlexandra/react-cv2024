@@ -2,11 +2,11 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
-export default function Project() {
+export default function Project({id}) {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-row w-[100%] md:px-[30%] px-[4%] py-[4%] md:py-[4%] bg-stone-600">
+    <div id={id} className="flex flex-row w-[100%] h-[100vh] md:px-[30%] px-[4%] py-[4%] md:py-[4%] bg-stone-600 snap-child">
       <a
       href=''
         className={`w-[32vh] bg-stone-700 p-2 rounded-2xl shadow-[3px_5px_16px_5px_rgba(0,0,0,0.6)]`}
