@@ -1,5 +1,12 @@
 export const allCardDetails = [
     {
+      link: "https://www.golfracks.club/",
+      background: "bg-GF",
+      headline: "GolfRacks",
+      description:
+        "Mobile app i was participated of the creation and correction, and this is a simple site to redirect to app download from desktop view"
+    },
+    {
       link: "https://leohunts.com/",
       background: "bg-LH",
       headline: "LEOHUNTS",
@@ -12,14 +19,7 @@ export const allCardDetails = [
       headline: "PetChat",
       description:
         "Mobile app, and this is a simple site to redirect to app downloadm from desktop view, I was participated in the project and created this site, it was made wih react native, expo, GQL, apollo"
-    },
-    {
-      link: "https://www.golfracks.club/",
-      background: "bg-GF",
-      headline: "GolfRacks",
-      description:
-        "Mobile app i was participated of the creation and correction, and this is a simple site to redirect to app download from desktop view"
-    },
+    },    
     {
       link: "https://hegedusalexandra.github.io/weather_forecast/frontend/",
       background: "bg-WA",

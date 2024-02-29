@@ -39,7 +39,7 @@ function Menu() {
             key={"about me"}
             className="text-black uppercase font-bold text-[2vh] invisible md:visible mx-auto"
           >
-            <NavLink to="/about me">{t("menu.about me")}</NavLink>
+            <NavLink to="/introduction">{t("menu.about me")}</NavLink>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.2, color: "#B91C1C" }}

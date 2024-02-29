@@ -19,7 +19,8 @@ module.exports = {
         'lemon': "url('./assets/pictures/lemon.jpg')",
         'abstract': "url('./assets/pictures/abstract.jpg')",
         'lemoncoconut': "url('./assets/pictures/lemon_coconut.jpg')",
-        'arrow': "url('./assets/pictures/arrow.jpg')"
+        'arrow': "url('./assets/pictures/arrow.jpg')",
+        'bee': "url('./assets/pictures/bee.png')",
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],

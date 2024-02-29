@@ -57,7 +57,8 @@ const resources = {
           'thank':"Thank you for the interest soon I will get in touch with you!"
         },
         'helmet':{
-          'projects':"projects",
+          'main':"Portfolio",
+          'projects':"Projects",
           'pro_desc':'Explore my portfolio, showcases my initial projects, each crafted to provide a glimpse into my journey and growth in web development. ',
           'h1':'I warmly invite you to explore my projects.'
         }
@@ -116,7 +117,8 @@ const resources = {
           'thank':"Köszönöm az érdeklődést,hamarosan jelentkezem!"
         },
         'helmet':{
-          'projects':"projektek",
+          'projects':"Projektek",
+          'main':"Portfolio",
           'pro_desc':'Fedezd fel a portfólióm amely bemutatja kezdeti projektjeimet, mindegyiket úgy alkottam meg, hogy betekintést nyújtsanak a fejlődésemben a webfejlesztés terén. ​',
           'h1': 'Szeretettel meghívlak, hogy nézd meg projektjeimet.'
         }
@@ -175,7 +177,8 @@ const resources = {
           "thank":"grazie per l'interesse, presto sarai ricontattato"
         },
         'helmet':{
-          'projects':"progetti",
+          'projects':"Progetti",
+          'main':"Portfolio",
           'pro_desc':'Esplora il mio portfolio mette in mostra i miei primi progetti, ognuno creato per offrire uno sguardo al mio viaggio e alla mia crescita nello sviluppo web. ​',
           'h1':"Vi invito calorosamente a esplorare i miei progetti ​"
         }
