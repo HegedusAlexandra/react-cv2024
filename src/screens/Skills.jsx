@@ -16,72 +16,96 @@ export default function Skills() {
   return (
     <div className="flex flex-row flex-wrap justify-between w-[100%] h-[50vh] bg-transparent md:bg-stone-200 md:px-[30%] px-[4%] py-[6%] md:gap-12">
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="amazon"
         src={amazon}
       />
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="apollo"
         src={apollo}
       />
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="docker"
         src={docker}
       />
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="figma"
         src={figma}
       />
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="github"
         src={github}
       />
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="html5"
         src={html5}
       />
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="javascript"
         src={javascript}
       />
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="nextdotjs"
         src={nextdotjs}
       />
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="nodedotjs"
         src={nodedotjs}
       />
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="react"
         src={react}
       />
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="sass"
         src={sass}
       />
       <img
+      width={150}
+      height={150}
         loading="eager"
         className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
         alt="tailwindcss"

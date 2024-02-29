@@ -55,6 +55,10 @@ const resources = {
           "CONTACT ME":'CONTACT ME',
           'lets': "let's speak",
           'thank':"Thank you for the interest soon I will get in touch with you!"
+        },
+        'helmet':{
+          'projects':"projects",
+          'pro_desc':'Explore my portfolio, showcases my initial projects, blending innovative design with functional simplicity, each crafted to provide a glimpse into my journey and growth in web development. '
         }
       }
     },
@@ -109,6 +113,10 @@ const resources = {
           "CONTACT ME":"Lépjünk kapcsolatba",
           'lets': "Beszéljünk!",
           'thank':"Köszönöm az érdeklődést,hamarosan jelentkezem!"
+        },
+        'helmet':{
+          'projects':"projektek",
+          'pro_desc':'Fedezd fel a portfólióm amely bemutatja kezdeti projektjeimet, amelyek innovatív tervezést ötvöznek a funkcionalitás egyszerűségével, mindegyiket úgy alkottam meg, hogy betekintést nyújtsanak az én utazásomba és fejlődésemben a webfejlesztés terén. ​'
         }
       }
     },
@@ -163,6 +171,10 @@ const resources = {
           "CONTACT ME": "CONTATTI",
           'lets':'sentiamoci',
           "thank":"grazie per l'interesse, presto sarai ricontattato"
+        },
+        'helmet':{
+          'projects':"progetti",
+          'pro_desc':'Esplora il mio portfolio in evoluzione. Il mio portfolio mette in mostra i miei primi progetti, combinando design innovativo con semplicità funzionale, ognuno creato per offrire uno sguardo al mio viaggio e alla mia crescita nello sviluppo web. ​'
         }
       }
     },

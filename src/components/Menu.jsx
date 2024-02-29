@@ -1,10 +1,9 @@
-import React, { memo, useCallback } from "react";
+import React, { memo } from "react";
 import { motion } from "framer-motion";
 import LanguageDropdown from "./LanguageDropdown";
 import { useTranslation } from "react-i18next";
 import linkedin from "../assets/simple_icon/linkedin.svg";
 import github from "../assets/simple_icon/github.svg";
-import { useScrollPosition } from "../hooks/position";
 import { NavLink, useLocation } from "react-router-dom";
 
 function Menu() {
@@ -58,6 +57,8 @@ function Menu() {
           href="https://github.com/HegedusAlexandra?tab=repositories"
         >
           <img
+          width={150}
+          height={150}
             loading="eager"
             className=" size-[2.5vh]"
             alt="github"
@@ -71,6 +72,8 @@ function Menu() {
           href="https://www.linkedin.com/in/alexandra-heged%C3%BCs-135220269/"
         >
           <img
+          width={150}
+          height={150}
             loading="eager"
             className=" size-[2.5vh]"
             alt="linkedin"

@@ -8,6 +8,8 @@ export default function FlipPic() {
       <div className="md:size-[26vh] size-[18vh] rounded-full mx-auto group-hover:animation-flip-slow">
         <div className="relative w-full h-full rounded-full">
           <img
+          width={600}
+          height={600}
             className="absolute w-full h-full rounded-full object-cover"
             src={me}
             alt="Front"
