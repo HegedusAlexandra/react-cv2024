@@ -10,14 +10,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { router } from './Navigator';
+import { HelmetProvider } from 'react-helmet-async';
 
 Amplify.configure(config);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <LanguageProvider>
-    <RouterProvider router={router} />
-  </LanguageProvider>
+  <HelmetProvider>
+    <LanguageProvider>
+      <RouterProvider router={router} />
+    </LanguageProvider>
+  </HelmetProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

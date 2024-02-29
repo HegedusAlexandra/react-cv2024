@@ -58,7 +58,8 @@ const resources = {
         },
         'helmet':{
           'projects':"projects",
-          'pro_desc':'Explore my portfolio, showcases my initial projects, blending innovative design with functional simplicity, each crafted to provide a glimpse into my journey and growth in web development. '
+          'pro_desc':'Explore my portfolio, showcases my initial projects, each crafted to provide a glimpse into my journey and growth in web development. ',
+          'h1':'I warmly invite you to explore my projects.'
         }
       }
     },
@@ -116,7 +117,8 @@ const resources = {
         },
         'helmet':{
           'projects':"projektek",
-          'pro_desc':'Fedezd fel a portfólióm amely bemutatja kezdeti projektjeimet, amelyek innovatív tervezést ötvöznek a funkcionalitás egyszerűségével, mindegyiket úgy alkottam meg, hogy betekintést nyújtsanak az én utazásomba és fejlődésemben a webfejlesztés terén. ​'
+          'pro_desc':'Fedezd fel a portfólióm amely bemutatja kezdeti projektjeimet, mindegyiket úgy alkottam meg, hogy betekintést nyújtsanak a fejlődésemben a webfejlesztés terén. ​',
+          'h1': 'Szeretettel meghívlak, hogy nézd meg projektjeimet.'
         }
       }
     },
@@ -174,7 +176,8 @@ const resources = {
         },
         'helmet':{
           'projects':"progetti",
-          'pro_desc':'Esplora il mio portfolio in evoluzione. Il mio portfolio mette in mostra i miei primi progetti, combinando design innovativo con semplicità funzionale, ognuno creato per offrire uno sguardo al mio viaggio e alla mia crescita nello sviluppo web. ​'
+          'pro_desc':'Esplora il mio portfolio mette in mostra i miei primi progetti, ognuno creato per offrire uno sguardo al mio viaggio e alla mia crescita nello sviluppo web. ​',
+          'h1':"Vi invito calorosamente a esplorare i miei progetti ​"
         }
       }
     },

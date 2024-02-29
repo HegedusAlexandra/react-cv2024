@@ -4,12 +4,15 @@ import CircularMenu from "../components/CircularMenu";
 import ProjectCard from "../components/ProjectCard";
 import { allCardDetails } from "../utils/allCardDetails";
 import HelmetComp from "../components/HelmetComponent";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const {t} = useTranslation()
   return (
-    <div className="flex flex-col w-[100%] h-[100vh] bg-stone-500 ">
-     {/*  <HelmetComp title={'helmet.projects'} url="projects" content={'helmet.pro_desc'}/> */}
-      <div className="flex flex-col w-[100%] px-[4%] md:px-[20%] pb-[20vh] bg-stone-100 snap-parent">
+    <div className="flex flex-col w-[100%] h-[100vh] bg-stone-900 ">
+     <HelmetComp title={'helmet.projects'} url="projects" content={'helmet.pro_desc'}/>
+      <div className="flex flex-col w-[100%] px-[4%] md:px-[20%] pb-[20vh] bg-stone-800 snap-parent">
+        <h1 className="w-[100%]">{t('helmet.h1')}</h1>
         {window.innerWidth > 0 ? <Menu /> : <CircularMenu />}
         {allCardDetails.map((el) => (
           <ProjectCard

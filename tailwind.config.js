@@ -18,7 +18,8 @@ module.exports = {
         'SP': "url('./assets/pictures/SP.png')",
         'lemon': "url('./assets/pictures/lemon.jpg')",
         'abstract': "url('./assets/pictures/abstract.jpg')",
-        'lemoncoconut': "url('./assets/pictures/lemon_coconut.jpg')"
+        'lemoncoconut': "url('./assets/pictures/lemon_coconut.jpg')",
+        'arrow': "url('./assets/pictures/arrow.jpg')"
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
