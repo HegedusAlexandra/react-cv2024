@@ -41,9 +41,9 @@ function Main() {
     <div className="flex flex-col w-[100%] h-[100vh] bg-stone-900 ">
       {/* {window.innerWidth > 0 ? <Menu /> : <CircularMenu />} */}
       {window.innerWidth > 780 ? (
-        <div className="absolute w-[100%] h-[200vh] overflow-hidden">
+        <div >
           <Menu />
-          <ParallaxTops />
+         {/*  <ParallaxTops /> */}
         </div>
       ) : (
         <CircularMenu />
@@ -51,7 +51,7 @@ function Main() {
       <div className="w-[100%] h-[500vh] snap-parent">
         <Landing id={"landing"} />
         <Skills id={"skills"} />
-        <Introduction id={"about me"} />
+        <Introduction id={"introduction"} />
         <Project id={"project"} />
         <Contact id={"contact"} />
       </div>

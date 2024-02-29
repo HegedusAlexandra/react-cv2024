@@ -13,10 +13,10 @@ function Menu() {
   return (
     <div className="fixed z-10 flex-flex-col w-[100%]">
       <div
-        className={`invisible md:visible fixed flex flex-row z-10 top-0 left-0 w-full h-[8%] py-[1%] font-roboto items-center px-[4%] backdrop-blur-sm bg-black/10 border-b-[1px] border-solid border-[#F7C001]`}
+        className={`invisible md:visible fixed flex flex-row z-10 top-0 left-0 w-full h-[8%] py-[1%] font-roboto items-center px-[4%] backdrop-blur-sm bg-black/10 border-b-[6px] border-solid border-[#F7C001]`}
       >
         <div className="w-[26%] h-[100%] flex items-center">
-          {/* <h2>{t("menu.wdp")}</h2> */}
+          <h2>{t("menu.wdp")}</h2> 
         </div>
         <ul
           className={`flex flex-row w-[30%] text-[3vw] md:text-[2vw] list-none `}
@@ -85,8 +85,7 @@ function Menu() {
         <div className="w-[22%] flex justify-end">
           <LanguageDropdown />
         </div>
-      </div>      
-      <div className="flex justify-center items-center fixed z-20 left-0 w-[18%] h-[8%] bg-yellow border-b-4 border-solid border-yellow-200"><h2 className="text-black font-regular uppercase font-roboto text-[2vh]">{t("menu.wdp")}</h2></div>   
+      </div>
     </div>
   );
 }
