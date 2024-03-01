@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectCard({
   link,
@@ -6,6 +7,9 @@ export default function ProjectCard({
   headline,
   description
 }) {
+
+  const {t} = useTranslation()
+
   return (
     <a
       href={link}
@@ -16,9 +20,9 @@ export default function ProjectCard({
       />
       <div className="w-[100%] pt-1 text-stone-100 font-opensans">
         <h2 className="font-opensans uppercase font-bold text-[4vh]">
-          {headline}
+          {t(headline)}
         </h2>
-        <p>{description}</p>
+        <p className="text-stone-400">{t(description)}</p>
       </div>
     </a>
   );

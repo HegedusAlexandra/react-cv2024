@@ -76,6 +76,22 @@ const resources = {
           'ger':'German',
           'EI':'Business Informatics',
           'frontend':'Frontend Development - Mobile app and Website',
+      },
+      'projects':{
+        'GF-headline': "GolfRacks",
+        'GF-description':"GolfRacks represents a mobile application project (made with React Native) in which I actively participated as a Vamosoft Developer.The project extends beyond the app itself, incorporating a straightforward website designed to facilitate the app's download from a desktop environment.",  
+        'LH-headline': "LEOHUNTS",
+        'LH-description':"LEOHUNTS is the digital face of a real estate selling company, for which I contributed significantly also as a developer at Vamosoft. My role involved assisting in the correction of existing features and the development of new functionalities. This website was brought to life using a modern tech stack that includes React, Algolia, and Next.js, reflecting my proficiency in front-end development and my capability to enhance user experiences in the real estate domain.",
+        'PCT-headline': "PetChat",
+        'PCT-description':"PetChat is a mobile application accompanied by a simplified website aimed at directing users to the app download page from a desktop perspective. My involvement in this project was comprehensive, participating in its development and spearheading the creation of the accompanying site. The project was developed using React Native, Expo, GraphQL (GQL), and Apollo, showcasing my versatility in handling various technologies and ability to build a realtime chat app and my commitment to creating engaging digital solutions.",
+        'WA-headline': "Weather App",
+        'WA-description':"The Weather App is a school project developed with JavaScript, designed to provide real-time weather data for any entered city. This application exemplifies my ability to apply coding knowledge to practical scenarios, enabling users to obtain current weather information with a simple city name input and a keystroke, illustrating my foundational skills in JavaScript and API integration.",
+        'BANK-headline': "BANKIST",
+        "BANK-description":"BANKIST is a project born from my desire to hone my JavaScript skills, resulting in the creation of a simulated bank website. This endeavor allowed me to explore JavaScript in depth, applying its principles to simulate banking operations and interactions, thereby enhancing my understanding of web development and financial applications.",
+        "OK-headline": "OMA's KLEIDERSCHRANK",
+        "OK-description":"This project entailed developing a website for a second-hand clothing shop using React. Despite the shop's closure, the website remains a testament to my capabilities in creating responsive and user-friendly e-commerce platforms, showcasing my skills in front-end development and my ability to deliver projects with a strong visual and functional appeal.",
+        'SP-headline': "SMALL PROJECTS",
+        'SP-description': "This collection of small projects serves as a playground for my JavaScript skills, encompassing a variety of fun applications, riddles, and games. Each project within this category is an opportunity to experiment with new ideas, refine programming techniques, and engage users with interactive and entertaining digital experiences."
       }
       }
     },
@@ -131,7 +147,7 @@ const resources = {
           "submit": "küldés",
           "CONTACT ME":"Lépjünk kapcsolatba",
           'lets': "Beszéljünk!",
-          'thank':"Köszönöm az érdeklődést,hamarosan jelentkezem!"
+          'thank':"Köszönöm az érdeklődést,hamarosan jelentkezem!",
         },
         'helmet':{
           'projects':"Projektek",
@@ -151,6 +167,22 @@ const resources = {
           'ger':'Német',
           'EI':'GazdaságInformatika',
           'frontend':'Frontend Fejlesztés - Mobil app és Weblap',
+      },
+      'projects':{
+        'GF-headline': "GolfRacks",
+        'GF-description':"A GolfRacks egy mobilalkalmazás-projekt (React Native-ben készült), amelyben aktívan részt vettem mint a Vamosoft fejlesztője. A projekt túlmutat magán az alkalmazáson, egy egyszerű weboldalt is magában foglal, amelynek célja az alkalmazás letöltésének megkönnyítése asztali környezetből.",  
+        'LH-headline': "LEOHUNTS",
+        'LH-description':"A LEOHUNTS a modern ingatlaneladás digitális megjelenítője, amelynek létrehozásához mint a Vamosoft egyik fejlesztője kiemelkedően hozzájárultam. A munkám során nem csupán a meglévő funkciók finomhangolásával foglalkoztam, hanem új, innovatív megoldások kidolgozásával is bővítettem a platform képességeit. A weboldal megalkotásához egy korszerű technológiai stack-et választottunk, amely a React, Algolia és Next.js technológiáit ötvözi hozzájárulva a felhasználói élmény folyamatos javításához az ingatlanpiaci szegmensben.",
+        'PCT-headline': "PetChat",
+        'PCT-description':"A PetChat egy mobilalkalmazás, amelyet egy egyszerűsített weboldal egészít ki, célja, hogy az asztali nézetből az alkalmazás letöltési oldalára irányítsa a felhasználókat. Ebben a projektben való részvételem átfogó volt, részt vettem a fejlesztésében és vezettem a kísérő weboldal létrehozását. A projekt React Native, Expo, GraphQL (GQL) és Apollo használatával készült, bemutatva a különféle technológiák kezelésében való sokoldalúságomat és képességemet egy valós idejű csevegő alkalmazás létrehozására, valamint elkötelezettségemet a vonzó digitális megoldások létrehozására.",
+        'WA-headline': "Időjárás App",
+        'WA-description':"Az Időjárás App egy iskolai projekt, amely JavaScripttel készült, célja, hogy valós idejű időjárás-adatokat biztosítson bármely megadott városra. Ez az alkalmazás példázza képességemet a kódolási ismeretek gyakorlati helyzetekben való alkalmazására, lehetővé téve a felhasználók számára, hogy egyszerű városnév bevitellel és egy billentyűleütéssel aktuális időjárás-információkat szerezzenek, bemutatva alapvető JavaScript és API integrációs készségeimet.",
+        'BANK-headline': "BANKIST",
+        "BANK-description":"A BANKIST egy olyan projekt, amely a JavaScript készségeim fejlesztési vágyából született, egy szimulált banki weboldal létrehozásával. Ez az erőfeszítés lehetővé tette számomra, hogy mélyrehatóan megismerjem a JavaScriptet, alkalmazva annak elveit a banki műveletek és interakciók szimulálására, ezzel bővítve webfejlesztési és pénzügyi alkalmazásokkal kapcsolatos ismereteimet.",
+        "OK-headline": "OMA's KLEIDERSCHRANK",
+        "OK-description":"Ez a projekt egy használtruha-üzlet weboldalának fejlesztését foglalta magában React használatával. Bár az üzlet bezárt, a weboldal továbbra is tanúbizonysága képességeimnek a reagálóképes és felhasználóbarát e-kereskedelmi platformok létrehozásában, bemutatva a front-end fejlesztésben szerzett készségeimet és képességemet a vizuálisan vonzó és funkcionálisan meggyőző projektek szállítására.",
+        'SP-headline': "Kis Projektek",
+        'SP-description': "Ez a kis projektek gyűjteménye játszóteret biztosít JavaScript készségeim számára, számos szórakoztató alkalmazást, rejtvényt és játékot magában foglalva. E kategórián belüli minden projekt lehetőséget biztosít új ötletek kipróbálására, a programozási technikák finomítására és a felhasználók interaktív és szórakoztató digitális élményekkel való megnyerésére."
       }
       }
     },
@@ -226,10 +258,25 @@ const resources = {
           'ger':'Tedesco',
           'EI':'Informatica Economica',
           'frontend':'Sviluppo Frontend - App mobile e Sito web',
-      }
-      }
-    },
-    
+        },
+        'projects':{
+          'GF-headline': "GolfRacks",
+          'GF-description':"GolfRacks rappresenta un progetto di applicazione mobile (realizzato con React Native) in cui ho partecipato attivamente come sviluppatore di Vamosoft. Il progetto va oltre l'applicazione stessa, incorporando un sito web semplice progettato per facilitare il download dell'app da un ambiente desktop.",  
+          'LH-headline': "LEOHUNTS",
+          'LH-description':"LEOHUNTS è il volto digitale di un'azienda di vendita immobiliare, per la quale ho contribuito significativamente anche come sviluppatore presso Vamosoft. Il mio ruolo includeva l'assistenza nella correzione delle funzionalità esistenti e lo sviluppo di nuove funzionalità. Questo sito web è stato creato utilizzando un moderno stack tecnologico che include React, Algolia e Next.js, riflettendo la mia competenza nello sviluppo front-end e la mia capacità di migliorare l'esperienza utente nel settore immobiliare.",
+          'PCT-headline': "PetChat",
+          'PCT-description':"PetChat è un'applicazione mobile accompagnata da un sito web semplificato mirato a indirizzare gli utenti alla pagina di download dell'app da una prospettiva desktop. Il mio coinvolgimento in questo progetto è stato completo, partecipando al suo sviluppo e guidando la creazione del sito web accompagnatorio. Il progetto è stato sviluppato utilizzando React Native, Expo, GraphQL (GQL) e Apollo, dimostrando la mia versatilità nel gestire varie tecnologie e la mia capacità di costruire un'app di chat in tempo reale e il mio impegno nella creazione di soluzioni digitali coinvolgenti.",
+          'WA-headline': "App Meteo",
+          'WA-description':"L'App Meteo è un progetto scolastico sviluppato con JavaScript, progettato per fornire dati meteorologici in tempo reale per qualsiasi città inserita. Questa applicazione esemplifica la mia capacità di applicare conoscenze di codifica a scenari pratici, consentendo agli utenti di ottenere informazioni meteorologiche attuali con un semplice inserimento del nome della città e un tasto, illustrando le mie competenze fondamentali in JavaScript e integrazione API.",
+          'BANK-headline': "BANKIST",
+          "BANK-description":"BANKIST è un progetto nato dal mio desiderio di affinare le mie competenze in JavaScript, risultando nella creazione di un sito web bancario simulato. Questo sforzo mi ha permesso di esplorare in profondità JavaScript, applicando i suoi principi per simulare operazioni e interazioni bancarie, migliorando così la mia comprensione dello sviluppo web e delle applicazioni finanziarie.",
+          "OK-headline": "OMA's KLEIDERSCHRANK",
+          "OK-description":"Questo progetto ha comportato lo sviluppo di un sito web per un negozio di abbigliamento di seconda mano utilizzando React. Nonostante la chiusura del negozio, il sito web rimane una testimonianza delle mie capacità nella creazione di piattaforme di e-commerce reattive e user-friendly, dimostrando le mie competenze nello sviluppo front-end e la mia capacità di consegnare progetti con un forte appeal visivo e funzionale.",
+          'SP-headline': "Piccoli Progetti",
+          'SP-description': "Questa collezione di piccoli progetti funge da campo di prova per le mie competenze in JavaScript, comprendendo una varietà di applicazioni divertenti, indovinelli e giochi. Ogni progetto all'interno di questa categoria è un'opportunità per sperimentare nuove idee, affinare le tecniche di programmazione e coinvolgere gli utenti con esperienze digitali interattive e divertenti."
+        }
+        }
+    }    
   };
   
   export default resources
