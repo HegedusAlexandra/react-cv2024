@@ -11,7 +11,7 @@ export default function Project({ id }) {
       id={id}
       className="flex flex-col w-[100%] h-[84vh] md:px-[20%] bg-stone-600 snap-child"
     >
-      <div className="flex justify-center w-[100%] mb-[4vh] px-[10vw]">
+      <div className="flex justify-center w-[100%] mb-[4vh]">
         <ScreenHeader title={"menu.projects"} />
       </div>
       <div

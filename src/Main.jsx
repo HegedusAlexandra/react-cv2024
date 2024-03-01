@@ -3,19 +3,15 @@ import { useEffect } from "react";
 import "./Main.css";
 import Landing from "./screens/Landing";
 import Skills from "./screens/Skills";
-import ParallaxTops from "./components/ParallaxTops";
 import Menu from "./components/Menu";
 import CircularMenu from "./components/CircularMenu";
 import Introduction from "./screens/Introduction";
 import Project from "./screens/Project";
 import Contact from "./screens/Contact";
-
 import { useParams } from "react-router-dom";
-import Footer from "./components/Footer";
 import { useTranslation } from "react-i18next";
 import HelmetComp from "./components/HelmetComponent";
-import ProjectCard from "./components/ProjectCard";
-import { allCardDetails } from "../src/utils/allCardDetails";
+import Knowledge from "./screens/Knowledge";
 
 function Main() {
   const { slug } = useParams();
@@ -41,9 +37,10 @@ function Main() {
     <div className="flex flex-col w-[100%] h-[100vh] bg-stone-900 ">
       <HelmetComp title={'helmet.main'} url="" content={'helmet.pro_desc'}/>
       {window.innerWidth > 0 ? <Menu /> : <CircularMenu />}
-      <div className="w-[100%] h-[500vh] snap-parent">
+      <div className="w-[100%] h-[600vh] snap-parent">
         <Landing id={"landing"} />
         <Skills id={"skills"} />
+        <Knowledge id={"knowledge"} />
         <Introduction id={"introduction"} />
         <Project id={"project"} />
         <Contact id={"contact"} />

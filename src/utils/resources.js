@@ -12,7 +12,8 @@ const resources = {
           'projects':"projects",
           'contact':"contact",
           'wdp':"web developer portfolio",
-          'skills':"skills",
+          'skills':"technical skills",
+          'knowledgge':'experience, languages, education',
           'introduction': "introduction",
         },
         'landing':{
@@ -61,7 +62,20 @@ const resources = {
           'projects':"Projects",
           'pro_desc':'Explore my portfolio, showcases my initial projects, each crafted to provide a glimpse into my journey and growth in web development. ',
           'h1':'I warmly invite you to explore my projects.'
-        }
+        },
+        'knowledge':{
+          'eng': 'English',
+          'eng_level':'C2',
+          'gimn':'Bilingual High School',
+          'ten_years':'Lived abroad for 10 years and worked as a manager',
+          'hun':'Hungarian',
+          'hun_level':'Native',
+          'ita':'Italian',
+          'ita_level':'Beginner',
+          'ger':'German',
+          'EI':'Business Informatics',
+          'frontend':'Frontend Development - Mobile app and Website',
+      }
       }
     },
     hu: {
@@ -72,7 +86,8 @@ const resources = {
           'projects':"projektek",
           'contact':"kontakt",
           'wdp':"webfejlesztő portfólió",
-          'skills':"képességek",
+          'skills':"technikai készségek",
+          'knowledge':'tapasztalat, nyelvek, képzettség',
           'introduction': "bemutatkozás",
         },
         'landing':{
@@ -82,8 +97,8 @@ const resources = {
           'long':'Üdvözlök mindenkit a portfólió oldalamon! Webfejlesztésre szakosodtam, és imádok vizuálisan vonzó weboldalakat készíteni. Böngéssz a projektek között és ne habozz, keress meg!',
         },
         'introduction':{
-          '1':' A nevem Alexandra, és lelkes kezdő frontend fejlesztőként több mint egy éves tapasztalattal rendelkezem a webes technológiák világában. Jelenleg aktívan bővítem tudásomat mind a gyakorlati, mind az elméleti területeken, miközben gazdaságinformatikát tanulok egyetemen. Az elmúlt év során számos projektben vettem részt. Büszke vagyok arra, hogy képes vagyok dinamikus és responsív weboldalakat létrehozni, amelyek nem csak esztétikailag vonzóak, hanem a felhasználói igényekhez is igazodnak.',
-          '2':'Folyamatosan törekszem arra, hogy naprakész maradjak a legújabb frontend technológiák és trendek terén, és rendszeresen részt veszek online kurzusokon és workshopokon. Hiszem, hogy a folyamatos tanulás és fejlődés kulcsfontosságú a technológiai ágazatban, és motivált vagyok abban, hogy tovább bővítsem szakmai tudásomat. Célom, hogy egy olyan csapat részese legyek, ahol megoszthatom eddigi tapasztalataimat és együtt dolgozhatunk izgalmas projekteken, miközben további tapasztalatokat szerezhetek. Hiszem, hogy a kreativitás, a csapatmunka és a technológiai innováció kombinációja képes valóban lenyűgöző eredményeket elérni. Izgatottan várom, hogy a jövőben milyen kihívásokkal és lehetőségekkel találkozom a frontend fejlesztés területén.'
+          '1':'A nevem Alexandra, és lelkes kezdő frontend fejlesztőként több mint egy éves tapasztalattal rendelkezem a webes technológiák világában. Jelenleg aktívan bővítem tudásomat mind a gyakorlati, mind az elméleti területeken, miközben gazdaságinformatikát tanulok egyetemen. Az elmúlt év során számos projektben vettem részt. Büszke vagyok arra, hogy képes vagyok dinamikus és responsív weboldalakat létrehozni, amelyek nem csak esztétikailag vonzóak, hanem a felhasználói igényekhez is igazodnak.',
+          '2':'Folyamatosan törekszem arra, hogy naprakész maradjak a legújabb frontend technológiák és trendek terén, és rendszeresen részt veszek online kurzusokon. Hiszem, hogy a folyamatos tanulás és fejlődés kulcsfontosságú , és motivált vagyok abban, hogy tovább bővítsem szakmai tudásomat. Célom, hogy egy olyan csapat részese legyek, ahol megoszthatom eddigi tapasztalataimat és együtt dolgozhatunk izgalmas projekteken, miközben további tapasztalatokat szerezhetek. Hiszem, hogy a tudás, a csapatmunka és a kreativitás kombinációja képes valóban lenyűgöző eredményeket elérni. Izgatottan várom, hogy a jövőben milyen kihívásokkal és lehetőségekkel találkozom.'
         },
         'contact':{
           "namemust":'A név megadása kötelező',
@@ -121,7 +136,20 @@ const resources = {
           'main':"Portfolio",
           'pro_desc':'Fedezd fel a portfólióm amely bemutatja kezdeti projektjeimet, mindegyiket úgy alkottam meg, hogy betekintést nyújtsanak a fejlődésemben a webfejlesztés terén. ​',
           'h1': 'Szeretettel meghívlak, hogy nézd meg projektjeimet.'
-        }
+        },
+        'knowledge':{
+          'eng': 'Angol',
+          'eng_level':'C2',
+          'gimn':'Kéttannyelvű Gimnázium',
+          'ten_years':'10 évig éltem külföldön és dolgoztam vezetőként',
+          'hun':'Magyar',
+          'hun_level':'Anyanyelv',
+          'ita':'Olasz',
+          'ita_level':'Kezdő',
+          'ger':'Német',
+          'EI':'GazdaságInformatika',
+          'frontend':'Frontend Fejlesztés - Mobil app és Weblap',
+      }
       }
     },
     it: {
@@ -132,7 +160,8 @@ const resources = {
           "projects": "progetti",
           "contact": "contatto",
           'wdp':"portfolio di sviluppatore web",
-          'skills':"competenze",
+          'skills':"competenze tecniche",
+          'knowledge':'esperienza, lingue, istruzione',
           'introduction': "introduzione",
         },
         'landing':{
@@ -181,7 +210,20 @@ const resources = {
           'main':"Portfolio",
           'pro_desc':'Esplora il mio portfolio mette in mostra i miei primi progetti, ognuno creato per offrire uno sguardo al mio viaggio e alla mia crescita nello sviluppo web. ​',
           'h1':"Vi invito calorosamente a esplorare i miei progetti ​"
-        }
+        },
+        'knowledge':{
+          'eng': 'Inglese',
+          'eng_level':'C2',
+          'gimn':'Liceo Bilingue',
+          'ten_years':"Ho vissuto all'estero per 10 anni",
+          'hun':'Ungherese',
+          'hun_level':'Madrelingua',
+          'ita':'Italiano',
+          'ita_level':'Principiante',
+          'ger':'Tedesco',
+          'EI':'Informatica Economica',
+          'frontend':'Sviluppo Frontend - App mobile e Sito web',
+      }
       }
     },
     
