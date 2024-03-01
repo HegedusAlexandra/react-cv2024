@@ -10,6 +10,8 @@ import nextdotjs from "../assets/simple_icon/nextdotjs.svg";
 import nodedotjs from "../assets/simple_icon/nodedotjs.svg";
 import react from "../assets/simple_icon/react.svg";
 import sass from "../assets/simple_icon/sass.svg";
+import graphql from "../assets/simple_icon/graphql.svg"
+import php from "../assets/simple_icon/php.svg"
 import tailwindcss from "../assets/simple_icon/tailwindcss.svg";
 import ScreenHeader from "../components/ScreenHeader";
 
@@ -37,6 +39,14 @@ export default function Skills({ id }) {
             className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
             alt="apollo"
             src={apollo}
+          />
+          <img
+            width={150}
+            height={150}
+            loading="eager"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            alt="graphql"
+            src={graphql}
           />
           <img
             width={150}
@@ -72,6 +82,14 @@ export default function Skills({ id }) {
           />
         </div>
         <div className="flex flex-row flex-wrap justify-between items-start w-[100%]">
+        <img
+            width={150}
+            height={150}
+            loading="eager"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            alt="php"
+            src={php}
+          />
           <img
             width={150}
             height={150}
@@ -79,7 +97,14 @@ export default function Skills({ id }) {
             className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
             alt="javascript"
             src={javascript}
-          />
+          /><img
+            width={150}
+            height={150}
+            loading="eager"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            alt="nodedotjs"
+            src={nodedotjs}
+          />  
           <img
             width={150}
             height={150}
@@ -93,17 +118,10 @@ export default function Skills({ id }) {
             height={150}
             loading="eager"
             className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
-            alt="nodedotjs"
-            src={nodedotjs}
-          />
-          <img
-            width={150}
-            height={150}
-            loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
             alt="react"
             src={react}
           />
+                  
           <img
             width={150}
             height={150}

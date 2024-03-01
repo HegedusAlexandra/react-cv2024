@@ -34,7 +34,7 @@ export default function Introduction({ id }) {
             onClick={openInt}
             className="w-[20%] md:h-[8vh] bg-[#F7C003] mt-[4vh] px-6 py-2 rounded-xl border-text font-roboto text-text font-bold uppercase"
           >
-            Tovább
+            {t('introduction.more')}
           </button>
         )}
       </div>
