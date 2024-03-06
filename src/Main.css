@@ -175,7 +175,6 @@ svg {
     border: 1px solid hsl(0, 100%, 100%);
     line-height: 3;
     opacity:0;
-    background-color: #F9E3D5;
     transition: transform .3s ease, background .2s ease;
     padding:1
   }  
@@ -187,7 +186,7 @@ svg {
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }  
   .menu-item.active {
-    background-color:black !important;
+    background-color:#F7C003 !important;
   }
   .circular-menu.visible .menu-item:nth-child(1) {
     transform:rotate(10deg) translate(12em) rotate(-10deg);    
@@ -199,7 +198,10 @@ svg {
     transform: rotate(57deg) translate(12em) rotate(-57deg);
   }
    .circular-menu.visible .menu-item:nth-child(4) {
-    transform: rotate(80deg) translate(12em) rotate(-80deg);
+    transform: rotate(20deg) translate(7em) rotate(-17deg);
+  }  
+   .circular-menu.visible .menu-item:nth-child(5) {
+    transform: rotate(60deg) translate(7em) rotate(-60deg);
   }  
 
   /* scroll snap*/

@@ -3,29 +3,33 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import LanguageDropdown from "./LanguageDropdown";
 import { useScrollPosition } from "../hooks/position";
+import { NavLink } from "react-router-dom";
+import linkedin from "../assets/simple_icon/linkedin.svg";
+import github from "../assets/simple_icon/github.svg";
 
 function CircularMenu() {
   const [isVisible, setIsVisible] = useState(false);
-  const scroll = useScrollPosition()
+  const scroll = useScrollPosition();
   const { t } = useTranslation();
 
-  useEffect(() => setIsVisible(false),[scroll])
+  useEffect(() => setIsVisible(false), [scroll]);
 
   const edge = useCallback(
     (str) => (
-     <a
-        href={`#${str}`}
-        className="menu-item"
-        key={str}
+      <NavLink
+        className="menu-item bg-white"
+        to={`/${str === "about me" ? "introduction" : str}`}
       >
-        <p className="text-xs">{str}</p>
-      </a> 
+        <p className="text-xs">{t(`menu.${str}`)}</p>
+      </NavLink>
     ),
     []
   );
 
   return (
-    <div className={`flex flex-row w-[100%] justify-between items-center md:hidden`}>
+    <div
+      className={`flex flex-row w-[100%] justify-between items-center md:hidden`}
+    >
       <div
         id="circularMenu1"
         className={`circular-menu md:hidden ${isVisible && "visible"}`}
@@ -62,10 +66,43 @@ function CircularMenu() {
             }
           />
         </motion.button>
-        <menu onClick={() => setIsVisible(!isVisible)} className="items-wrapper">
+        <menu
+          onClick={() => setIsVisible(!isVisible)}
+          className="items-wrapper"
+        >
           {edge("about me")}
           {edge("projects")}
           {edge("contact")}
+          <motion.a
+            whileHover={{ scale: 1.6, backgroundColor: "#F7C003" }}
+            className="menu-item bg-white"
+            transition={{ type: "spring", stiffness: 400, damping: 20 }}
+            href="https://github.com/HegedusAlexandra?tab=repositories"
+          >
+            <img
+              width={150}
+              height={150}
+              loading="eager"
+              className=" size-[2.5vh]"
+              alt="github"
+              src={github}
+            />
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.6, backgroundColor: "#F7C003" }}
+            className="menu-item bg-white"
+            transition={{ type: "spring", stiffness: 400, damping: 20 }}
+            href="https://www.linkedin.com/in/alexandra-heged%C3%BCs-135220269/"
+          >
+            <img
+              width={150}
+              height={150}
+              loading="eager"
+              className=" size-[2.5vh]"
+              alt="linkedin"
+              src={linkedin}
+            />
+          </motion.a>
         </menu>
       </div>
       <LanguageDropdown />
