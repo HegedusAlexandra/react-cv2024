@@ -1,14 +1,20 @@
 export const allCardDetails = [
-    {
-      link: "https://www.golfracks.club/",
-      background: "bg-GF",
-      headline: "projects.GF-headline",
-      description:"projects.GF-description"},
+
     {
       link: "https://leohunts.com/",
       background: "bg-LH",
       headline: "projects.LH-headline",
       description:"projects.LH-description" },
+      {
+        link: "https://hegedusalexandra.github.io/osk/",
+        background: "bg-OKS",
+        headline: "projects.OK-headline",
+        description:"projects.OK-description" },
+        {
+          link: "https://www.golfracks.club/",
+          background: "bg-GF",
+          headline: "projects.GF-headline",
+          description:"projects.GF-description"},
     {
       link: "https://hegedusalexandra.github.io/PCL/PCL.html",
       background: "bg-PCT",
@@ -24,11 +30,6 @@ export const allCardDetails = [
       background: "bg-BANK",
       headline: "projects.BANK-headline",
       description:"projects.BANK-description"},
-    {
-      link: "https://hegedusalexandra.github.io/OMASKLEIDERSCHRANK/",
-      background: "bg-OKS",
-      headline: "projects.OK-headline",
-      description:"projects.OK-description" },
     {
       link: "https://hegedusalexandra.github.io/small_projects/",
       background: "bg-SP",
