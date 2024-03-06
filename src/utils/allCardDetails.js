@@ -5,16 +5,16 @@ export const allCardDetails = [
       background: "bg-LH",
       headline: "projects.LH-headline",
       description:"projects.LH-description" },
-      {
-        link: "https://hegedusalexandra.github.io/osk/",
-        background: "bg-OKS",
-        headline: "projects.OK-headline",
-        description:"projects.OK-description" },
-        {
-          link: "https://www.golfracks.club/",
-          background: "bg-GF",
-          headline: "projects.GF-headline",
-          description:"projects.GF-description"},
+    {
+      link: "https://hegedusalexandra.github.io/osk/",
+      background: "bg-OKS",
+      headline: "projects.OK-headline",
+      description:"projects.OK-description" },
+    {
+      link: "https://www.golfracks.club/",
+      background: "bg-GF",
+      headline: "projects.GF-headline",
+      description:"projects.GF-description"},
     {
       link: "https://hegedusalexandra.github.io/PCL/PCL.html",
       background: "bg-PCT",

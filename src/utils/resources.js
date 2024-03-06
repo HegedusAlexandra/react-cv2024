@@ -20,7 +20,7 @@ const resources = {
           'hello':'Hello dear visitor!',
           'iam':'I am Alexandra a passionate ',
           'developer':'frontend developer',
-          'long':'Welcome to my stylish portfolio site.I specialize in web development and love creating visually appealing websites.Explore my projects and get in touch with me.'
+          'long':'I specialize in web development and love creating visually appealing websites.Explore my projects and get in touch with me.'
         },
         'introduction':{
           'more':'more',
@@ -111,7 +111,7 @@ const resources = {
           'hello':'Üdvözöllek az oldalon!',
           'iam':'Alexandra vagyok, elhivatott ',
           'developer':'frontend developer',
-          'long':'Üdvözlök mindenkit a portfólió oldalamon! Webfejlesztésre szakosodtam, és imádok vizuálisan vonzó weboldalakat készíteni. Böngéssz a projektek között és ne habozz, keress meg!',
+          'long':'Webfejlesztéssel foglalkozom, és imádok vizuálisan vonzó weboldalakat készíteni. Böngéssz a projektek között és ne habozz, keress meg!',
         },
         'introduction':{
           'more':'tovább',
@@ -202,7 +202,7 @@ const resources = {
           'hello':'Ciao caro visitatore!' ,
           'iam':'Sono Alexandra, una appassionata',
           'developer':' frontend developer',
-          'long':'Benvenuti nel mio elegante sito portfolio. Mi specializzo nello sviluppo web e adoro creare siti web visivamente accattivanti. Esplora i miei progetti e mettiti in contatto con me.',
+          'long':'Mi specializzo nello sviluppo web e adoro creare siti web visivamente accattivanti. Esplora i miei progetti e mettiti in contatto con me.',
         },
         'introduction':{
           'more':'piú',

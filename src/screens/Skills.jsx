@@ -19,24 +19,24 @@ export default function Skills({ id }) {
   return (
     <div
       id={id}
-      className="flex flex-col w-[100%] h-[84vh] md:bg-stone-300 md:px-[20%] px-[4%] snap-child"
+      className="flex flex-col w-[100%] md:h-[84vh] h-[78vh] bg-stone-300 md:px-[20%] px-[4%] snap-child"
     >
       <ScreenHeader title={`menu.${id}`} />
       <div className="flex flex-row flex-wrap justify-between items-start w-[100%] h-[40vh] mt-[10vh]">
-        <div className="flex flex-row flex-wrap justify-between items-start w-[100%] ">
-          <img
+        <div className="flex flex-row flex-wrap justify-between items-start w-[100%]">
+          {/* <img
             width={150}
             height={150}
             loading="eager"
             className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
             alt="amazon"
             src={amazon}
-          />
+          /> */}
           <img
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="apollo"
             src={apollo}
           />
@@ -44,7 +44,7 @@ export default function Skills({ id }) {
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="graphql"
             src={graphql}
           />
@@ -52,7 +52,7 @@ export default function Skills({ id }) {
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="docker"
             src={docker}
           />
@@ -60,7 +60,7 @@ export default function Skills({ id }) {
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="figma"
             src={figma}
           />
@@ -68,7 +68,7 @@ export default function Skills({ id }) {
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="github"
             src={github}
           />
@@ -76,32 +76,32 @@ export default function Skills({ id }) {
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="html5"
             src={html5}
           />
         </div>
         <div className="flex flex-row flex-wrap justify-between items-start w-[100%]">
-        <img
+        {/* <img
             width={150}
             height={150}
             loading="eager"
             className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
             alt="php"
             src={php}
-          />
+          /> */}
           <img
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="javascript"
             src={javascript}
           /><img
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="nodedotjs"
             src={nodedotjs}
           />  
@@ -109,7 +109,7 @@ export default function Skills({ id }) {
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="nextdotjs"
             src={nextdotjs}
           />
@@ -117,7 +117,7 @@ export default function Skills({ id }) {
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="react"
             src={react}
           />
@@ -126,7 +126,7 @@ export default function Skills({ id }) {
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="sass"
             src={sass}
           />
@@ -134,7 +134,7 @@ export default function Skills({ id }) {
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh]"
+            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
             alt="tailwindcss"
             src={tailwindcss}
           />
