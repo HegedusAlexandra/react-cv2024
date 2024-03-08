@@ -17,7 +17,7 @@ function CircularMenu() {
   const edge = useCallback(
     (str) => (
       <NavLink
-        className="menu-item bg-white"
+        className="menu-item"
         to={`/${str === "about me" ? "introduction" : str}`}
       >
         <p className="text-xs">{t(`menu.${str}`)}</p>
@@ -25,6 +25,14 @@ function CircularMenu() {
     ),
     []
   );
+
+  const scrollableElement = document.querySelector('.snap-parent');
+
+  scrollableElement?.addEventListener('scroll', function() {
+    // Your scroll handling code here
+    setIsVisible(false)
+  });
+
 
   return (
     <div
@@ -74,9 +82,9 @@ function CircularMenu() {
           {edge("projects")}
           {edge("contact")}
           <motion.a
-            whileHover={{ scale: 1.6, backgroundColor: "#F7C003" }}
-            className="menu-item bg-white"
-            transition={{ type: "spring", stiffness: 400, damping: 20 }}
+            
+            className="menu-item"
+      
             href="https://github.com/HegedusAlexandra?tab=repositories"
           >
             <img
@@ -89,9 +97,9 @@ function CircularMenu() {
             />
           </motion.a>
           <motion.a
-            whileHover={{ scale: 1.6, backgroundColor: "#F7C003" }}
-            className="menu-item bg-white"
-            transition={{ type: "spring", stiffness: 400, damping: 20 }}
+   
+            className="menu-item"
+            
             href="https://www.linkedin.com/in/alexandra-heged%C3%BCs-135220269/"
           >
             <img

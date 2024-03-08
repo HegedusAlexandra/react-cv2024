@@ -13,7 +13,7 @@ export default function Landing({ id }) {
       id={id}
       className="flex md:flex-row flex-col justify-center items-center w-[100%] h-[100vh] md:pl-[30%] md:pr-[10%] bg-landing bg-cover bg-no-repeat snap-child"
     >
-      <div className="flex flex-col justify-start items-center md:w-[100%] w-[90%] md:bg-transparent pt-[10vh] bg-[#ecc5c546] rounded-md font-roboto font-semibold  md:translate-y-0 translate-y-[4vh]">
+      <div className="flex flex-col justify-start items-center md:w-[100%] w-[90%] md:bg-transparent md:pt-0 pt-[10vh] bg-[#ecc5c546] rounded-md font-roboto font-semibold  md:translate-y-0 translate-y-[4vh]">
       {window.innerWidth < 780 && <div className="flex justify-center md:h-[64vh] h-[20vh] md:w-[60%] w-[100%] -translate-y-[4vh]">
         <FlipPic />
       </div> }

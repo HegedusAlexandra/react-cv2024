@@ -168,25 +168,28 @@ svg {
     text-decoration: none;
     color: hsl(0, 0%, 0%);
     font-size: 1em;
-    font-weight: 800;
+    font-weight: 500;
     width: 4em;
     height: 4em;
     border-radius: 50%;
     border: 1px solid hsl(0, 100%, 100%);
+    background-color:#e7e5e4;
     line-height: 3;
     opacity:0;
-    transition: transform .3s ease, background .2s ease;
+    transition: transform .3s ease, #101010 .2s ease;
     padding:1
   }  
   .circular-menu .menu-item:hover {
-    background-color: #57534E;
+    background-color: #484848;
+    color:white
   }  
   .circular-menu.visible .menu-item {
     opacity:1;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }  
   .menu-item.active {
-    background-color:#F7C003 !important;
+    background-color:#484848 !important;
+    color:white
   }
   .circular-menu.visible .menu-item:nth-child(1) {
     transform:rotate(10deg) translate(12em) rotate(-10deg);    
