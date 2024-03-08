@@ -29,7 +29,7 @@ export default function Contact({ id }) {
       id={id}
       className="flex flex-col items-center justify-between w-[100%] md:h-[84vh] h-[100vh] bg-white md:pt-0 pt-[14vh] snap-child"
     >
-      <div className="w-[100%] px-[20%]">
+      <div className="w-[100%] px-[20%] md:pb-[2vh]">
         <ScreenHeader title={"menu.contact"} />
       </div>
       <h2

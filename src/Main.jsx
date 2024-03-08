@@ -26,7 +26,6 @@ function Main() {
   }, [slug]);
 
   const scrollToSection = (slug) => {
-    console.log(slug);
     const element = document.getElementById(slug);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -40,7 +39,7 @@ function Main() {
       <div className="w-[100%] h-[600vh] snap-parent">
         <Landing id={"landing"} />
         <Skills id={"skills"} />
-        <Knowledge id={"knowledge"} />
+        {/* <Knowledge id={"knowledge"} /> */}
         <Introduction id={"introduction"} />
         <Project id={"project"} />
         <Contact id={"contact"} />

@@ -20,7 +20,7 @@ module.exports = {
         'abstract': "url('./assets/pictures/abstract.jpg')",
         'lemoncoconut': "url('./assets/pictures/lemon_coconut.jpg')",
         'arrow': "url('./assets/pictures/arrow.jpg')",
-        'bee': "url('./assets/pictures/bee.png')",
+        'roll': "url('./assets/pictures/billboard.jpg')",
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],

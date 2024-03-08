@@ -5,8 +5,6 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 function Captcha({setRecaptchaValue,visible}) {
   const {selectedLanguage} = useLanguage();
-   
-console.log(selectedLanguage)
 
   const variants = {
     hidden: { opacity: 0, y: "-50vh" },
@@ -19,7 +17,7 @@ console.log(selectedLanguage)
       animate={visible ? "visible" : "hidden"}
       variants={variants}
       transition={{ duration: 0.5 }}
-      className="flex justify-center items-center relative z-0 md:w-[40%] w-[90%] bg-background_light rounded-b-xl px-6 pt-8 pb-4"
+      className="flex justify-center items-center relative z-0 md:w-[40%] w-[90%] rounded-b-md px-6 pt-8 pb-4"
     >
       <ReCAPTCHA
         sitekey={process.env.REACT_APP_GOOGLE_RECAPTCHA_CLIENTKEY}

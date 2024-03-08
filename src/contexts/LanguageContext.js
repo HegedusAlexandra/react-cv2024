@@ -16,8 +16,6 @@ export const LanguageProvider = ({ children }) => {
     return match || Language.en;
   };
 
-  console.log("lang",navigator.languages,Object.keys(Language));
-
   const [selectedLanguage, setSelectedLanguage] = useState(Language.en);
 
   useEffect(

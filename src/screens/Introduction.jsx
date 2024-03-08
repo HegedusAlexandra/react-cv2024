@@ -22,17 +22,17 @@ export default function Introduction({ id }) {
     >
       <div className="md:h-[84vh] md:w-[60%] w-[92%] text-[2vh]">
         <ScreenHeader title={`menu.${id}`} />
-        <div className="flex flex-row md:h-[22vh] justify-start items-center w-[100%] md:rounded-lg font-roboto mb-[2vh] mt-[4vh]">
+        <div className="flex flex-row md:h-[22vh] justify-start items-center w-[100%] md:rounded-md font-roboto mb-[2vh] mt-[4vh]">
           <p>{t("introduction.1")}</p>
         </div>
         {isIntOpen ? (
-          <div className="flex flex-row justify-start items-start w-[100%] md:h-[42vh] md:rounded-lg font-roboto">
+          <div className="flex flex-row justify-start items-start w-[100%] md:h-[42vh] md:rounded-md font-roboto">
             <p>{t("introduction.2")}</p>
           </div>
         ) : (
           <button
             onClick={openInt}
-            className="md:w-[20%] md:h-[8vh] bg-[#F7C003] md:mt-[4vh] px-6 py-2 rounded-xl font-roboto font-bold uppercase"
+            className="md:w-[20%] md:h-[8vh] bg-[#F7C003] md:mt-[4vh] px-6 py-2 rounded-md font-roboto font-bold uppercase shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)]"
           >
             {t('introduction.more')}
           </button>

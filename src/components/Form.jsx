@@ -196,7 +196,7 @@ const Form = ({ handleData, setSent }) => {
             />
           </div>
           <div className="flex flex-col md:items-center md:flex-row md:justify-between mb-4 w-[100%] h-[30%]">
-            <div className="rounded-x font-roboto text-text text-[1.8vh]">
+            <div className="rounded-md font-roboto text-text text-[1.8vh]">
               <div className="flex flex-row mb-1">
                 <button
                   onClick={slidePrefType}
@@ -246,7 +246,7 @@ const Form = ({ handleData, setSent }) => {
             </div>
             <button
               type="submit"
-              className="md:h-[8vh] bg-[#F7C003] mt-2 px-6 py-2 rounded-xl border-text font-roboto text-text font-bold uppercase"
+              className="md:h-[8vh] bg-[#F7C003] mt-2 px-6 py-2 rounded-md border-text font-roboto text-text font-bold uppercase shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)]"
             >
               {t("contact.submit")}
             </button>

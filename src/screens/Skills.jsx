@@ -15,15 +15,18 @@ import php from "../assets/simple_icon/php.svg";
 import tailwindcss from "../assets/simple_icon/tailwindcss.svg";
 import ScreenHeader from "../components/ScreenHeader";
 import FlipPic from "../components/FlipPic";
+import { useTranslation } from "react-i18next";
 
 export default function Skills({ id }) {
+const {t} = useTranslation()
+
   return (
     <div
       id={id}
-      className="flex flex-col w-[100%] md:h-[64vh] h-[100vh] font-montserrat bg-gradient-to-b from-stone-300 to-yellow-300 md:px-[20%] px-[4%] snap-child"
+      className="flex flex-col w-[100%] md:h-[84vh] h-[100vh] font-montserrat bg-stone-300 md:px-[20%] px-[4%] snap-child"
     >
       <ScreenHeader title={`menu.${id}`} />
-      <div className="flex flex-col items-start w-[100%] md:h-[20vh] h-[50vh] mt-[10vh]">
+      <div className="flex flex-col items-start w-[100%] md:h-[40vh] h-[50vh] mt-[10vh]">
         <div className="flex md:flex-row flex-col w-[100%] md:h-[10vh] h-[25vh] gap-[6vw]">
           <div className="flex flex-row flex-wrap justify-between items-start w-[100%]">
             <img
@@ -133,12 +136,22 @@ export default function Skills({ id }) {
             />
           </div>
         </div>
-      </div>
-      {window.innerWidth < 780 && (
-        <div className="flex justify-center items-center w-[100%] h-[20vh] mt-[10vh]">
-          <FlipPic />
+        <div className="font-roboto uppercase p-2 flex md:flex-row flex-col w-[100%] gap-[6vw] bg-stone-300 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)]">
+        <div className="flex flex-col"> 
+          <p>{t("knowledge.hun")} - {t("knowledge.hun_level")}</p>
+          <p>{t("knowledge.eng")} - {t("knowledge.eng_level")}</p>    
+          <p>{t("knowledge.ita")} - {t("knowledge.ita_level")}</p>  
+          <p>{t("knowledge.ger")} - {t("knowledge.ita_level")}</p>  
         </div>
-      )}
+        <div className="flex flex-col">
+        <p>2022 - Codecool</p>
+        <p> 2022 -  Ruander </p>
+        <p> 2023 - GDE {t("knowledge.EI")} (Bsc) </p>
+        <p> 2022 -  Vamosoft - {t("knowledge.frontend")}</p> 
+         
+         </div>    
+        </div>
+      </div>
     </div>
   );
 }
