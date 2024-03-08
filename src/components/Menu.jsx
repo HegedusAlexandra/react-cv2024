@@ -6,7 +6,7 @@ import linkedin from "../assets/simple_icon/linkedin.svg";
 import github from "../assets/simple_icon/github.svg";
 import { NavLink, useLocation } from "react-router-dom";
 
-function Menu() {
+function Menu({screen}) {
   const { t } = useTranslation();
   const location = useLocation();
 
@@ -15,7 +15,7 @@ function Menu() {
       <div
         className={`invisible md:visible fixed flex flex-row z-10 top-0 left-0 w-full h-[8%] py-[1%] font-roboto items-center px-[4%] backdrop-blur-sm bg-black/10 border-b-[6px] border-solid border-[#F7C001]`}
       >
-        <div className="w-[26%] h-[100%] flex items-center">
+        <div className={`${screen === 'projects' ? 'text-white' : 'text-black'} uppercase text-[2vh] invisible md:visible mx-auto w-[26%] h-[100%] flex items-center`}>
           <h2>{t("menu.wdp")}</h2> 
         </div>
         <ul
@@ -25,7 +25,7 @@ function Menu() {
             whileHover={{ scale: 1.2, color: "#B91C1C" }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
             key={location.pathname === "/projects" ? "home" : "projects"}
-            className="text-black uppercase font-bold text-[2vh] invisible md:visible mx-auto"
+            className={`${screen === 'projects' ? 'text-white' : 'text-black'} uppercase  text-[2vh] invisible md:visible mx-auto`}
           >
             <NavLink to={location.pathname === "/projects" ? "/" : "/projects"}>
               {location.pathname === "/projects"
@@ -37,7 +37,7 @@ function Menu() {
             whileHover={{ scale: 1.2, color: "#B91C1C" }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
             key={"about me"}
-            className="text-black uppercase font-bold text-[2vh] invisible md:visible mx-auto"
+            className={`${screen === 'projects' ? 'text-white' : 'text-black'} uppercase text-[2vh] invisible md:visible mx-auto`}
           >
             <NavLink to="/introduction">{t("menu.about me")}</NavLink>
           </motion.div>
@@ -45,7 +45,7 @@ function Menu() {
             whileHover={{ scale: 1.2, color: "#B91C1C" }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
             key={"contact"}
-            className="text-black uppercase font-bold text-[2vh] invisible md:visible mx-auto"
+            className={`${screen === 'projects' ? 'text-white' : 'text-black'} uppercase text-[2vh] invisible md:visible mx-auto`}
           >
             <NavLink to="/contact">{t("menu.contact")}</NavLink>
           </motion.div>
@@ -83,7 +83,7 @@ function Menu() {
           </motion.a>
         </div>
         <div className="w-[22%] flex justify-end">
-          <LanguageDropdown />
+          <LanguageDropdown screen={screen}/>
         </div>
       </div>
     </div>

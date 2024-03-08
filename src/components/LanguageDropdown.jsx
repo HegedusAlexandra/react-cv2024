@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext'; // Adjust the path as necessary
 import { Language } from '../utils/enum';
 
-const LanguageDropdown = () => {
+const LanguageDropdown = ({screen}) => {
   const { selectedLanguage, setSelectedLanguage } = useLanguage();
 
   const handleChange = (event) => {
@@ -12,7 +12,7 @@ const LanguageDropdown = () => {
   // Assuming Language enum is imported or defined somewhere in this file
   return (
     <select
-      className={`absolute z-30 md:static md:right-2 right-[6%] md:top-6 top-[4vh] md:w-[4vw] md:text-[12px] text-[6vw] p-2 flex justify-end items-end border-none uppercase`}
+      className={`${screen === 'projects' ? 'text-white' : 'text-black'} absolute z-30 md:static md:right-2 right-[6%] md:top-6 top-[4vh] md:w-[4vw] md:text-[12px] text-[6vw] p-2 flex justify-end items-end border-none uppercase`}
       value={selectedLanguage}
       onChange={handleChange}
     >

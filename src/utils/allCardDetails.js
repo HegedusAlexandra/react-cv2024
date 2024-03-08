@@ -25,11 +25,11 @@ export const allCardDetails = [
       background: "bg-WA",
       headline: "projects.WA-headline",
       description:"projects.WA-description" },
-    {
+    /* {
       link: "https://hegedusalexandra.github.io/bankist/",
       background: "bg-BANK",
       headline: "projects.BANK-headline",
-      description:"projects.BANK-description"},
+      description:"projects.BANK-description"}, */
     {
       link: "https://hegedusalexandra.github.io/small_projects/",
       background: "bg-SP",

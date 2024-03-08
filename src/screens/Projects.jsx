@@ -13,7 +13,7 @@ export default function Projects() {
      <HelmetComp title={'helmet.projects'} url="projects" content={'helmet.pro_desc'}/>
       <div className="flex flex-col w-[100%] px-[4%] md:px-[20%] pb-[20vh] bg-stone-800 h-[800vh] snap-parent">
         <h1 className="w-[100%] hidden">{t('helmet.h1')}</h1>
-        {window.innerWidth > 780 ? <Menu /> : <CircularMenu />}
+        {window.innerWidth > 780 ? <Menu screen={'projects'}/> : <CircularMenu />}
         {allCardDetails.map((el) => (
           <ProjectCard
             key={el.background}
