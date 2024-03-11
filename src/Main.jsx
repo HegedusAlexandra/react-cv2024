@@ -11,11 +11,12 @@ import Contact from "./screens/Contact";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import HelmetComp from "./components/HelmetComponent";
-import Knowledge from "./screens/Knowledge";
+
 
 function Main() {
   const { slug } = useParams();
   const { t } = useTranslation();
+
   console.log(
     "Welcome to my page, if you have any question or just want to say hello, please don't hesitate to contact me! :)"
   );
@@ -31,20 +32,21 @@ function Main() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   
+
+
   return (
-    <div className="flex flex-col w-[100%] h-[100vh] bg-stone-900 ">
+    <div className="flex flex-col w-[100%] bg-stone-900 ">
       <HelmetComp title={'helmet.main'} url="" content={'helmet.pro_desc'}/>
       {window.innerWidth > 780 ? <Menu /> : <CircularMenu />}
-      <div className="w-[100%] h-[600vh] snap-parent">
+     {/*  <div className="w-[100%] h-[600vh] snap-parent"> */}
         <Landing id={"landing"} />
         <Skills id={"skills"} />
         {/* <Knowledge id={"knowledge"} /> */}
         <Introduction id={"introduction"} />
         <Project id={"project"} />
         <Contact id={"contact"} />
-      </div>
+      {/* </div> */}
     </div>
   );
 }

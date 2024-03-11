@@ -3,6 +3,9 @@ import { useTranslation } from "react-i18next";
 import ScreenHeader from "../components/ScreenHeader";
 import { useLottie } from "lottie-react";
 import lottie from "../assets/girl.json";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { variants } from "../utils/animations";
 
 export default function Introduction({ id }) {
   const [isIntOpen, setIntOpen] = useState(false);
@@ -15,6 +18,16 @@ export default function Introduction({ id }) {
   const { View } = useLottie(options);
   const openInt = () => setIntOpen(true);
 
+  // For text
+  const [textRef, textInView] = useInView({ 
+    threshold: 0.3,
+  });
+
+  // For Lottie animation
+  const [lottieRef, lottieInView] = useInView({
+    threshold: 0.3,
+  });
+
   return (
     <div
       id={id}
@@ -22,23 +35,42 @@ export default function Introduction({ id }) {
     >
       <div className="md:h-[84vh] md:w-[60%] w-[92%] text-[2vh]">
         <ScreenHeader title={`menu.${id}`} />
-        <div className="flex flex-row md:h-[22vh] justify-start items-center w-[100%] md:rounded-md font-roboto mb-[2vh] mt-[4vh]">
+        <motion.div
+          ref={textRef}
+          initial="hiddenText"
+          animate={textInView ? "visibleText" : "hiddenText"}
+          variants={variants}
+          className="flex flex-row md:h-[22vh] justify-start items-center w-[100%] md:rounded-md font-roboto mb-[2vh] mt-[4vh]"
+        >
           <p>{t("introduction.1")}</p>
-        </div>
+        </motion.div>
         {isIntOpen ? (
-          <div className="flex flex-row justify-start items-start w-[100%] md:h-[42vh] md:rounded-md font-roboto">
+          <motion.div
+            variants={variants}
+            initial="hiddenText"
+            animate={textInView ? "visibleText" : "hiddenText"}
+            className="flex flex-row justify-start items-start w-[100%] md:h-[42vh] md:rounded-md font-roboto"
+          >
             <p>{t("introduction.2")}</p>
-          </div>
+          </motion.div>
         ) : (
           <button
             onClick={openInt}
-            className="md:w-[20%] md:h-[8vh] bg-[#F7C003] md:mt-[4vh] px-6 py-2 rounded-md font-roboto font-bold uppercase shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)]"
+            className="md:w-[30%] md:h-[8vh] bg-[#F7C003] md:mt-[4vh] px-6 py-2 rounded-md font-roboto font-bold uppercase shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)]"
           >
-            {t('introduction.more')}
+            {t("introduction.more")}
           </button>
         )}
       </div>
-      <div className="md:h-[84vh] md:w-[40%] h-[40vh] w-[92%] md:mt-[20vh]">{View}</div>
+      <motion.div
+        ref={lottieRef}
+        initial="hiddenLottie"
+        animate={lottieInView ? "visibleLottie" : "hiddenLottie"}
+        variants={variants}
+        className="md:h-[84vh] md:w-[40%] h-[40vh] w-[92%] md:mt-[20vh]"
+      >
+        {View}
+      </motion.div>
     </div>
   );
 }

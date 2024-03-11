@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import amazon from "../assets/simple_icon/amazonaws.svg";
 import apollo from "../assets/simple_icon/apollographql.svg";
 import docker from "../assets/simple_icon/docker.svg";
@@ -11,22 +11,33 @@ import nodedotjs from "../assets/simple_icon/nodedotjs.svg";
 import react from "../assets/simple_icon/react.svg";
 import sass from "../assets/simple_icon/sass.svg";
 import graphql from "../assets/simple_icon/graphql.svg";
-import php from "../assets/simple_icon/php.svg";
 import tailwindcss from "../assets/simple_icon/tailwindcss.svg";
 import ScreenHeader from "../components/ScreenHeader";
-import FlipPic from "../components/FlipPic";
 import { useTranslation } from "react-i18next";
+import { motion, useAnimation } from "framer-motion";
+import { variants } from "../utils/animations";
+import { useInView } from "react-intersection-observer";
 
 export default function Skills({ id }) {
-const {t} = useTranslation()
+const controls = useAnimation();
+const [ref, inView] = useInView();
+
+useEffect(() => {
+  if (inView) {
+    controls.start("visibleCard");
+  }
+}, [controls, inView]);
 
   return (
     <div
       id={id}
-      className="flex flex-col w-[100%] md:h-[84vh] h-[100vh] font-montserrat bg-stone-300 md:px-[20%] px-[4%] snap-child"
+      className="flex flex-col w-[100%] md:h-[64vh] h-[100vh] font-montserrat bg-stone-300 md:px-[20%] px-[4%] snap-child"
     >
       <ScreenHeader title={`menu.${id}`} />
-      <div className="flex flex-col items-start w-[100%] md:h-[40vh] h-[50vh] mt-[10vh]">
+      <motion.div ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={variants} className="flex flex-col items-start w-[100%] md:h-[40vh] h-[50vh] mt-[10vh]">
         <div className="flex md:flex-row flex-col w-[100%] md:h-[10vh] h-[25vh] gap-[6vw]">
           <div className="flex flex-row flex-wrap justify-between items-start w-[100%]">
             <img
@@ -136,7 +147,7 @@ const {t} = useTranslation()
             />
           </div>
         </div>
-        <div className="font-roboto uppercase p-2 flex md:flex-row flex-col w-[100%] gap-[6vw] bg-stone-300 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)]">
+      {/*   <div className="font-roboto uppercase p-2 flex md:flex-row flex-col w-[100%] gap-[6vw] bg-stone-300 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)]">
         <div className="flex flex-col"> 
           <p>{t("knowledge.hun")} - {t("knowledge.hun_level")}</p>
           <p>{t("knowledge.eng")} - {t("knowledge.eng_level")}</p>    
@@ -150,8 +161,8 @@ const {t} = useTranslation()
         <p> 2022 -  Vamosoft - {t("knowledge.frontend")}</p> 
          
          </div>    
-        </div>
-      </div>
+        </div> */}
+      </motion.div>
     </div>
   );
 }

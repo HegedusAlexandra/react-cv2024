@@ -73,5 +73,25 @@ export const variants = {
     call: { x: '2.3vh' ,backgroundColor: "#CFC7B9",border: 'solid 1px black'}, 
     left: { x: 0, backgroundColor: "#E03D3D" },
     right: { x: '2.3vh' ,backgroundColor: "#14532d"}, 
+    hiddenText: {
+      opacity: 0,
+      y: 20,
+      transition: { duration: 1 }
+    },
+    visibleText: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1 }
+    },
+    hiddenLottie: {
+      opacity: 0,
+      scale: 0.8,
+      transition: { duration: 0.5 }
+    },
+    visibleLottie: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5 }
+    }
   }
   

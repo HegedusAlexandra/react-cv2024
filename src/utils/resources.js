@@ -23,7 +23,7 @@ const resources = {
           'long':'I specialize in web development and love creating visually appealing websites.Explore my projects and get in touch with me.'
         },
         'introduction':{
-          'more':'more',
+          'more':'read more',
           '1':'My name is Alexandra, and as an enthusiastic beginner frontend developer, I have more than a year of experience in the world of web technologies. I am currently actively expanding my knowledge in both practical and theoretical areas while studying business informatics at university. Over the past year, I have participated in numerous projects. I am proud to be able to create dynamic and responsive websites that are not only aesthetically appealing but also cater to user needs.',
           '2':'I continuously strive to stay up-to-date with the latest frontend technologies and trends, regularly participating in online courses and workshops. I believe that continuous learning and development are crucial in the technology sector, and I am motivated to further expand my professional knowledge. My goal is to be part of a team where I can share my experiences and work together on exciting projects while gaining further experience. I believe that the combination of creativity, teamwork, and technological innovation can achieve truly impressive results. I am excited to see what challenges and opportunities I will encounter in the future in the field of frontend development.'
         },
@@ -114,7 +114,7 @@ const resources = {
           'long':'Webfejlesztéssel foglalkozom, és imádok vizuálisan vonzó weboldalakat készíteni. Böngéssz a projektek között és ne habozz, keress meg!',
         },
         'introduction':{
-          'more':'tovább',
+          'more':'tovább olvasom',
           '1':'A nevem Alexandra, és lelkes kezdő frontend fejlesztőként több mint egy éves tapasztalattal rendelkezem a webes technológiák világában. Jelenleg aktívan bővítem tudásomat mind a gyakorlati, mind az elméleti területeken, miközben gazdaságinformatikát tanulok egyetemen. Az elmúlt év során számos projektben vettem részt. Büszke vagyok arra, hogy képes vagyok dinamikus és responsív weboldalakat létrehozni, amelyek nem csak esztétikailag vonzóak, hanem a felhasználói igényekhez is igazodnak.',
           '2':'Folyamatosan törekszem arra, hogy naprakész maradjak a legújabb frontend technológiák és trendek terén, és rendszeresen részt veszek online kurzusokon. Hiszem, hogy a folyamatos tanulás és fejlődés kulcsfontosságú , és motivált vagyok abban, hogy tovább bővítsem szakmai tudásomat. Célom, hogy egy olyan csapat részese legyek, ahol megoszthatom eddigi tapasztalataimat és együtt dolgozhatunk izgalmas projekteken, miközben további tapasztalatokat szerezhetek. Hiszem, hogy a tudás, a csapatmunka és a kreativitás kombinációja képes valóban lenyűgöző eredményeket elérni. Izgatottan várom, hogy a jövőben milyen kihívásokkal és lehetőségekkel találkozom.'
         },
@@ -205,7 +205,7 @@ const resources = {
           'long':'Mi specializzo nello sviluppo web e adoro creare siti web visivamente accattivanti. Esplora i miei progetti e mettiti in contatto con me.',
         },
         'introduction':{
-          'more':'piú',
+          'more':'continuo a leggere',
           '1':"Mi chiamo Alexandra e, come sviluppatrice frontend principiante entusiasta, ho più di un anno di esperienza nel mondo delle tecnologie web. Attualmente sto attivamente ampliando le mie conoscenze sia nelle aree pratiche che teoriche mentre studio informatica aziendale all'università. Nell'ultimo anno, ho partecipato a numerosi progetti. Sono orgogliosa di essere in grado di creare siti web dinamici e responsivi che non sono solo esteticamente attraenti ma si adattano anche alle esigenze degli utenti.",
           '2':"Mi impegno costantemente a rimanere aggiornata sulle ultime tecnologie e tendenze frontend, partecipando regolarmente a corsi online e workshop. Credo che l'apprendimento continuo e lo sviluppo siano cruciali nel settore tecnologico, e sono motivata ad ampliare ulteriormente le mie conoscenze professionali. Il mio obiettivo è far parte di un team dove posso condividere le mie esperienze precedenti e lavorare insieme su progetti eccitanti, acquisendo nel contempo ulteriore esperienza. Credo che la combinazione di creatività, lavoro di squadra e innovazione tecnologica possa raggiungere risultati veramente impressionanti. Sono entusiasta di scoprire quali sfide e opportunità incontrerò in futuro nel campo dello sviluppo frontend."
         },
