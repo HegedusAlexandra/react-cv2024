@@ -12,7 +12,6 @@ import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import HelmetComp from "./components/HelmetComponent";
 
-
 function Main() {
   const { slug } = useParams();
   const { t } = useTranslation();
@@ -32,20 +31,17 @@ function Main() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
-
 
   return (
     <div className="flex flex-col w-[100%] bg-stone-900 ">
-      <HelmetComp title={'helmet.main'} url="" content={'helmet.pro_desc'}/>
+      <HelmetComp title={"helmet.main"} url="" content={"helmet.pro_desc"} />
       {window.innerWidth > 780 ? <Menu /> : <CircularMenu />}
-     {/*  <div className="w-[100%] h-[600vh] snap-parent"> */}
-        <Landing id={"landing"} />
-        <Skills id={"skills"} />
-        {/* <Knowledge id={"knowledge"} /> */}
-        <Introduction id={"introduction"} />
-        <Project id={"project"} />
-        <Contact id={"contact"} />
+      {/*  <div className="w-[100%] h-[600vh] snap-parent"> */}
+      <Landing id={"landing"} />
+      <Introduction id={"introduction"} />
+      <Skills id={"skills"} />
+      <Project id={"project"} />
+      <Contact id={"contact"} />
       {/* </div> */}
     </div>
   );

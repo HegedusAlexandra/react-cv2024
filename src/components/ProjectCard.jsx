@@ -29,7 +29,7 @@ export default function ProjectCard({
     animate={controls}
     variants={variants}
       href={link}
-      className={` bg-stone-700 p-2 mt-[20vh] mb-[5vh] mx-[4%] md:mx-[20%] rounded-md shadow-[3px_5px_16px_5px_rgba(0,0,0,0.6)] snap-child`}
+      className={`bg-stone-700 p-2 mt-[20vh] mb-[5vh] mx-[4%] md:mx-[10%] rounded-md shadow-[3px_5px_16px_5px_rgba(0,0,0,0.6)] snap-child`}
     >
       <div
         className={`w-[100%] md:h-[50vh] h-[40vh] ${background} bg-top bg-cover rounded-md`}

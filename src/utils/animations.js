@@ -92,6 +92,16 @@ export const variants = {
       opacity: 1,
       scale: 1,
       transition: { duration: 0.5 }
+    },
+    hiddenShadow: {
+ 
+      backgroundColor: "#1c1917" ,
+      transition: { duration: 1 ,ease: ["backIn", "backOut"]}
+    },
+    visibleShadow: {
+     
+      backgroundColor: "transparent" ,
+      transition: { duration: 1 ,ease: ["backIn", "backOut"] }
     }
   }
   

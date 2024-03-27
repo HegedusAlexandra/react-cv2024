@@ -4,12 +4,15 @@ import { useTranslation } from "react-i18next";
 import { generateClient } from "aws-amplify/api";
 import { createContactMe } from "../graphql/mutations";
 import Footer from "../components/Footer";
-import ScreenHeader from "../components/ScreenHeader";
+import { motion } from "framer-motion";
+import github from "../assets/simple_icon/github.svg";
+import linkedin from "../assets/simple_icon/linkedin.svg";
+import { NavLink } from "react-router-dom";
 
 export default function Contact({ id }) {
   const [isSent, setSent] = useState(false);
   const { t } = useTranslation();
-
+  const [visible, setVisible] = useState(false);
   const client = generateClient();
 
   const handleData = useCallback(
@@ -27,19 +30,90 @@ export default function Contact({ id }) {
   return (
     <div
       id={id}
-      className="flex flex-col items-center justify-between w-[100%] md:h-[84vh] h-[100vh] bg-white md:pt-0 pt-[14vh] snap-child"
+      className="flex flex-col items-center justify-between w-[100%] md:h-[92vh] h-[100vh] bg-[#EAE7DC] pt-[14vh] snap-child"
     >
-      <div className="w-[100%] px-[20%] md:pb-[2vh]">
-        <ScreenHeader title={"menu.contact"} />
+      <div className="flex flex-row w-[100%] h-[60vh] items-start justify-center px-[10%]">
+        <div className="flex flex-col justify-start items-start w-[50%] h-[100%] ">
+          <h2
+            className={`md:w-[50%] w-[90%] mx-[5%] md:mx-0 text-stone-900 md:text-[6vh] text-[6.5vw] font-semibold font-roboto uppercase tracking-wide text-left ${
+              isSent && "h-[40vh]"
+            }`}
+          >
+            {isSent ? `${t("contact.thank")}` : `${t("contact.lets")}`}
+          </h2>
+          {!isSent && <Form handleData={handleData} setSent={setSent} />}
+        </div>
+        <div className="flex flex-col w-[50%] h-[80%] pb-[2vh] border-l-4 border-solid border-black">
+          <div
+            className="flex-1 flex flex-col md:items-start w-[100%] bg-[#EAE7DC] text-center px-4 font-bold font-montserrat text-[2vh] "
+          >
+            <div className="flex-1 flex justify-start w-[100%] bg-[#EAE7DC] text-center p-4 text-[6vh] align-text-top -translate-y-[1vh]">
+              <p>h.alexa.dev@gmail.com</p>
+            </div>
+            <div className="flex-1 flex flex-col items-start md:justify-end justify-center w-[100%] bg-[#EAE7DC] text-center p-4">
+              <a
+                whileHover={{ scale: 1.6, backgroundColor: "#F7C003" }}
+                className=" flex flex-row justify-start items-center h-[6vh] rounded-full mr-[2vh] gap-[2vw]"
+                transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                href="https://github.com/HegedusAlexandra?tab=repositories"
+              >
+                <motion.img
+                  whileHover={{ scale: 1.6, backgroundColor: "#F7C003" }}
+                  transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                  width={150}
+                  height={150}
+                  loading="eager"
+                  className=" size-[4vh] rounded-full"
+                  alt="github"
+                  src={github}
+                />
+                <h2 className="font-normal">take a look at my repositories</h2>
+              </a>
+              <h2 className="font-normal">OR</h2>
+              <a
+                className=" flex flex-row justify-start items-center h-[6vh] rounded-sm mr-[2vh] gap-[2vw]"
+                href="https://www.linkedin.com/in/alexandra-heged%C3%BCs-135220269/"
+              >
+                <motion.img
+                  whileHover={{ scale: 1.6, backgroundColor: "#F7C003" }}
+                  transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                  width={150}
+                  height={150}
+                  loading="eager"
+                  className=" size-[4vh] rounded-sm"
+                  alt="linkedin"
+                  src={linkedin}
+                />
+                <h2 className="font-normal">visit my linkedin account</h2>
+              </a>
+            </div>
+            <div className="md:h-[4vh] mt-2 px-2 py-2 rounded-md border-text font-roboto text-text font-bold uppercase">
+              SITEMAP
+            </div>
+
+            <NavLink to="/">
+              <p className="text-stone-800 font-light text-[1.5vh] capitalize pl-2">
+                {t("menu.home")}
+              </p>
+            </NavLink>
+            <NavLink to="/projects">
+              <p className="text-stone-800 font-light text-[1.5vh] capitalize pl-2">
+                {t("menu.projects")}
+              </p>
+            </NavLink>
+            <NavLink to="/introduction">
+              <p className="text-stone-800 font-light text-[1.5vh] capitalize pl-2">
+                {t("menu.about me")}
+              </p>
+            </NavLink>
+            <NavLink to="/contact">
+              <p className="text-stone-800 font-light text-[1.5vh] capitalize pl-2">
+                {t("menu.contact")}
+              </p>
+            </NavLink>
+          </div>
+        </div>
       </div>
-      <h2
-        className={`md:w-[60%] w-[90%] mx-[5%] md:mx-0 my-[2vh] text-red-600 md:text-[6vh] text-[6.5vw] font-semibold font-roboto uppercase tracking-wide text-left ${
-          isSent && "h-[40vh]"
-        }`}
-      >
-        {isSent ? `${t("contact.thank")}` : `${t("contact.lets")}`}
-      </h2>
-      {!isSent && <Form handleData={handleData} setSent={setSent} />}
       <Footer id={"footer"} />
     </div>
   );
