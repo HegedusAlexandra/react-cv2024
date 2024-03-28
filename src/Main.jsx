@@ -36,7 +36,6 @@ function Main() {
     <div className="flex flex-col w-[100%] bg-stone-900 ">
       <HelmetComp title={"helmet.main"} url="" content={"helmet.pro_desc"} />
       {window.innerWidth > 780 ? <Menu /> : <CircularMenu />}
-      {/*  <div className="w-[100%] h-[600vh] snap-parent"> */}
       <Landing id={"landing"} />
       <Introduction id={"introduction"} />
       <Skills id={"skills"} />

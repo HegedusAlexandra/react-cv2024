@@ -14,6 +14,7 @@ import tailwindcss from "../assets/simple_icon/tailwindcss.svg";
 import { motion, useAnimation } from "framer-motion";
 import { variants } from "../utils/animations";
 import { useInView } from "react-intersection-observer";
+import lamp from '../assets/pictures/lamp.png'
 
 export default function Skills({ id }) {
   const controls = useAnimation();
@@ -31,22 +32,23 @@ export default function Skills({ id }) {
   return (
     <div
       id={id}
-      className="flex flex-col w-[100%] md:h-[140vh] h-[100vh] font-montserrat bg-stone-950 snap-child md:px-[1%]"
+      className="flex flex-col w-[100%] md:h-[140vh] h-[100vh] font-montserrat bg-stone-950 md:px-[1%]"
     >
       <div
         id={id}
-        className="flex flex-col w-[100%] md:h-[84vh] h-[100vh] font-montserrat bg-[#FFC30B] snap-child"
+        className="flex flex-col w-[100%] md:h-[84vh] h-[100vh] font-montserrat bg-[#FFC30B]"
       >
-        <div className="bg-stone-950 w-[100%] h-[20vh]"></div>
+        <div className="bg-stone-950 w-[100%] h-[72vh]"></div>
         <motion.div
           ref={shadowRef}
           initial={{ backgroundColor: "#1c1917" }}
           animate={shadowInView && "visibleShadow"}
           variants={variants}
-          className="w-[100%] h-[50vh] flex flex-row"
+          className="w-[100%] flex flex-row"
         >
-          <div class="relative left-0 triangle"></div>
-          <div class="relative right-0 triangleRight"></div>
+          <img src={lamp} alt={lamp} className=" w-[100vw]"/> 
+         {/*  <div class="relative left-0 triangle"></div>
+          <div class="relative right-0 triangleRight"></div> */}
         </motion.div>
       </div>
       <div

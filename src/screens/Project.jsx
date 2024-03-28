@@ -12,12 +12,12 @@ export default function Project({ id }) {
     visible: (i) => ({
       opacity: 1,
       y: 0,
-      transition: { delay: i * 0.2, duration: 1 }
+      transition: { delay: i * 0.2, duration: 0.3 }
     })
   };
 
   const [setRef, inView] = useInViewAnimation({
-    threshold: 0.3 // Customize this value as needed
+    threshold: 0.1 // Customize this value as needed
   });
 
   return (
