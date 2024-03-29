@@ -16,24 +16,26 @@ export default function Scale({
 
   const variants = {
     hiddenScale: {
-      width: "5%",
+      width: `${window.innerWidth > 780 ? '5' : '10'}%`,
+      backgroundColor: 'black',
       transition: { duration: 1, ease: ["backIn", "backOut"] }
     },
     visibleScale: {
       width: `${scaleWidth}%`,
+      backgroundColor:'red',
       transition: { duration: 1, ease: ["backIn", "backOut"] }
     }
   };
 
   return (
     <div
-      className={`flex items-center px-1 w-[${containerWidth}%] h-[${containerHeight}vh] bg-${containerColor} rounded-full`}
+      className={`flex items-center px-1 w-[${containerWidth}%] md:h-[${containerHeight}vh] h-[2vh] bg-${containerColor} rounded-full`}
     >
       <motion.div
         ref={scaleRef}
         animate={scaleInView ? "visibleScale" : "hiddenScale"}
         variants={variants}
-        className={`w-[${scaleWidth}%] h-[${scaleHeight}%] bg-${scaleColor} rounded-full`}
+        className={`h-[${scaleHeight}%] bg-${scaleColor} rounded-full`}
       ></motion.div>
     </div>
   );

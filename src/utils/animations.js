@@ -94,12 +94,10 @@ export const variants = {
       transition: { duration: 0.5 }
     },
     hiddenShadow: {
- 
-      backgroundColor: "#1c1917" ,
+      backgroundColor: 'black' ,
       transition: { duration: 1 ,ease: ["backIn", "backOut"]}
     },
     visibleShadow: {
-     
       backgroundColor: "transparent" ,
       transition: { duration: 1 ,ease: ["backIn", "backOut"] }
     },
