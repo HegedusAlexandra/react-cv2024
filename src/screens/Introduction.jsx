@@ -28,9 +28,9 @@ export default function Introduction({ id }) {
   return (
     <div
       id={id}
-      className="flex md:flex-row flex-col justify-center items-center w-[100%] md:pl-[10%] md:pr-[10%] bg-[#EAE7DC] snap-child gap-[2vw]"
+      className="flex md:flex-row flex-col justify-center items-center w-[100%] md:pl-[10%] md:pr-[10%] bg-[#EAE7DC] gap-[2vw]"
     >
-      <div className="flex flex-col justify-center items-center md:w-[84%] w-[92%] text-[2vh] pt-[6vh]">
+      <div className="flex flex-col justify-center items-center md:w-[84%] w-[92%] text-[2vh] pt-[6vh] mb-[10vh]">
         <motion.div
           ref={textRef}
           initial="hiddenText"
@@ -39,12 +39,11 @@ export default function Introduction({ id }) {
           className="flex flex-col justify-start items-start w-[100%] md:rounded-md font-roboto mb-[2vh] mt-[4vh]"
         >
           <h2
-            className="text-[8vh] font-bold text-sky-700"
+            className="text-[8vh] font-bold text-sky-700 my-[10vh]"
             style={{ textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" }}
           >
             Introduction
           </h2>
-
           <p>{t("introduction.1")}</p>
         </motion.div>
         <motion.div

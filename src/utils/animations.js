@@ -102,6 +102,7 @@ export const variants = {
      
       backgroundColor: "transparent" ,
       transition: { duration: 1 ,ease: ["backIn", "backOut"] }
-    }
+    },
+   
   }
   

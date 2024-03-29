@@ -12,7 +12,6 @@ import { NavLink } from "react-router-dom";
 export default function Contact({ id }) {
   const [isSent, setSent] = useState(false);
   const { t } = useTranslation();
-  const [visible, setVisible] = useState(false);
   const client = generateClient();
 
   const handleData = useCallback(
@@ -30,23 +29,21 @@ export default function Contact({ id }) {
   return (
     <div
       id={id}
-      className="flex flex-col items-center justify-between w-[100%] md:h-[92vh] h-[100vh] bg-[#EAE7DC] pt-[14vh] snap-child"
+      className="flex flex-col items-center justify-between w-[100%] md:h-[100vh] h-[100vh] bg-[#EAE7DC] pt-[14vh] snap-child"
     >
       <div className="flex flex-row w-[100%] h-[60vh] items-start justify-center px-[10%]">
-        <div className="flex flex-col justify-start items-start w-[50%] h-[100%] ">
+        <div className=" flex flex-col justify-start items-start w-[50%] h-[100%]">
           <h2
             className={`md:w-[50%] w-[90%] mx-[5%] md:mx-0 text-stone-900 md:text-[6vh] text-[6.5vw] font-semibold font-roboto uppercase tracking-wide text-left ${
               isSent && "h-[40vh]"
             }`}
           >
-            {isSent ? `${t("contact.thank")}` : `${t("contact.lets")}`}
+            {isSent && `${t("contact.lets")}`}
           </h2>
           {!isSent && <Form handleData={handleData} setSent={setSent} />}
         </div>
         <div className="flex flex-col w-[50%] h-[80%] pb-[2vh] border-l-4 border-solid border-black">
-          <div
-            className="flex-1 flex flex-col md:items-start w-[100%] bg-[#EAE7DC] text-center px-4 font-bold font-montserrat text-[2vh] "
-          >
+          <div className="flex-1 flex flex-col md:items-start w-[100%] bg-[#EAE7DC] text-center px-4 font-bold font-montserrat text-[2vh] ">
             <div className="flex-1 flex justify-start w-[100%] bg-[#EAE7DC] text-center p-4 text-[6vh] align-text-top -translate-y-[1vh]">
               <p>h.alexa.dev@gmail.com</p>
             </div>

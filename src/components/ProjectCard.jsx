@@ -24,6 +24,7 @@ export default function ProjectCard({
 
   return (
     <motion.a
+    target="blank"
     ref={ref}
     initial="hidden"
     animate={controls}
@@ -40,6 +41,7 @@ export default function ProjectCard({
             {t(headline)}
           </h2>
           {(background === 'bg-OKS' || background === 'bg-WA' || background === 'bg-BANK' || background === 'bg-SP') && <motion.a
+           target="blank"
             whileHover={{ scale: 1.6, backgroundColor: "#F7C003" }}
             className=" flex justify-center items-center size-[3.8vh] rounded-full mr-[2vh] "
             transition={{ type: "spring", stiffness: 400, damping: 20 }}

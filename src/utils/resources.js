@@ -65,7 +65,11 @@ const resources = {
           'h1':'I warmly invite you to explore my projects.'
         },
         'knowledge':{
-          'eng': 'English',
+          'technical_skills':'Technical Skills',
+        'soft_skills':'Soft Skills',
+        'lang_skills':'Language Skills',
+        'soft_skills_des':"In today's rapidly evolving professional landscape, the spotlight increasingly falls on a set of skills that computers can't automate and exams can't quantify : soft skills. Mastering key skills like quick learning, creative problem-solving, adaptability, empathy, clear communication, and teamwork not only sets you apart but also brings people together, making every challenge a bit more manageable and every success a shared joy. ",
+         'eng': 'English',
           'eng_level':'C2',
           'gimn':'Bilingual High School',
           'ten_years':'Lived abroad for 10 years and worked as a manager',
@@ -156,6 +160,10 @@ const resources = {
           'h1': 'Szeretettel meghívlak, hogy nézd meg projektjeimet.'
         },
         'knowledge':{
+          'technical_skills':'Technikai kompetenciák',
+          'soft_skills':'Szeméyes tulajdonságok',
+          'lang_skills':'Nyelvtudás',
+          'soft_skills_des':'A mai gyorsan fejlődő szakmai világban egyre inkább a figyelem középpontjába kerülnek azok a készségek, amelyeket a számítógépek nem automatizálhatnak, és a tesztek nem mérhetnek le. Az olyan kulcskészségek elsajátítása, mint a gyors tanulás, a kreatív problémamegoldás, az alkalmazkodóképesség, az empátia, a tiszta kommunikáció és a csapatmunka, nemcsak hogy kiemel, de véleményem szerint össze is hozza az embereket, így minden kihívás kezelhetőbbé válik.',
           'eng': 'Angol',
           'eng_level':'C2',
           'gimn':'Kéttannyelvű Gimnázium',
@@ -247,6 +255,10 @@ const resources = {
           'h1':"Vi invito calorosamente a esplorare i miei progetti ​"
         },
         'knowledge':{
+          'technical_skills':'Competenze Tecniche',
+          "soft_skills": "Competenze Trasversali",
+          "lang_skills": "Competenze Linguistiche",
+          'soft_skills_des':"Nel panorama professionale in rapida evoluzione di oggi, l'attenzione si concentra sempre più su un insieme di competenze che i computer non possono automatizzare e gli esami non possono quantificare: le soft skills. Padronizzare abilità chiave come l'apprendimento rapido, la risoluzione creativa dei problemi, l'adattabilità, l'empatia, la comunicazione chiara e il lavoro di squadra non solo ti distingue, ma unisce anche le persone, rendendo ogni sfida un po' più gestibile e ogni successo una gioia condivisa.",
           'eng': 'Inglese',
           'eng_level':'C2',
           'gimn':'Liceo Bilingue',

@@ -31,20 +31,7 @@ export default function Project({ id }) {
       >
         <motion.a
           ref={setRef}
-          variants={variants}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-          custom={0}
-          href="https://leohunts.com/"
-          className={`md:w-[39vw] w-[92vw] md:h-[40vh]  bg-stone-700 p-2 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)] overflow-hidden`}
-        >
-          <div className="w-[100%] md:h-[38vh] h-[20vh] bg-LH bg-cover bg-right bg-no-repeat rounded-md"></div>
-          <h2 className="-translate-y-[10vh] h-[10vh] font-opensans uppercase font-bold text-[3vh] bg-white/70 pl-2 rounded-b-lg">
-            LEOHUNTS
-          </h2>
-        </motion.a>
-        <motion.a
-          ref={setRef}
+          target="blank"
           variants={variants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -58,6 +45,22 @@ export default function Project({ id }) {
             OMA'S
           </h2>
         </motion.a>
+        <motion.a
+          ref={setRef}
+          target="blank"
+          variants={variants}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          custom={0}
+          href="https://leohunts.com/"
+          className={`md:w-[39vw] w-[92vw] md:h-[40vh]  bg-stone-700 p-2 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)] overflow-hidden`}
+        >
+          <div className="w-[100%] md:h-[38vh] h-[20vh] bg-LH bg-cover bg-right bg-no-repeat rounded-md"></div>
+          <h2 className="-translate-y-[10vh] h-[10vh] font-opensans uppercase font-bold text-[3vh] bg-white/70 pl-2 rounded-b-lg">
+            LEOHUNTS
+          </h2>
+        </motion.a>
+        
       </div>
       <div
         id={id}
@@ -65,6 +68,7 @@ export default function Project({ id }) {
       >
         <motion.a
           ref={setRef}
+          target="blank"
           variants={variants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
