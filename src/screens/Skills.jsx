@@ -39,9 +39,9 @@ export default function Skills({ id }) {
     >
       <div
         id={id}
-        className="flex flex-col w-[100%] md:h-[84vh] h-[100vh] font-montserrat bg-[#FFC30B]"
+        className="flex flex-col w-[100%] md:h-[84vh] h-[30vh] font-montserrat bg-[#FFC30B]"
       >
-        <div className="bg-stone-950 w-[100%] h-[72vh]"></div>
+        
         <motion.div
           ref={shadowRef}
           initial={{ backgroundColor: "#1c1917" }}
@@ -63,7 +63,7 @@ export default function Skills({ id }) {
           initial="hidden"
           animate={controls}
           variants={variants}
-          className="flex flex-row items-start w-[100%] mb-[16vh]"
+          className="flex flex-row items-start w-[100%] md:mb-[16vh] mb-[4vh]"
         >
           <div className="flex md:flex-row flex-wrap justify-between w-[100%]">
             <img
@@ -168,61 +168,62 @@ export default function Skills({ id }) {
         </motion.div>
         <div className="w-[100%] flex flex-row mb-[20vh] gap-[10%]">
           <h2
-            className="flex justify-center items-center text-[8vh] font-bold text-sky-700 w-[30%]"
-            style={{ textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" }}
+            className="flex justify-center items-center md:text-[8vh] text-[4vh] font-bold text-sky-700 w-[20%] md:w-[30%] -rotate-90"
+            style={window.width > 780 ? { textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" } : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }}
           >
             {t('knowledge.technical_skills')}
           </h2>
-          <span className="flex flex-col w-[60%] h-[100%] gap-[2vh]">
+          <span className="flex flex-col md:w-[60%] w-[70%] h-[100%] gap-[2vh]">
             <p className="font-bold">EXPERIENCED</p>
-            <p>
+            <p className="text-[2vh] md:text-[3vh]">
               JavaScript, TypeScript, HTML5, React, React Native, CSS3, SASS,
               Tailwind, Node.js, Figma, GraphQL, Apollo, Redux, Performance
               Optimization, SEO Basics, Responsive design
             </p>
             <p className="font-bold">KNOWN</p>
-            <p>Python, PHP, SQL / MySQL, Docker,AWS, OAuth & JWT </p>
+            <p className="text-[2vh] md:text-[3vh]">Python, PHP, SQL / MySQL, Docker,AWS, OAuth & JWT </p>
           </span>
         </div>
         <div className="w-[100%] flex flex-row  mb-[20vh] gap-[10%]">
-          <span className="flex flex-col w-[60%] h-[100%] gap-[2vh]">
-            <p>
+          <span className="flex flex-col w-[60%] md:w-[70%] h-[100%] gap-[2vh]">
+            <p className="text-[2vh] md:text-[3vh]">
            {t('knowledge.soft_skills_des')}
             </p>
           </span>
           <h2
-            className="flex justify-center items-center text-[8vh] font-bold text-red-600 w-[30%]"
-            style={{ textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" }}
-          >
+            className="flex justify-center items-center md:text-[8vh] text-[4vh] font-bold text-red-600 md:w-[30%] w-[20%] rotate-90"
+            style={window.width > 780 ? { textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" } : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }}
+
+>
             {t('knowledge.soft_skills')}
           </h2>
         </div>
         <div className="w-[100%] flex flex-row mb-[20vh] gap-[10%]">
           <h2
-            className="flex items-center text-[8vh] font-bold text-stone-400 w-[30%]"
-            style={{ textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" }}
+             className="flex justify-center items-center md:text-[8vh] text-[4vh] font-bold text-lime-600 md:w-[30%] w-[20%] -rotate-90"
+             style={window.width > 780 ? { textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" } : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }}
           >
             {t('knowledge.lang_skills')}
           </h2>
           <span className="flex flex-col w-[60%] h-[100%] gap-[2vh]">
             <span className="flex flex-row w-[100%] h-[100%] gap-[2vh]">
-              <p className="w-[15%]">{t('knowledge.hun')}</p>
-              <p className="w-[15%]">{t('knowledge.hun_level')}</p>
+              <p className="w-[15%] text-[2vh] md:text-[3vh]">{t('knowledge.hun')}</p>
+              <p className="w-[15%] text-[2vh] md:text-[3vh]">{t('knowledge.hun_level')}</p>
               <Scale scaleWidth={100}/>
             </span>
             <span className="flex flex-row w-[100%] h-[100%] gap-[2vh]">
-              <p className="w-[15%]">{t('knowledge.eng')}</p>
-              <p className="w-[15%]">{t('knowledge.eng_level')}</p>
+              <p className="w-[15%] text-[2vh] md:text-[3vh]">{t('knowledge.eng')}</p>
+              <p className="w-[15%] text-[2vh] md:text-[3vh]">{t('knowledge.eng_level')}</p>
               <Scale scaleWidth={90}/>
             </span>
             <span className="flex flex-row w-[100%] h-[100%] gap-[2vh]">
-              <p className="w-[15%]">{t('knowledge.ita')}</p>
-              <p className="w-[15%]">{t('knowledge.ita_level')}</p>
+              <p className="w-[15%] text-[2vh] md:text-[3vh]">{t('knowledge.ita')}</p>
+              <p className="w-[15%] text-[2vh] md:text-[3vh]">{t('knowledge.ita_level')}</p>
               <Scale scaleWidth={22}/>
             </span>
             <span className="flex flex-row w-[100%] h-[100%] gap-[2vh]">
-              <p className="w-[15%]">{t('knowledge.ger')}</p>
-              <p className="w-[15%]">{t('knowledge.ita_level')}</p>
+              <p className="w-[15%] text-[2vh] md:text-[3vh]">{t('knowledge.ger')}</p>
+              <p className="w-[15%] text-[2vh] md:text-[3vh]">{t('knowledge.ita_level')}</p>
               <Scale scaleWidth={10}/>
             </span>
           </span>
