@@ -8,7 +8,7 @@ export default function Knowledge({ id }) {
   return (
     <div
       id={id}
-      className="flex flex-col w-[100%] md:h-[100vh] h-[100vh] bg-stone-50 md:px-[20%] px-[4%] md:pt-0 pt-[20vh] snap-child"
+      className="flex flex-col w-[100%] md:h-[100vh] h-[100vh] bg-stone-50 md:px-[20%] px-[4%] md:pt-0 pt-[20vh]"
     >
       <ScreenHeader title={`menu.${id}`} />
       <div className="w-[100%] grid grid-cols-4 gap-[2vh] mt-[4vh] rounded-xl font-opensans text-[2vh]">

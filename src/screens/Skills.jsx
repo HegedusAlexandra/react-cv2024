@@ -21,9 +21,7 @@ import { useTranslation } from "react-i18next";
 export default function Skills({ id }) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
-  const [shadowRef, shadowInView] = useInView({
-    threshold: 1
-  });
+  const [shadowRef, shadowInView] = useInView();
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -38,7 +36,7 @@ export default function Skills({ id }) {
       className="flex flex-col w-[100%] font-montserrat text-[2.5vh] bg-stone-950 md:px-[1%]"
     >
       <div
-        id={id}
+       
         className="flex flex-col w-[100%] md:h-[84vh] h-[30vh] font-montserrat bg-[#FFC30B]"
       >
         <motion.div
@@ -54,8 +52,8 @@ export default function Skills({ id }) {
         </motion.div>
       </div>
       <div
-        id={id}
-        className="flex flex-col w-[100%] font-montserrat bg-gradient-to-b from-[#FFC30B] to-[#FFD662] md:px-[9%] px-[4%]"
+        
+        className="flex flex-col w-[100%] font-montserrat bg-gradient-to-b from-[#FFC30B] to-[#EAE7DC] md:px-[9%] px-[4%]"
       >
         <motion.div
           ref={ref}
@@ -196,7 +194,7 @@ export default function Skills({ id }) {
             </p>
           </span>
           <h2
-            className="flex justify-center items-center md:text-[8vh] text-[4vh] font-bold text-red-600 md:w-[30%] w-[20%] md:rotate-0 rotate-90"
+            className="flex justify-center items-center md:text-[8vh] text-[4vh] font-bold text-sky-700 md:w-[30%] w-[20%] md:rotate-0 rotate-90"
             style={
               window.innerWidth > 780
                 ? { textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" }
@@ -208,7 +206,7 @@ export default function Skills({ id }) {
         </div>
         <div className="w-[100%] flex flex-row mb-[20vh] gap-[10%]">
           <h2
-            className="flex justify-center items-center md:text-[8vh] text-[4vh] font-bold text-lime-600 md:w-[30%] w-[20%] md:rotate-0 -rotate-90"
+            className="flex justify-center items-center md:text-[8vh] text-[4vh] font-bold text-sky-700 md:w-[30%] w-[20%] md:rotate-0 -rotate-90"
             style={
               window.innerWidth > 780
                 ? { textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" }
@@ -219,44 +217,44 @@ export default function Skills({ id }) {
           </h2>
           <span className="flex flex-col w-[60%] h-[100%] gap-[2vh]">
             <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
-              <div className="flex flex-row">
-                <p className="md:w-[15%] w-[50%] text-[2vh] md:text-[2.5vh]">
+              <div className="flex flex-row md:w-[40%]">
+                <p className=" w-[50%] text-[2vh] md:text-[2.5vh]">
                   {t("knowledge.hun")}
                 </p>
-                <p className="md:w-[15%] w-[50%] text-[2vh] md:text-[2.5vh]">
+                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
                   {t("knowledge.hun_level")}
                 </p>
               </div>
               <Scale scaleWidth={100}/>
             </span>
             <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
-              <div className="flex flex-row">
-                <p className="md:w-[15%] w-[50%] text-[2vh] md:text-[2.5vh]">
+              <div className="md:w-[40%] flex flex-row">
+                <p className=" w-[50%] text-[2vh] md:text-[2.5vh]">
                   {t("knowledge.eng")}
                 </p>
-                <p className="md:w-[15%] w-[50%] text-[2vh] md:text-[2.5vh]">
+                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
                   {t("knowledge.eng_level")}
                 </p>
               </div>
               <Scale scaleWidth={90}/>
             </span>
             <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
-              <div className="flex flex-row">
-                <p className="md:w-[15%] w-[50%] text-[2vh] md:text-[2.5vh]">
+              <div className="md:w-[40%] flex flex-row">
+                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
                   {t("knowledge.ita")}
                 </p>
-                <p className="md:w-[15%] w-[50%] text-[2vh] md:text-[2.5vh]">
+                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
                   {t("knowledge.ita_level")}
                 </p>
               </div>
               <Scale scaleWidth={22}/>
             </span>
             <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
-              <div className="flex flex-row">
-                <p className="md:w-[15%] w-[50%] text-[2vh] md:text-[2.5vh]">
+              <div className="md:w-[40%] flex flex-row">
+                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
                   {t("knowledge.ger")}
                 </p>
-                <p className="md:w-[15%] w-[50%] text-[2vh] md:text-[2.5vh]">
+                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
                   {t("knowledge.ita_level")}
                 </p>
               </div>
