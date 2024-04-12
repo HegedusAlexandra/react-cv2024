@@ -7,7 +7,7 @@ export default function HelmetComp({url='',content,title}) {
 
   return (
     <Helmet>
-          <title>{'Alexa.H // ' + t(title)}</title>
+          <title>{"Alexandra's Portfolio"}</title>
           <meta name="description" content={t(content)} />
           <link rel="canonical" href={`https://www.alexahegedus.com/${url}`} />
     </Helmet>  
