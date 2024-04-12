@@ -21,7 +21,7 @@ import { useTranslation } from "react-i18next";
 export default function Skills({ id }) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
-  const [shadowRef, shadowInView] = useInView();
+  const [sectionRef, sectionInView] = useInView();
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -30,31 +30,28 @@ export default function Skills({ id }) {
     }
   }, [controls, inView]);
 
+
   return (
     <div
+
       id={id}
       className="flex flex-col w-[100%] font-montserrat text-[2.5vh] bg-stone-950 md:px-[1%]"
     >
-      <div
-       
-        className="flex flex-col w-[100%] md:h-[84vh] h-[30vh] font-montserrat bg-[#FFC30B]"
-      >
-        <motion.div
-          ref={shadowRef}
-          initial={{ backgroundColor: "black" }}
-          animate={shadowInView && "visibleShadow"}
-          variants={variants}
-          className="w-[100%] flex flex-row"
-        >
+      <motion.div
+        ref={sectionRef}
+        initial="hiddenShadow"
+        animate={sectionInView ? 'hiddenShadow' : 'visibleShadow'}
+        variants={variants}
+        className="bg-stone-950 w-[100%] h-[260vh] absolute z-20 left-[0vw]"
+      ></motion.div>
+      <div className="flex flex-col w-[100%] md:h-[84vh] h-[30vh] font-montserrat bg-[#FFC30B]">
+        <motion.div className="w-[100%] flex flex-row">
           <img src={lamp} alt={lamp} className=" w-[100vw]" />
           {/*  <div class="relative left-0 triangle"></div>
           <div class="relative right-0 triangleRight"></div> */}
         </motion.div>
       </div>
-      <div
-        
-        className="flex flex-col w-[100%] font-montserrat bg-gradient-to-b from-[#FFC30B] to-[#EAE7DC] md:px-[9%] px-[4%]"
-      >
+      <div className="flex flex-col w-[100%] font-montserrat bg-gradient-to-b from-[#FFC30B] to-[#EAE7DC] md:px-[9%] px-[4%]">
         <motion.div
           ref={ref}
           initial="hidden"
@@ -225,7 +222,7 @@ export default function Skills({ id }) {
                   {t("knowledge.hun_level")}
                 </p>
               </div>
-              <Scale scaleWidth={100}/>
+              <Scale scaleWidth={100} />
             </span>
             <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
               <div className="md:w-[40%] flex flex-row">
@@ -236,7 +233,7 @@ export default function Skills({ id }) {
                   {t("knowledge.eng_level")}
                 </p>
               </div>
-              <Scale scaleWidth={90}/>
+              <Scale scaleWidth={90} />
             </span>
             <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
               <div className="md:w-[40%] flex flex-row">
@@ -247,7 +244,7 @@ export default function Skills({ id }) {
                   {t("knowledge.ita_level")}
                 </p>
               </div>
-              <Scale scaleWidth={22}/>
+              <Scale scaleWidth={22} />
             </span>
             <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
               <div className="md:w-[40%] flex flex-row">
@@ -258,7 +255,7 @@ export default function Skills({ id }) {
                   {t("knowledge.ita_level")}
                 </p>
               </div>
-              <Scale scaleWidth={10}/>
+              <Scale scaleWidth={10} />
             </span>
           </span>
         </div>
