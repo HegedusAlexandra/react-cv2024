@@ -38,7 +38,7 @@ export default function Landing({ id }) {
             <p className="w-[100%] md:text-[5vh] text-[2.8vh] font-roboto font-semibold leading-[5vh] md:leading-[7vh]">
               {t("landing.iam")}
             </p>
-            <p className="w-[100%] md:text-[5vh] text-red-700 text-[4vh] font-roboto font-semibold md:mb-0 mb-[2vh] leading-[6vh] md:leading-[7vh]">
+            <p className="w-[100%] md:text-[5vh] text-red-500 text-[4vh] font-roboto font-semibold md:mb-0 mb-[2vh] leading-[6vh] md:leading-[7vh]">
               {t("landing.developer")}
             </p>
           </h1>

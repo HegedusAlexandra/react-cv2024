@@ -39,8 +39,8 @@ export default function Introduction({ id }) {
           className="flex flex-col justify-start items-start w-[100%] md:rounded-md font-roboto mb-[2vh] mt-[4vh]"
         >
           <h2
-            className="md:text-[8vh] text-[6vh] font-bold text-sky-700 my-[10vh]"
-            style={{ textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" }}
+            className="md:text-[8vh] text-[6vh] font-bold text-cyan-500 my-[10vh] capitalize"
+            style={{ textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }}
           >
             {t('menu.about me')}
           </h2>

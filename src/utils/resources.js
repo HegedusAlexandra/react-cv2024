@@ -65,7 +65,7 @@ const resources = {
           'h1':'I warmly invite you to explore my projects.'
         },
         'knowledge':{
-          'technical_skills':'Technical Skills',
+        'technical_skills':'Technical Skills',
         'soft_skills':'Soft Skills',
         'lang_skills':'Language Skills',
         'soft_skills_des':"In today's rapidly evolving professional landscape, the spotlight increasingly falls on a set of skills that computers can't automate and exams can't quantify : soft skills. Mastering key skills like quick learning, creative problem-solving, adaptability, empathy, clear communication, and teamwork not only sets you apart but also brings people together, making every challenge a bit more manageable and every success a shared joy. ",
@@ -114,7 +114,7 @@ const resources = {
         'landing':{
           'hello':'Üdvözöllek az oldalon!',
           'iam':'Alexandra vagyok, elhivatott ',
-          'developer':'frontend developer',
+          'developer':'frontend fejlesztő',
           'long':'Webfejlesztéssel foglalkozom, és imádok vizuálisan vonzó weboldalakat készíteni. Böngéssz a projektek között és ne habozz, keress meg!',
         },
         'introduction':{
@@ -161,7 +161,7 @@ const resources = {
         },
         'knowledge':{
           'technical_skills':'Technikai kompetenciák',
-          'soft_skills':'Szeméyes tulajdonságok',
+          'soft_skills':'Soft Skillek',
           'lang_skills':'Nyelvtudás',
           'soft_skills_des':'A mai gyorsan fejlődő szakmai világban egyre inkább a figyelem középpontjába kerülnek azok a készségek, amelyeket a számítógépek nem automatizálhatnak, és a tesztek nem mérhetnek le. Az olyan kulcskészségek elsajátítása, mint a gyors tanulás, a kreatív problémamegoldás, az alkalmazkodóképesség, az empátia, a tiszta kommunikáció és a csapatmunka, nemcsak hogy kiemel, de véleményem szerint össze is hozza az embereket, így minden kihívás kezelhetőbbé válik.',
           'eng': 'Angol',

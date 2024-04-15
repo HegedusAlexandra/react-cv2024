@@ -35,7 +35,7 @@ export default function Skills({ id }) {
     <div
 
       id={id}
-      className="flex flex-col w-[100%] font-montserrat text-[2.5vh] bg-stone-950 md:px-[1%]"
+      className="flex flex-col w-[100%] font-montserrat text-[2.5vh] bg-stone-950"
     >
       <motion.div
         ref={sectionRef}
@@ -51,7 +51,7 @@ export default function Skills({ id }) {
           <div class="relative right-0 triangleRight"></div> */}
         </motion.div>
       </div>
-      <div className="flex flex-col w-[100%] font-montserrat bg-gradient-to-b from-[#FFC30B] to-[#EAE7DC] md:px-[9%] px-[4%]">
+      <div className="flex flex-col w-[100%] font-montserrat bg-gradient-to-b from-[#FFC30B] to-[20%] to-[#EAE7DC] md:px-[9%] px-[4%]">
         <motion.div
           ref={ref}
           initial="hidden"
@@ -160,18 +160,18 @@ export default function Skills({ id }) {
             />
           </div>
         </motion.div>
-        <div className="w-[100%] flex flex-row mb-[20vh] gap-[10%]">
+        <div className="w-[100%] flex md:flex-row flex-col mb-[20vh] gap-[10%]">
           <h2
-            className="flex justify-center items-center md:text-[8vh] text-[4vh] font-bold text-sky-700 w-[20%] md:w-[30%] md:rotate-0 -rotate-90"
+            className="flex justify-center md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-cyan-500 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
             style={
               window.innerWidth > 780
-                ? { textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" }
+                ? { textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }
                 : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }
             }
           >
             {t("knowledge.technical_skills")}
           </h2>
-          <span className="flex flex-col md:w-[60%] w-[70%] h-[100%] gap-[2vh]">
+          <span className="flex flex-col md:w-[60%] w-[100%] h-[100%] gap-[2vh]">
             <p className="font-bold">EXPERIENCED</p>
             <p className="text-[2vh] md:text-[3vh]">
               JavaScript, TypeScript, HTML5, React, React Native, CSS3, SASS,
@@ -184,35 +184,35 @@ export default function Skills({ id }) {
             </p>
           </span>
         </div>
-        <div className="w-[100%] flex flex-row  mb-[20vh] gap-[10%]">
-          <span className="flex flex-col w-[60%] md:w-[70%] h-[100%] gap-[2vh]">
+        <div className="w-[100%] flex md:flex-row flex-col-reverse mb-[20vh] gap-[10%]">
+          <span className="flex flex-col md:w-[70%] w-[100%] h-[100%] gap-[2vh]">
             <p className="text-[2vh] md:text-[3vh]">
               {t("knowledge.soft_skills_des")}
             </p>
           </span>
           <h2
-            className="flex justify-center items-center md:text-[8vh] text-[4vh] font-bold text-sky-700 md:w-[30%] w-[20%] md:rotate-0 rotate-90"
+            className="flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-cyan-500 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
             style={
               window.innerWidth > 780
-                ? { textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" }
+                ? { textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }
                 : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }
             }
           >
             {t("knowledge.soft_skills")}
           </h2>
         </div>
-        <div className="w-[100%] flex flex-row mb-[20vh] gap-[10%]">
+        <div className="w-[100%] flex md:flex-row flex-col mb-[20vh] gap-[10%]">
           <h2
-            className="flex justify-center items-center md:text-[8vh] text-[4vh] font-bold text-sky-700 md:w-[30%] w-[20%] md:rotate-0 -rotate-90"
+            className="flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-cyan-500 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
             style={
               window.innerWidth > 780
-                ? { textShadow: "4px 4px 1px rgba(0, 0, 0, 0.8)" }
+                ? { textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }
                 : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }
             }
           >
             {t("knowledge.lang_skills")}
           </h2>
-          <span className="flex flex-col w-[60%] h-[100%] gap-[2vh]">
+          <span className="flex flex-col md:w-[60%] w-[100%] h-[100%] gap-[2vh]">
             <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
               <div className="flex flex-row md:w-[40%]">
                 <p className=" w-[50%] text-[2vh] md:text-[2.5vh]">

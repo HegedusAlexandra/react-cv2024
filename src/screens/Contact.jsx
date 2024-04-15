@@ -48,10 +48,8 @@ export default function Contact({ id }) {
               <p>h.alexa.dev@gmail.com</p>
             </div>
             <div className="flex-1 flex flex-col items-start md:justify-end justify-center w-[100%] bg-[#EAE7DC] text-center p-4">
-              <a
-                whileHover={{ scale: 1.6, backgroundColor: "#F7C003" }}
-                className=" flex flex-row justify-start items-center h-[6vh] rounded-full mr-[2vh] gap-[2vw]"
-                transition={{ type: "spring", stiffness: 400, damping: 20 }}
+              <a  
+                className=" flex flex-row justify-start items-center h-[6vh] rounded-full mr-[2vh] gap-[2vw]"                
                 href="https://github.com/HegedusAlexandra?tab=repositories"
               >
                 <motion.img

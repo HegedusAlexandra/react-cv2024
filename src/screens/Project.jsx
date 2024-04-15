@@ -23,7 +23,7 @@ export default function Project({ id }) {
   return (
     <div
       id={id}
-      className="flex flex-col justify-center items-center w-[100%] md:px-[10vw] md:py-[20vh] bg-stone-950"
+      className="flex flex-col justify-center items-center w-[100%] md:px-[10vw] md:py-[20vh] bg-[#EAE7DC] "
     >
       <div
         id={id}
@@ -38,7 +38,7 @@ export default function Project({ id }) {
 
           custom={0}
           href="https://hegedusalexandra.github.io/osk/"
-          className={`md:w-[39vw] w-[92vw] md:h-[40vh] h-[32vh] bg-stone-700 p-2 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)] overflow-hidden`}
+          className={`md:w-[39vw] w-[92vw] md:h-[40vh] h-[32vh] bg-stone-500 p-2 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)] overflow-hidden`}
         >
           <div className="w-[100%] md:h-[38vh] h-[30vh] bg-OKS bg-cover bg-left bg-no-repeat rounded-md"></div>
 
@@ -54,7 +54,7 @@ export default function Project({ id }) {
                 animate={inViewTwo ? 'visible' : 'hidden'}
           custom={1}
           href="https://leohunts.com/"
-          className={`md:w-[39vw] w-[92vw] md:h-[40vh] h-[32vh] bg-stone-700 p-2 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)] overflow-hidden`}
+          className={`md:w-[39vw] w-[92vw] md:h-[40vh] h-[32vh] bg-stone-500 p-2 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)] overflow-hidden`}
         >
           <div className="w-[100%] md:h-[38vh] h-[30vh] bg-LH bg-cover bg-right bg-no-repeat rounded-md"></div>
           <h2 className="-translate-y-[10vh] h-[10vh] font-opensans uppercase font-bold text-[3vh] bg-white/70 pl-2 rounded-b-lg">
@@ -76,7 +76,7 @@ export default function Project({ id }) {
             animate={inViewThree ? 'visible' : 'hidden'}
           custom={2}
           href="https://www.golfracks.club/"
-          className={`md:w-[39vw] w-[92vw] md:h-[40vh] h-[32vh] bg-stone-700 p-2 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)] overflow-hidden`}
+          className={`md:w-[39vw] w-[92vw] md:h-[40vh] h-[32vh] bg-stone-500 p-2 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)] overflow-hidden`}
         >
           <div className="w-[100%] md:h-[38vh] h-[30vh] bg-GF bg-cover bg-right bg-no-repeat rounded-md"></div>
           <h2 className="-translate-y-[10vh] h-[10vh] font-opensans uppercase font-bold text-[3vh] bg-white/70 pl-2 rounded-b-lg">
@@ -90,7 +90,7 @@ export default function Project({ id }) {
             initial="hidden"
             animate={inViewFour ? 'visible' : 'hidden'}
           custom={3} // Adjust the custom delay as needed
-          className="md:w-[39vw] w-[92vw] md:h-[40vh] h-[32vh] bg-stone-700 p-2 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)] overflow-hidden"
+          className="md:w-[39vw] w-[92vw] md:h-[40vh] h-[32vh] bg-stone-500 p-2 rounded-md shadow-[1px_1px_2px_2px_rgba(0,0,0,0.4)] overflow-hidden"
         >
           <NavLink to="/projects">
             <div className="w-[100%] md:h-[38vh] h-[30vh] bg-arrow bg-cover bg-center bg-no-repeat rounded-md"></div>
