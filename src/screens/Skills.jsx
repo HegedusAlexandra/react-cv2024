@@ -35,14 +35,14 @@ export default function Skills({ id }) {
     <div
 
       id={id}
-      className="flex flex-col w-[100%] font-montserrat text-[2.5vh] bg-stone-950"
+      className="flex flex-col w-[100%] font-montserrat text-[2.5vh] "
     >
       <motion.div
         ref={sectionRef}
         initial="hiddenShadow"
         animate={sectionInView ? 'hiddenShadow' : 'visibleShadow'}
         variants={variants}
-        className="bg-stone-950 w-[100%] h-[260vh] absolute z-20 left-[0vw]"
+        className="bg-stone-950 w-[100%] h-[280vh] absolute z-20 left-[0vw]"
       ></motion.div>
       <div className="flex flex-col w-[100%] md:h-[84vh] h-[30vh] font-montserrat bg-[#FFC30B]">
         <motion.div className="w-[100%] flex flex-row">

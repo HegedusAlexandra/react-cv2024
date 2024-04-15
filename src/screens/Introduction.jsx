@@ -42,7 +42,7 @@ export default function Introduction({ id }) {
             className="md:text-[8vh] text-[6vh] font-bold text-cyan-500 my-[10vh] capitalize"
             style={{ textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }}
           >
-            {t('menu.about me')}
+            {t('menu.introduction')}
           </h2>
           <p>{t("introduction.1")}</p>
         </motion.div>

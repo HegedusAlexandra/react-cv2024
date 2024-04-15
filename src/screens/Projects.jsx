@@ -16,7 +16,7 @@ export default function Projects() {
         url="projects"
         content={"helmet.pro_desc"}
       />
-      <div className="flex flex-col w-[100%]  bg-stone-800 h-[800vh] snap-parent">
+      <div className="flex flex-col w-[100%] bg-stone-800 h-[800vh] snap-parent">
         <h1 className="w-[100%] hidden">{t("helmet.h1")}</h1>
         {window.innerWidth > 780 ? (
           <Menu screen={"projects"} />
@@ -33,7 +33,7 @@ export default function Projects() {
             description={el.description}
           />
         ))}
-        <div className="bg-stone-500 w-[100%] h-[30vh] snap-child"></div>
+
         <Contact />
       </div>
     </div>

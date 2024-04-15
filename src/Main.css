@@ -210,7 +210,7 @@ svg {
   /* scroll snap*/
 
   .snap-parent {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
   }
    /*

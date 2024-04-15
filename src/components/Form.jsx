@@ -103,8 +103,8 @@ const Form = ({ handleData, setSent }) => {
   };
 
   return (
-    <div className="flex flex-col w-[100%] justify-start items-start bg-[#EAE7DC]">
-      <div className="relative z-10 md:w-[80%] w-[90%] rounded-xl -translate-y-3">
+    <div className="flex flex-col w-[100%] h-[100%] justify-start items-start bg-[#EAE7DC]">
+      <div className="relative z-10 md:w-[80%] w-[100%] rounded-xl md:-translate-y-3 p-[4%]">
         <form onSubmit={handleSubmit(onSubmit)} className="w-[100%]">
           <div className="flex flex-col mt-2 w-[100%] h-[60%]">
             <Controller

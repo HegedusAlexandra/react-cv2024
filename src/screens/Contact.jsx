@@ -29,10 +29,10 @@ export default function Contact({ id }) {
   return (
     <div
       id={id}
-      className="flex flex-col items-center justify-between w-[100%] md:h-[100vh] bg-[#EAE7DC] pt-[14vh]"
+      className="flex flex-col items-center justify-between w-[100%] md:h-[100vh] h-[140vh] bg-[#EAE7DC] pt-[14vh] mt-[30vh] snap-child"
     >
-      <div className="flex md:flex-row flex-col w-[100%] md:h-[60vh] items-start justify-center px-[10%]">
-        <div className=" flex flex-col justify-start items-start md:w-[50%] w-[100%] h-[100%]">
+      <div className="flex md:flex-row flex-col w-[100%] md:h-[60vh] items-start justify-center">
+        <div className=" flex flex-col justify-start items-start md:w-[50%] w-[100%] h-[100%] overflow-x-hidden">
           <h2
             className={`md:w-[50%] w-[90%] mx-[5%] md:mx-0 text-stone-900 md:text-[6vh] text-[6.5vw] font-semibold font-roboto uppercase tracking-wide text-left ${
               isSent && "h-[40vh]"
@@ -40,14 +40,14 @@ export default function Contact({ id }) {
           >
             {isSent && `${t("contact.lets")}`}
           </h2>
-          {!isSent && <Form handleData={handleData} setSent={setSent} />}
-        </div>
-        <div className="flex flex-col md:w-[50%] w-[100%] h-[80%] pb-[2vh] border-l-4 border-solid border-black">
-          <div className="flex-1 flex flex-col md:items-start w-[100%] bg-[#EAE7DC] text-center px-4 font-bold font-montserrat text-[2vh] ">
-            <div className="flex-1 flex justify-start w-[100%] bg-[#EAE7DC] text-center p-4 md:text-[6vh] text-[2.5vh] align-text-top -translate-y-[1vh]">
+          {!isSent && <Form handleData={handleData} setSent={setSent} />} 
+        </div> 
+        <div className="flex flex-col md:w-[50%] w-[100%] h-[80%] pb-[2vh] border-l-4 md:border-solid md:border-black">
+          <div className="flex-1 flex flex-col md:items-start items-center w-[100%] bg-[#EAE7DC] text-center px-4 font-bold font-montserrat text-[2vh] ">
+            <div className="flex-1 flex md:justify-start justify-center w-[100%] bg-[#EAE7DC] text-center px-4 md:text-[6vh] text-[2.5vh] align-text-top -translate-y-[1vh]">
               <p>h.alexa.dev@gmail.com</p>
             </div>
-            <div className="flex-1 flex flex-col items-start md:justify-end justify-center w-[100%] bg-[#EAE7DC] text-center p-4">
+            <div className="flex-1 flex flex-col md:items-start items-center md:justify-end justify-center w-[100%] bg-[#EAE7DC] text-center p-4">
               <a  
                 className=" flex flex-row justify-start items-center h-[6vh] rounded-full mr-[2vh] gap-[2vw]"                
                 href="https://github.com/HegedusAlexandra?tab=repositories"

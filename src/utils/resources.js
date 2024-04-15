@@ -103,7 +103,7 @@ const resources = {
       translation: { 
         'menu':{
           'home':'főoldal',
-          'about me':"bemutatkozás",
+          'about me':"rólam",
           'projects':"projektek",
           'contact':"kontakt",
           'wdp':"webfejlesztő portfólió",
