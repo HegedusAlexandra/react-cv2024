@@ -44,8 +44,8 @@ export default function Contact({ id }) {
         </div> 
         <div className="flex flex-col md:w-[50%] w-[100%] h-[80%] pb-[2vh] border-l-4 md:border-solid md:border-black">
           <div className="flex-1 flex flex-col md:items-start items-center w-[100%] bg-[#EAE7DC] text-center px-4 font-bold font-montserrat text-[2vh] ">
-            <div className="flex-1 flex md:justify-start justify-center w-[100%] bg-[#EAE7DC] text-center px-4 md:text-[6vh] text-[2.5vh] align-text-top -translate-y-[1vh]">
-              <p>h.alexa.dev@gmail.com</p>
+            <div className="flex-1 flex md:justify-start justify-center w-[100%] bg-[#EAE7DC] text-center px-4 md:text-[4vh] text-[2.5vh] align-text-top -translate-y-[1vh]">
+              <p>he.xandra.code@gmail.com</p>
             </div>
             <div className="flex-1 flex flex-col md:items-start items-center md:justify-end justify-center w-[100%] bg-[#EAE7DC] text-center p-4">
               <a  
