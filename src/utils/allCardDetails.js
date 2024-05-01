@@ -13,6 +13,12 @@ export const allCardDetails = [
       headline: "projects.OK-headline",
       description:"projects.OK-description" },
     {
+        link: "https://hegedusalexandra.github.io/patissier-portfolio/",
+        github: "https://github.com/HegedusAlexandra/patissier-portfolio",
+        background: "bg-PAT",
+        headline: "projects.PAT-headline",
+      description:"projects.PAT-description"},
+    {
       link: "https://www.golfracks.club/",
       github:"",
       background: "bg-GF",

@@ -84,6 +84,8 @@ const resources = {
       'projects':{
         'GF-headline': "GolfRacks",
         'GF-description':"GolfRacks represents a mobile application project (made with React Native) in which I actively participated as a Vamosoft Developer.The project extends beyond the app itself, incorporating a straightforward website designed to facilitate the app's download from a desktop environment.",  
+        'PAT-headline': "My Patissier Portfolio",
+        'PAT-description':"This is my own Patissier Portfolio site made with React and a lot of white chocolate",  
         'LH-headline': "LEOHUNTS",
         'LH-description':"LEOHUNTS is the digital face of a real estate selling company, for which I contributed significantly also as a developer at Vamosoft. My role involved assisting in the correction of existing features and the development of new functionalities. This website was brought to life using a modern tech stack that includes React, Algolia, and Next.js, reflecting my proficiency in front-end development and my capability to enhance user experiences in the real estate domain.",
         'PCT-headline': "PetChat",
@@ -179,6 +181,8 @@ const resources = {
       'projects':{
         'GF-headline': "GolfRacks",
         'GF-description':"A GolfRacks egy mobilalkalmazás-projekt (React Native-ben készült), amelyben aktívan részt vettem mint a Vamosoft fejlesztője. A projekt túlmutat magán az alkalmazáson, egy egyszerű weboldalt is magában foglal, amelynek célja az alkalmazás letöltésének megkönnyítése asztali környezetből.",  
+        'PAT-headline': "Az én cukrász portfólióm",
+        'PAT-description':"Ez az én saját egyszerű cukrász weboldalam ami React-tal készült",  
         'LH-headline': "LEOHUNTS",
         'LH-description':"A LEOHUNTS a modern ingatlaneladás digitális megjelenítője, amelynek létrehozásához mint a Vamosoft egyik fejlesztője kiemelkedően hozzájárultam. A munkám során nem csupán a meglévő funkciók finomhangolásával foglalkoztam, hanem új, innovatív megoldások kidolgozásával is bővítettem a platform képességeit. A weboldal megalkotásához egy korszerű technológiai stack-et választottunk, amely a React, Algolia és Next.js technológiáit ötvözi hozzájárulva a felhasználói élmény folyamatos javításához az ingatlanpiaci szegmensben.",
         'PCT-headline': "PetChat",
@@ -274,6 +278,8 @@ const resources = {
         'projects':{
           'GF-headline': "GolfRacks",
           'GF-description':"GolfRacks rappresenta un progetto di applicazione mobile (realizzato con React Native) in cui ho partecipato attivamente come sviluppatore di Vamosoft. Il progetto va oltre l'applicazione stessa, incorporando un sito web semplice progettato per facilitare il download dell'app da un ambiente desktop.",  
+          'PAT-headline': "My Patissier Portfolio",
+        'PAT-description':"This is my own Patissier Portfolio site made with React and a lot of white chocolate",  
           'LH-headline': "LEOHUNTS",
           'LH-description':"LEOHUNTS è il volto digitale di un'azienda di vendita immobiliare, per la quale ho contribuito significativamente anche come sviluppatore presso Vamosoft. Il mio ruolo includeva l'assistenza nella correzione delle funzionalità esistenti e lo sviluppo di nuove funzionalità. Questo sito web è stato creato utilizzando un moderno stack tecnologico che include React, Algolia e Next.js, riflettendo la mia competenza nello sviluppo front-end e la mia capacità di migliorare l'esperienza utente nel settore immobiliare.",
           'PCT-headline': "PetChat",
