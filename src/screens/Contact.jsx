@@ -34,13 +34,16 @@ export default function Contact({ id }) {
       <div className="flex md:flex-row flex-col w-[100%] md:h-[60vh] items-start justify-center">
         <div className=" flex flex-col justify-start items-start md:w-[90%] w-[100%] h-[100%] overflow-x-hidden">
           <h2
-            className={`md:w-[50%] w-[90%] mx-[5%] md:mx-0 text-stone-900 md:text-[6vh] text-[6.5vw] font-semibold font-roboto uppercase tracking-wide text-left ${
-              isSent && "h-[40vh]"
-            }`}
+            className={`md:w-[50%] w-[90%] mx-[5%] text-stone-900 md:text-[6vh] text-[6.5vw] font-semibold font-roboto uppercase tracking-wide text-left`}
           >
-            {isSent && `${t("contact.lets")}`}
+            {!isSent &&`${t("contact.lets")} `}
           </h2>
-          {!isSent && <Form handleData={handleData} setSent={setSent} />}
+         {!isSent && <Form handleData={handleData} setSent={setSent} />}
+          <h2
+            className={`md:w-[50%] mt-[10vh] w-[90%] mx-[5%] text-stone-900 md:text-[2vh] text-[2vw] font-semibold font-roboto uppercase tracking-wide text-left`}
+          >
+            {isSent && `We sincerely apologize for the inconvenience, but our contact form is currently experiencing some issues. In the meantime, please feel free to reach out to us via email or return in some days. Thank you for your understanding!`}
+          </h2>
         </div>
         <div className="flex flex-col md:w-[50%] w-[100%] h-[80%] pb-[2vh] border-l-4 md:border-solid md:border-black">
           <div className="flex-1 flex flex-col md:items-start items-center w-[100%]  text-center px-4 font-bold font-montserrat text-[2vh] ">

@@ -22,7 +22,7 @@ export default function Scale({
     },
     visibleScale: {
       width: `${scaleWidth}%`,
-      backgroundColor:'red',
+      backgroundColor:'orange',
       transition: { duration: 1, ease: ["backIn", "backOut"] }
     }
   };
