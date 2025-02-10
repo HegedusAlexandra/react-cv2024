@@ -33,7 +33,7 @@ function Main() {
   };
 
   return (
-    <div className="flex flex-col w-[100%] bg-[#EAE7DC] ">
+    <div className="flex flex-col w-[100%]  ">
       <HelmetComp title={"helmet.main"} url="" content={"helmet.pro_desc"} />
       {window.innerWidth > 780 ? <Menu /> : <CircularMenu />}
     <Landing id={"landing"} />

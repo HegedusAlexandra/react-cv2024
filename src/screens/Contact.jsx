@@ -29,10 +29,10 @@ export default function Contact({ id }) {
   return (
     <div
       id={id}
-      className="flex flex-col items-center justify-between w-[100%] md:h-[100vh] h-[140vh] bg-[#EAE7DC] pt-[10vh] md:px-[8%] mt-[10vh] snap-child"
+      className="flex flex-col items-center justify-between w-[100%] bg-[#fdfbf7] pt-[10vh] md:px-[8%]  snap-child"
     >
       <div className="flex md:flex-row flex-col w-[100%] md:h-[60vh] items-start justify-center">
-        <div className=" flex flex-col justify-start items-start md:w-[50%] w-[100%] h-[100%] overflow-x-hidden">
+        <div className=" flex flex-col justify-start items-start md:w-[90%] w-[100%] h-[100%] overflow-x-hidden">
           <h2
             className={`md:w-[50%] w-[90%] mx-[5%] md:mx-0 text-stone-900 md:text-[6vh] text-[6.5vw] font-semibold font-roboto uppercase tracking-wide text-left ${
               isSent && "h-[40vh]"
@@ -43,14 +43,14 @@ export default function Contact({ id }) {
           {!isSent && <Form handleData={handleData} setSent={setSent} />}
         </div>
         <div className="flex flex-col md:w-[50%] w-[100%] h-[80%] pb-[2vh] border-l-4 md:border-solid md:border-black">
-          <div className="flex-1 flex flex-col md:items-start items-center w-[100%] bg-[#EAE7DC] text-center px-4 font-bold font-montserrat text-[2vh] ">
-          <h2
-        className="md:text-[8vh] text-[6vh] font-bold text-red-500 my-[1vw] md:mx-[2vw] mx-[4vw] capitalize self-start"
-        style={{ textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }}
-      >
-        Contact
-      </h2>
-            <div className="flex-1 flex flex-col md:items-start items-center md:justify-end justify-center w-[100%] bg-[#EAE7DC] text-center p-4">
+          <div className="flex-1 flex flex-col md:items-start items-center w-[100%]  text-center px-4 font-bold font-montserrat text-[2vh] ">
+            <h2
+              className="md:text-[8vh] text-[6vh] font-bold text-red-500 my-[1vw] md:mx-[2vw] mx-[4vw] capitalize self-start"
+              style={{ textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }}
+            >
+              Contact
+            </h2>
+            <div className="flex-1 flex flex-col md:items-start items-center md:justify-end justify-center w-[100%]  text-center p-4">
               <a
                 className=" flex flex-row justify-start items-center h-[6vh] rounded-full mr-[2vh] gap-[2vw]"
                 href="https://github.com/HegedusAlexandra?tab=repositories"

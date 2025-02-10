@@ -1,35 +1,16 @@
-import React, { useEffect } from "react";
-import apollo from "../assets/simple_icon/apollographql.svg";
-import docker from "../assets/simple_icon/docker.svg";
-import figma from "../assets/simple_icon/figma.svg";
-import github from "../assets/simple_icon/github.svg";
-import html5 from "../assets/simple_icon/html5.svg";
-import javascript from "../assets/simple_icon/javascript.svg";
-import nextdotjs from "../assets/simple_icon/nextdotjs.svg";
-import nodedotjs from "../assets/simple_icon/nodedotjs.svg";
-import react from "../assets/simple_icon/react.svg";
-import sass from "../assets/simple_icon/sass.svg";
-import graphql from "../assets/simple_icon/graphql.svg";
-import tailwindcss from "../assets/simple_icon/tailwindcss.svg";
-import { motion, useAnimation } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import { variants } from "../utils/animations";
 import { useInView } from "react-intersection-observer";
 import lamp from "../assets/pictures/lamp.png";
 import Scale from "../components/Scale";
 import { useTranslation } from "react-i18next";
+import AnimatedIcons from "../components/AnimatedIcons";
 
 export default function Skills({ id }) {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
+
   const [sectionRef, sectionInView] = useInView();
   const { t } = useTranslation();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visibleCard");
-    }
-  }, [controls, inView]);
-
 
   return (
     <div
@@ -42,7 +23,7 @@ export default function Skills({ id }) {
         initial="hiddenShadow"
         animate={sectionInView ? 'hiddenShadow' : 'visibleShadow'}
         variants={variants}
-        className="bg-stone-950 w-[100%] h-[280vh] absolute z-20 left-[0vw]"
+        className="bg-stone-950 w-[100%] h-[80vh] absolute z-20 left-[0vw]"
       ></motion.div>
       <div className="flex flex-col w-[100%] md:h-[84vh] h-[30vh] font-montserrat bg-[#FFC30B]">
         <motion.div className="w-[100%] flex flex-row">
@@ -51,8 +32,8 @@ export default function Skills({ id }) {
           <div class="relative right-0 triangleRight"></div> */}
         </motion.div>
       </div>
-      <div className="flex flex-col w-[100%] font-montserrat bg-gradient-to-b from-[#FFC30B] to-[20%] to-[#EAE7DC] md:px-[9%] px-[4%]">
-        <motion.div
+      <div className="flex flex-col w-[100%] font-montserrat bg-gradient-to-b from-[#FFC30B] to-[20%] to-[#fdfbf7] md:px-[9%] px-[4%]">
+       {/*  <motion.div
           ref={ref}
           initial="hidden"
           animate={controls}
@@ -159,26 +140,28 @@ export default function Skills({ id }) {
               src={tailwindcss}
             />
           </div>
-        </motion.div>
+        </motion.div> */}
+        <AnimatedIcons/>
         <div className="w-[100%] flex md:flex-row flex-col mb-[20vh] gap-[10%]">
           <h2
-            className="flex justify-center md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-cyan-500 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
+            className="flex justify-center md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-amber-100 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
             style={
               window.innerWidth > 780
-                ? { textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }
+                ? { textShadow: "-1px -1px 0px rgba(0, 0, 0, 1),1px 1px 0px rgba(50, 50, 50, 1),1.5px 1.5px 0px rgba(45, 45, 45, 1), 2px 2px 0px rgba(40, 40, 40, 1), 3px 3px 0px rgba(35, 35, 35, 1), 4px 4px 0px rgba(30, 30, 30, 1), 5px 5px 0px rgba(25, 25, 25, 1),  6px 6px 0px rgba(20, 20, 20, 1),  7px 7px 0px rgba(15, 15, 15, 1),  8px 8px 0px rgba(10, 10, 10, 1)"
+                }
                 : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }
             }
           >
             {t("knowledge.technical_skills")}
           </h2>
-          <span className="flex flex-col md:w-[60%] w-[100%] h-[100%] gap-[2vh]">
-            <p className="font-bold">EXPERIENCED</p>
+          <span className="flex flex-col md:w-[60%] w-[100%] h-[100%] gap-[2vh] text-stone-600">
+            <p className="font-bold text-stone-800">Experienced</p>
             <p className="text-[2vh] md:text-[3vh]">
               JavaScript, TypeScript, HTML5, React, React Native, CSS3, SASS,
               Tailwind, Node.js, Figma, GraphQL, Apollo, Redux, Performance
               Optimization, SEO Basics, Responsive design
             </p>
-            <p className="font-bold">KNOWN</p>
+            <p className="font-bold text-stone-800">Familiar</p>
             <p className="text-[2vh] md:text-[3vh]">
               Python, PHP, SQL / MySQL, Docker,AWS, OAuth & JWT{" "}
             </p>
@@ -186,15 +169,15 @@ export default function Skills({ id }) {
         </div>
         <div className="w-[100%] flex md:flex-row flex-col-reverse mb-[20vh] gap-[10%]">
           <span className="flex flex-col md:w-[70%] w-[100%] h-[100%] gap-[2vh]">
-            <p className="text-[2vh] md:text-[3vh]">
+            <p className="text-[2vh] md:text-[3vh] text-stone-600">
               {t("knowledge.soft_skills_des")}
             </p>
           </span>
           <h2
-            className="flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-cyan-500 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
+            className="flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-amber-100 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
             style={
               window.innerWidth > 780
-                ? { textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }
+                ? { textShadow: "-1px -1px 0px rgba(0, 0, 0, 1),1px 1px 0px rgba(50, 50, 50, 1),1.5px 1.5px 0px rgba(45, 45, 45, 1), 2px 2px 0px rgba(40, 40, 40, 1), 3px 3px 0px rgba(35, 35, 35, 1), 4px 4px 0px rgba(30, 30, 30, 1), 5px 5px 0px rgba(25, 25, 25, 1),  6px 6px 0px rgba(20, 20, 20, 1),  7px 7px 0px rgba(15, 15, 15, 1),  8px 8px 0px rgba(10, 10, 10, 1)" }
                 : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }
             }
           >
@@ -203,10 +186,10 @@ export default function Skills({ id }) {
         </div>
         <div className="w-[100%] flex md:flex-row flex-col mb-[20vh] gap-[10%]">
           <h2
-            className="flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-cyan-500 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
+            className="flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-amber-100 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
             style={
               window.innerWidth > 780
-                ? { textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }
+                ? { textShadow: "-1px -1px 0px rgba(0, 0, 0, 1),1px 1px 0px rgba(50, 50, 50, 1),1.5px 1.5px 0px rgba(45, 45, 45, 1), 2px 2px 0px rgba(40, 40, 40, 1), 3px 3px 0px rgba(35, 35, 35, 1), 4px 4px 0px rgba(30, 30, 30, 1), 5px 5px 0px rgba(25, 25, 25, 1),  6px 6px 0px rgba(20, 20, 20, 1),  7px 7px 0px rgba(15, 15, 15, 1),  8px 8px 0px rgba(10, 10, 10, 1)" }
                 : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }
             }
           >

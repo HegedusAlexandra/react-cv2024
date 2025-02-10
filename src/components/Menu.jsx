@@ -22,7 +22,7 @@ function Menu({screen}) {
           className={`flex flex-row w-[30%] text-[3vw] md:text-[2vw] list-none `}
         >
           <motion.div
-            whileHover={{ scale: 1.2, color: "#B91C1C" }}
+            whileHover={{ scale: 1.035, color: "#ffa" }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
             key={location.pathname === "/projects" ? "home" : "projects"}
             className={`${screen === 'projects' ? 'text-white' : 'text-black'} uppercase  text-[2vh] invisible md:visible mx-auto`}
@@ -34,7 +34,7 @@ function Menu({screen}) {
             </NavLink>
           </motion.div>
           <motion.div
-            whileHover={{ scale: 1.2, color: "#B91C1C" }}
+            whileHover={{ scale: 1.035, color: "#ffa" }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
             key={"about me"}
             className={`${screen === 'projects' ? 'text-white' : 'text-black'} uppercase text-[2vh] invisible md:visible mx-auto`}
@@ -42,7 +42,7 @@ function Menu({screen}) {
             <NavLink to="/introduction">{t("menu.about me")}</NavLink>
           </motion.div>
           <motion.div
-            whileHover={{ scale: 1.2, color: "#B91C1C" }}
+            whileHover={{ scale: 1.035, color: "#ffa" }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
             key={"contact"}
             className={`${screen === 'projects' ? 'text-white' : 'text-black'} uppercase text-[2vh] invisible md:visible mx-auto`}
