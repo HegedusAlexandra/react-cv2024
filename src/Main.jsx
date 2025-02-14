@@ -36,12 +36,11 @@ function Main() {
     <div className="flex flex-col w-[100%]  ">
       <HelmetComp title={"helmet.main"} url="" content={"helmet.pro_desc"} />
       {window.innerWidth > 780 ? <Menu /> : <CircularMenu />}
-    <Landing id={"landing"} />
+      <Landing id={"landing"} />
       <Introduction id={"introduction"} />
-     <Skills id={"skills"} />
-        <Project id={"project"} />
-   <Contact id={"contact"} /> 
-    
+      <Skills id={"skills"} />
+      <Project id={"project"} />
+      <Contact id={"contact"} />
     </div>
   );
 }

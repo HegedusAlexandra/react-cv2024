@@ -17,7 +17,7 @@ function Captcha({setRecaptchaValue,visible}) {
       animate={visible ? "visible" : "hidden"}
       variants={variants}
       transition={{ duration: 0.5 }}
-      className="flex justify-center items-center relative z-0 rounded-b-md px-10 pt-8 pb-4"
+      className="flex justify-center items-center relative z-10 rounded-b-md px-10 pt-8 pb-4"
     >
       <ReCAPTCHA
         sitekey={process.env.REACT_APP_GOOGLE_RECAPTCHA_CLIENTKEY}

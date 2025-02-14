@@ -80,6 +80,7 @@ const Form = ({ handleData, setSent }) => {
         .then((result) => {
           console.log("data was sent successfully", result, dataSum);
           alert(t("Form submitted successfully."));
+          setSent(true)
         })
         .catch((ex) => {
           console.log(
@@ -88,8 +89,8 @@ const Form = ({ handleData, setSent }) => {
             dataSum
           );
           alert(t("submission failed, please try again."));
+          setSent(false)
         })
-        .finally(setSent(true));
     },
     [contactPref, handleData, isAgreed, recaptchaValue, setSent, t]
   );
@@ -104,7 +105,7 @@ const Form = ({ handleData, setSent }) => {
 
   return (
     <div className="flex flex-col w-[100%] justify-start items-start ">
-      <div className="relative z-10 md:w-[80%] w-[100%] rounded-xl md:-translate-y-3 p-[4%]">
+      <div className="relative z-20 md:w-[100%] w-[100%] rounded-xl md:-translate-y-3 p-[4%]">
         <form onSubmit={handleSubmit(onSubmit)} className="w-[100%]">
           <div className="flex flex-col mt-2 w-[100%] h-[60%]">
             <Controller
