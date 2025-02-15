@@ -41,7 +41,7 @@ export default function Landing({ id }) {
             <p  style={{
               textShadow:
                 "-1px -1px 0px rgba(50, 50, 50, 1),1px 1px 0px rgba(50, 50, 50, 1),1.5px 1.5px 0px rgba(45, 45, 45, 1), 2px 2px 0px rgba(40, 40, 40, 1), 3px 3px 0px rgba(35, 35, 35, 1), 4px 4px 0px rgba(30, 30, 30, 1), 5px 5px 0px rgba(25, 25, 25, 1),  6px 6px 0px rgba(20, 20, 20, 1),  7px 7px 0px rgba(15, 15, 15, 1),  8px 8px 0px rgba(10, 10, 10, 1)"
-            }} className="mt-[10vh] h-[30vh] md:text-[14vh] text-red-500 text-[4vh] font-roboto font-semibold md:mb-0 mb-[2vh] leading-[6vh] md:leading-[10vh]">
+            }} className="md:mt-[10vh] mt-[1vh] h-[30vh] md:text-[14vh] text-red-500 text-[9vh] font-roboto font-semibold md:mb-0 mb-[2vh] leading-[6vh] md:leading-[10vh]">
               {t("landing.developer")}
             </p>
           </h1>
