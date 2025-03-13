@@ -29,7 +29,7 @@ export default function Contact({ id }) {
   return (
     <div
       id={id}
-      className="flex flex-col items-center justify-between w-[100%] bg-[#fdfbf7] pt-[10vh] md:px-[8%]"
+      className="flex flex-col items-center justify-between w-[100%] bg-[#fdfbf7] pt-[10vh] md:px-[8%] snap-child"
     >
       <h2
         className="md:text-[12vh] text-[6vh] font-bold text-[#fcefc0] my-[8vh] capitalize"

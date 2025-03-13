@@ -33,7 +33,6 @@ export default function Projects() {
             description={el.description}
           />
         ))}
-
         <Contact />
       </div>
     </div>

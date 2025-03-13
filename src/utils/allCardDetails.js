@@ -1,11 +1,4 @@
 export const allCardDetails = [
-
-    {
-      link: "https://leohunts.com/",
-      github:"",
-      background: "bg-LH",
-      headline: "projects.LH-headline",
-      description:"projects.LH-description" },
     {
       link: "https://hegedusalexandra.github.io/osk/",
       github:'https://github.com/HegedusAlexandra/osk',
@@ -18,18 +11,6 @@ export const allCardDetails = [
         background: "bg-PAT",
         headline: "projects.PAT-headline",
       description:"projects.PAT-description"},
-    {
-      link: "https://www.golfracks.club/",
-      github:"",
-      background: "bg-GF",
-      headline: "projects.GF-headline",
-      description:"projects.GF-description"},
-    {
-      link: "https://hegedusalexandra.github.io/PCL/PCL.html",
-      github:"",
-      background: "bg-PCT",
-      headline: "projects.PCT-headline",
-      description:"projects.PCT-description" },    
     {
       link: "https://hegedusalexandra.github.io/weather_forecast/frontend/",
       github:"https://github.com/HegedusAlexandra/weather_forecast",
