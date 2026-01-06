@@ -7,7 +7,6 @@ import Menu from "./components/Menu";
 import CircularMenu from "./components/CircularMenu";
 import Introduction from "./screens/Introduction";
 import Project from "./screens/Project";
-import Contact from "./screens/Contact";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import HelmetComp from "./components/HelmetComponent";
@@ -40,7 +39,6 @@ function Main() {
       <Introduction id={"introduction"} />
       <Skills id={"skills"} />
       <Project id={"project"} />
-      <Contact id={"contact"} />
     </div>
   );
 }

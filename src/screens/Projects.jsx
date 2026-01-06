@@ -1,11 +1,9 @@
-import React from "react";
 import Menu from "../components/Menu";
 import CircularMenu from "../components/CircularMenu";
 import ProjectCard from "../components/ProjectCard";
 import { allCardDetails } from "../utils/allCardDetails";
 import HelmetComp from "../components/HelmetComponent";
 import { useTranslation } from "react-i18next";
-import Contact from "./Contact";
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -33,7 +31,6 @@ export default function Projects() {
             description={el.description}
           />
         ))}
-        <Contact />
       </div>
     </div>
   );
