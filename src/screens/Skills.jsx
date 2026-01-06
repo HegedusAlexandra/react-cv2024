@@ -137,13 +137,8 @@ export default function Skills({ id }) {
         <AnimatedIcons/>
         <div className="w-[100%] flex md:flex-row flex-col mb-[20vh] gap-[10%]">
           <h2
-            className="flex justify-center md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-amber-100 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
-            style={
-              window.innerWidth > 780
-                ? { textShadow: "-1px -1px 0px rgba(0, 0, 0, 1),1px 1px 0px rgba(50, 50, 50, 1),1.5px 1.5px 0px rgba(45, 45, 45, 1), 2px 2px 0px rgba(40, 40, 40, 1), 3px 3px 0px rgba(35, 35, 35, 1), 4px 4px 0px rgba(30, 30, 30, 1), 5px 5px 0px rgba(25, 25, 25, 1),  6px 6px 0px rgba(20, 20, 20, 1),  7px 7px 0px rgba(15, 15, 15, 1),  8px 8px 0px rgba(10, 10, 10, 1)"
-                }
-                : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }
-            }
+            className=" flex justify-center md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-gray-600 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
+           
           >
             {t("knowledge.technical_skills")}
           </h2>
@@ -167,24 +162,16 @@ export default function Skills({ id }) {
             </p>
           </span>
           <h2
-            className="flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-amber-100 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
-            style={
-              window.innerWidth > 780
-                ? { textShadow: "-1px -1px 0px rgba(0, 0, 0, 1),1px 1px 0px rgba(50, 50, 50, 1),1.5px 1.5px 0px rgba(45, 45, 45, 1), 2px 2px 0px rgba(40, 40, 40, 1), 3px 3px 0px rgba(35, 35, 35, 1), 4px 4px 0px rgba(30, 30, 30, 1), 5px 5px 0px rgba(25, 25, 25, 1),  6px 6px 0px rgba(20, 20, 20, 1),  7px 7px 0px rgba(15, 15, 15, 1),  8px 8px 0px rgba(10, 10, 10, 1)" }
-                : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }
-            }
+            className=" flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-gray-600 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
+            
           >
             {t("knowledge.soft_skills")}
           </h2>
         </div>
         <div className="w-[100%] flex md:flex-row flex-col mb-[20vh] gap-[10%]">
           <h2
-            className="flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-amber-100 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
-            style={
-              window.innerWidth > 780
-                ? { textShadow: "-1px -1px 0px rgba(0, 0, 0, 1),1px 1px 0px rgba(50, 50, 50, 1),1.5px 1.5px 0px rgba(45, 45, 45, 1), 2px 2px 0px rgba(40, 40, 40, 1), 3px 3px 0px rgba(35, 35, 35, 1), 4px 4px 0px rgba(30, 30, 30, 1), 5px 5px 0px rgba(25, 25, 25, 1),  6px 6px 0px rgba(20, 20, 20, 1),  7px 7px 0px rgba(15, 15, 15, 1),  8px 8px 0px rgba(10, 10, 10, 1)" }
-                : { textShadow: "1.5px 1.5px 1px rgba(0, 0, 0, 0.8)" }
-            }
+            className=" flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-gray-600 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
+         
           >
             {t("knowledge.lang_skills")}
           </h2>

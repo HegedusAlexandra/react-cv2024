@@ -1,4 +1,3 @@
-import React from "react";
 import globe from "../assets/simple_icon/globe.svg";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -13,43 +12,38 @@ export default function Landing({ id }) {
       id={id}
       className="flex md:flex-row flex-col justify-center items-center w-[100%] h-[100vh] md:pl-[30%] md:pr-[10%] bg-landing bg-cover bg-no-repeat"
     >
-      <div className="flex flex-col justify-start items-center md:w-[100%] w-[90%] md:bg-transparent md:pt-0 pt-[10vh] bg-[#ecc5c546] rounded-md font-roboto font-semibold  md:translate-y-0 translate-y-[4vh]">
-      {window.innerWidth < 780 && <div className="flex justify-center md:h-[64vh] h-[20vh] md:w-[60%] w-[100%] -translate-y-[4vh]">
-        <FlipPic />
-      </div> }
-        <div className="flex flex-row w-[100%] md:mb-[2vh] p-[3vw] md:p-0">        
+      <div className="flex flex-col gap-4 justify-center md:justify-start items-center md:w-[100%] w-[90%] md:bg-transparent md:pt-0 pt-[10vh] rounded-md font-roboto  md:translate-y-0 translate-y-[4vh]">
+        <div className="flex justify-center lg:hidden md:h-[64vh] h-[20vh] md:w-[60%] w-[100%] -translate-y-4">
+          <FlipPic />
+        </div>
+        <div className="flex flex-row items-center text-stone-700 gap-2 md:justify-start justify-center w-[100%]">
           <img
-            className="size-[3vh]"
+            src={globe}
+            alt="Location"
             width={24}
             height={24}
-            alt="globe"
-            src={globe}
+            className="opacity-60"
             loading="eager"
           />
-          <p className="mx-[1vh]">
-            {selectedLanguage === "it" ? " Udine" : " Budapest"}
-          </p>
+          <span>{selectedLanguage === "it" ? " Udine" : " Budapest"}</span>
         </div>
-        <div className="flex flex-col items-start md:w-[100%] w-[90%] bg-transparent rounded-md">
-          <p className="md:w-[80%] w-[100%] md:text-[5vh] text-[2.8vh] font-roboto font-semibold leading-[5vh] md:leading-[7vh]">
+        <div className="space-y-2 w-[100%]">
+          <p className="flex md:justify-start justify-center w-[100%] text-2xl text-stone-700 ">
             {t("landing.hello")}
           </p>
-          <h1>
-            <p className="w-[100%] md:text-[5vh] text-[2.8vh] font-roboto font-semibold leading-[5vh] md:leading-[5vh]">
-              {t("landing.iam")}
-            </p>
-            <p  style={{
-              textShadow:
-                "-1px -1px 0px rgba(50, 50, 50, 1),1px 1px 0px rgba(50, 50, 50, 1),1.5px 1.5px 0px rgba(45, 45, 45, 1), 2px 2px 0px rgba(40, 40, 40, 1), 3px 3px 0px rgba(35, 35, 35, 1), 4px 4px 0px rgba(30, 30, 30, 1), 5px 5px 0px rgba(25, 25, 25, 1),  6px 6px 0px rgba(20, 20, 20, 1),  7px 7px 0px rgba(15, 15, 15, 1),  8px 8px 0px rgba(10, 10, 10, 1)"
-            }} className="md:mt-[10vh] mt-[1vh] h-[30vh] md:text-[14vh] text-red-500 text-[9vh] font-roboto font-semibold md:mb-0 mb-[2vh] leading-[6vh] md:leading-[10vh]">
-              {t("landing.developer")}
-            </p>
-          </h1>
+          <p className="flex md:justify-start justify-center md:w-[60%] text-md text-stone-700 ">
+            {t("landing.long")}
+          </p>
         </div>
+        <h1 className="space-y-1 w-[100%]">
+          <p className="small-heading-shadow md:heading-shadow md:text-start text-center text-yellow-50 font-semibold md:text-8xl text-4xl">
+            {t("landing.developer")}
+          </p>
+          <p className="small-heading-shadow md:heading-shadow md:text-start text-center text-yellow-50 font-semibold md:text-4xl text-xl">
+            {t("landing.ecoinfo")}
+          </p>
+        </h1>
       </div>
-      {window.innerWidth > 780 && <div className="md:static absolute flex justify-center md:h-[64vh] h-[20vh] md:w-[60%] w-[100%] md:translate-x-[2vw] md:translate-y-[16vh] top-[6vh]">
-        <FlipPic />
-      </div> }
     </div>
   );
 }

@@ -39,11 +39,8 @@ export default function Introduction({ id }) {
           className="flex flex-col justify-start items-start w-[100%] md:rounded-md font-roboto mb-[2vh] mt-[4vh]"
         >
           <h2
-            className="md:text-[12vh] text-[6vh] font-bold text-[#fcefc0] my-[8vh] capitalize"
-            style={{
-              textShadow:
-                "-1px -1px 0px rgba(50, 50, 50, 1),1px 1px 0px rgba(50, 50, 50, 1),1.5px 1.5px 0px rgba(45, 45, 45, 1), 2px 2px 0px rgba(40, 40, 40, 1), 3px 3px 0px rgba(35, 35, 35, 1), 4px 4px 0px rgba(30, 30, 30, 1), 5px 5px 0px rgba(25, 25, 25, 1),  6px 6px 0px rgba(20, 20, 20, 1),  7px 7px 0px rgba(15, 15, 15, 1),  8px 8px 0px rgba(10, 10, 10, 1)"
-            }}
+            className=" md:text-[12vh] text-[6vh] font-bold text-gray-600 my-[8vh] capitalize"
+            
           >
             {t("menu.introduction")}
           </h2>
@@ -53,9 +50,17 @@ export default function Introduction({ id }) {
           variants={variants}
           initial="hiddenText"
           animate={textInView ? "visibleText" : "hiddenText"}
-          className="flex flex-row justify-start items-start w-[100%] md:rounded-md font-roboto md:mb-[10vh]"
+          className="flex flex-row justify-start items-start w-[100%] md:rounded-md font-roboto mb-[2vh]"
         >
           <p>{t("introduction.2")}</p>
+        </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hiddenText"
+          animate={textInView ? "visibleText" : "hiddenText"}
+          className="flex flex-row justify-start items-start w-[100%] md:rounded-md font-roboto md:mb-[10vh]"
+        >
+          <p>{t("introduction.3")}</p>
         </motion.div>
       </div>
       <motion.div

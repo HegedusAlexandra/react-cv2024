@@ -234,3 +234,11 @@ svg {
     border-right: 0px solid transparent; /* Adjust size by changing the value */
     border-top: 48vh solid #0C0A09; /* Adjust size by changing the value */
   }
+
+  .heading-shadow {
+    text-shadow: 1.5px 1.5px 0px rgba(45,45,45,1), 1px 1px 0px rgba(25,25,25,1), 2px 2px 0px rgba(20,20,20,1)
+  }
+  
+  .small-heading-shadow {
+    text-shadow: 1.5px 1.5px 0px rgba(45,45,45,0.7), 1px 1px 0px rgba(25,25,25,0.7)
+  }

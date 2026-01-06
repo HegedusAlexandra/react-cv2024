@@ -1,5 +1,3 @@
-import React from "react";
-import me from "../assets/pictures/me.jpg";
 import me_cartoon from "../assets/pictures/cartoon_me.jpg";
 
 export default function FlipPic() {
