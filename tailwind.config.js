@@ -18,7 +18,7 @@ module.exports = {
         'lemon': "url('./assets/pictures/lemon.jpg')",
         'abstract': "url('./assets/pictures/abstract.jpg')",
         'lemoncoconut': "url('./assets/pictures/lemon_coconut.jpg')",
-        'arrow': "url('./assets/pictures/arrow.jpg')",
+        'arrow': "url('./assets/pictures/explore.jpg')",
         'roll': "url('./assets/pictures/billboard.jpg')",
       },
       fontFamily: {
