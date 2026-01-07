@@ -40,9 +40,9 @@ export default function AnimatedIcons() {
   }, [controls, inView]);
 
   return (
-    <motion.div ref={ref} className="absolute overflow-hidden w-full flex flex-row items-start md:mb-[16vh] mb-[4vh] left-0 md:-translate-y-[20vh] -translate-y-[10vh]">
+    <motion.div ref={ref} className="absolute overflow-hidden w-full flex flex-row items-start left-0 md:-translate-y-64 -translate-y-32">
       <motion.div
-        className="flex flex-row flex-nowrap w-max gap-8"
+        className="flex flex-row flex-nowrap w-max gap-6"
         animate={{ x: ["0%", "-100%"] }}
         transition={{
           repeat: Infinity,
@@ -56,7 +56,7 @@ export default function AnimatedIcons() {
             width={150}
             height={150}
             loading="eager"
-            className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
+            className="md:size-[64px] size-[36px] mx-0 md:mx-[0vh]"
             alt={icon.alt}
             src={icon.src}
           />

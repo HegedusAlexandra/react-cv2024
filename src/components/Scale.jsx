@@ -7,36 +7,44 @@ export default function Scale({
   scaleWidth = 60,
   containerHeight = 4,
   scaleHeight = 80,
-  containerColor = "black",
-  scaleColor = "red-500"
+  containerColor = "#1f2933",
+  scaleColor = "#faf7f2"
 }) {
   const [scaleRef, scaleInView] = useInView({
     threshold: 0.3
   });
 
   const variants = {
-    hiddenScale: {
-      width: `${window.innerWidth > 780 ? '5' : '10'}%`,
-      backgroundColor: 'black',
-      transition: { duration: 1, ease: ["backIn", "backOut"] }
+    hidden: {
+      width: "10%",
+      backgroundColor: containerColor
     },
-    visibleScale: {
+    visible: {
       width: `${scaleWidth}%`,
-      backgroundColor:'orange',
-      transition: { duration: 1, ease: ["backIn", "backOut"] }
+      backgroundColor: scaleColor
     }
   };
 
   return (
     <div
-      className={`flex items-center px-1 w-[${containerWidth}%] md:h-[${containerHeight}vh] h-[2vh] bg-${containerColor} rounded-full`}
+      className="flex items-center px-1 rounded-full"
+      style={{
+        width: `${containerWidth}%`,
+        height: `${containerHeight}vh`,
+        backgroundColor: containerColor
+      }}
     >
       <motion.div
         ref={scaleRef}
-        animate={scaleInView ? "visibleScale" : "hiddenScale"}
         variants={variants}
-        className={`h-[${scaleHeight}%] bg-${scaleColor} rounded-full`}
-      ></motion.div>
+        initial="hidden"
+        animate={scaleInView ? "visible" : "hidden"}
+        transition={{ duration: 1, ease: "easeOut" }}
+        style={{
+          height: `${scaleHeight}%`
+        }}
+        className="rounded-full"
+      />
     </div>
   );
 }

@@ -28,9 +28,9 @@ export default function Introduction({ id }) {
   return (
     <div
       id={id}
-      className="flex md:flex-row flex-col justify-center items-center w-[100%] md:pl-[10%] md:pr-[10%] bg-[#fdfbf7] gap-[2vw]"
+      className="flex md:flex-row flex-col justify-center items-center w-[100%] md:pl-[10%] md:pr-[10%] bg-[#fdfbf7] gap-[2vw] text-stone-600"
     >
-      <div className="flex flex-col justify-center items-center md:w-[84%] w-[92%] text-[2vh] pt-[6vh] mb-[10vh]">
+      <div className="flex flex-col justify-center items-center md:w-[84%] w-[92%] text-base pt-[6vh] mb-[10vh]">
         <motion.div
           ref={textRef}
           initial="hiddenText"
@@ -39,7 +39,7 @@ export default function Introduction({ id }) {
           className="flex flex-col justify-start items-start w-[100%] md:rounded-md font-roboto mb-[2vh] mt-[4vh]"
         >
           <h2
-            className=" md:text-[12vh] text-[6vh] font-bold text-gray-600 my-[8vh] capitalize"
+            className=" md:text-5xl text-4xl font-bold  my-[8vh] capitalize"
             
           >
             {t("menu.introduction")}
@@ -68,7 +68,7 @@ export default function Introduction({ id }) {
         initial="hiddenLottie"
         animate={lottieInView ? "visibleLottie" : "hiddenLottie"}
         variants={variants}
-        className=" md:w-[40%] w-[92%] "
+        className=" md:w-[40%] w-[84%] md:m-0 mb-24"
       >
         {View}
       </motion.div>

@@ -1,227 +1,60 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { variants } from "../utils/animations";
-import { useInView } from "react-intersection-observer";
 import lamp from "../assets/pictures/lamp.png";
 import Scale from "../components/Scale";
 import { useTranslation } from "react-i18next";
 import AnimatedIcons from "../components/AnimatedIcons";
+import SkillCard from "../components/SkillCard";
+import LanguageSkillCard from "../components/LanguageSkillCard";
 
 export default function Skills({ id }) {
-
-  const [sectionRef, sectionInView] = useInView();
   const { t } = useTranslation();
 
   return (
-    <div
-
-      id={id}
-      className="flex flex-col w-[100%] font-montserrat text-[2.5vh] "
-    >
-      <div className="flex flex-col w-[100%] md:h-[84vh] h-[30vh] font-montserrat bg-[#FFC30B]">
+    <div id={id} className="flex flex-col w-[100%] font-montserrat text-lg ">
+      <div className="flex flex-col w-[100%] md:h-[84vh] h-[30vh] bg-[#FFC30B]">
         <motion.div className="w-[100%] flex flex-row">
           <img src={lamp} alt={lamp} className=" w-[100vw]" />
-          {/*  <div class="relative left-0 triangle"></div>
-          <div class="relative right-0 triangleRight"></div> */}
         </motion.div>
       </div>
-      <div className="flex flex-col w-[100%] font-montserrat bg-gradient-to-b from-[#FFC30B] to-[20%] to-[#fdfbf7] md:px-[9%] px-[4%]">
-       {/*  <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={variants}
-          className="flex flex-row items-start w-[100%] md:mb-[16vh] mb-[4vh]"
-        >
-          <div className="flex md:flex-row flex-wrap justify-between w-[100%]">
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0 "
-              alt="apollo"
-              src={apollo}
-            />
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
-              alt="graphql"
-              src={graphql}
-            />
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
-              alt="docker"
-              src={docker}
-            />
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
-              alt="figma"
-              src={figma}
-            />
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
-              alt="github"
-              src={github}
-            />
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
-              alt="html5"
-              src={html5}
-            />
-
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
-              alt="javascript"
-              src={javascript}
-            />
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
-              alt="nodedotjs"
-              src={nodedotjs}
-            />
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
-              alt="nextdotjs"
-              src={nextdotjs}
-            />
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
-              alt="react"
-              src={react}
-            />
-
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
-              alt="sass"
-              src={sass}
-            />
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className="md:size-[8vh] size-[7vh] mx-[2vh] md:mx-[0vh] mb-[3vh] md:mb-0"
-              alt="tailwindcss"
-              src={tailwindcss}
-            />
-          </div>
-        </motion.div> */}
-        <AnimatedIcons/>
-        <div className="w-[100%] flex md:flex-row flex-col mb-[20vh] gap-[10%]">
-          <h2
-            className=" flex justify-center md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-gray-600 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
-           
-          >
-            {t("knowledge.technical_skills")}
-          </h2>
-          <span className="flex flex-col md:w-[60%] w-[100%] h-[100%] gap-[2vh] text-stone-600">
-            <p className="font-bold text-stone-800">Experienced</p>
-            <p className="text-[2vh] md:text-[3vh]">
-              JavaScript, TypeScript, HTML5, React, React Native, CSS3, SASS,
-              Tailwind, Node.js, Figma, GraphQL, Apollo, Redux, Performance
-              Optimization, SEO Basics, Responsive design
-            </p>
-            <p className="font-bold text-stone-800">Familiar</p>
-            <p className="text-[2vh] md:text-[3vh]">
-              Python, PHP, SQL / MySQL, Docker,AWS, OAuth & JWT{" "}
-            </p>
-          </span>
-        </div>
-        <div className="w-[100%] flex md:flex-row flex-col-reverse mb-[20vh] gap-[10%]">
-          <span className="flex flex-col md:w-[70%] w-[100%] h-[100%] gap-[2vh]">
-            <p className="text-[2vh] md:text-[3vh] text-stone-600">
-              {t("knowledge.soft_skills_des")}
-            </p>
-          </span>
-          <h2
-            className=" flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-gray-600 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
-            
-          >
-            {t("knowledge.soft_skills")}
-          </h2>
-        </div>
-        <div className="w-[100%] flex md:flex-row flex-col mb-[20vh] gap-[10%]">
-          <h2
-            className=" flex md:justify-center justify-start md:items-center items-start md:text-[8vh] text-[6vh] font-bold text-gray-600 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-[10vh]"
-         
-          >
-            {t("knowledge.lang_skills")}
-          </h2>
-          <span className="flex flex-col md:w-[60%] w-[100%] h-[100%] gap-[2vh]">
-            <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
-              <div className="flex flex-row md:w-[40%]">
-                <p className=" w-[50%] text-[2vh] md:text-[2.5vh]">
-                  {t("knowledge.hun")}
-                </p>
-                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
-                  {t("knowledge.hun_level")}
-                </p>
-              </div>
-              <Scale scaleWidth={100} />
-            </span>
-            <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
-              <div className="md:w-[40%] flex flex-row">
-                <p className=" w-[50%] text-[2vh] md:text-[2.5vh]">
-                  {t("knowledge.eng")}
-                </p>
-                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
-                  {t("knowledge.eng_level")}
-                </p>
-              </div>
-              <Scale scaleWidth={90} />
-            </span>
-            <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
-              <div className="md:w-[40%] flex flex-row">
-                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
-                  {t("knowledge.ita")}
-                </p>
-                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
-                  {t("knowledge.ita_level")}
-                </p>
-              </div>
-              <Scale scaleWidth={22} />
-            </span>
-            <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
-              <div className="md:w-[40%] flex flex-row">
-                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
-                  {t("knowledge.ger")}
-                </p>
-                <p className="w-[50%] text-[2vh] md:text-[2.5vh]">
-                  {t("knowledge.ita_level")}
-                </p>
-              </div>
-              <Scale scaleWidth={10} />
-            </span>
-          </span>
-        </div>
+      <div className="flex flex-col w-[100%] text-stone-600 bg-gradient-to-b from-[#FFC30B] to-[20%] to-[#fdfbf7] md:px-[9%] px-[4%] md:pt-36">
+        <AnimatedIcons />
+        <SkillCard title={t("knowledge.technical_skills")}>
+          <h3 className="">Experienced</h3>
+          <h5 className="text-base ">
+            JavaScript, TypeScript, HTML5, React, React Native, CSS3, SASS,
+            Tailwind, Node.js, Figma, GraphQL, Apollo, Redux, Performance
+            Optimization, SEO Basics, Responsive design
+          </h5>
+          <h3 className="">Familiar</h3>
+          <h5 className="text-base ">
+            Python, PHP, SQL / MySQL, Docker,AWS, OAuth & JWT{" "}
+          </h5>
+        </SkillCard>
+        <SkillCard title={t("knowledge.soft_skills")}>
+          <p className="text-base">{t("knowledge.soft_skills_des")}</p>
+        </SkillCard>
+        <SkillCard title={t("knowledge.lang_skills")}>
+          <LanguageSkillCard
+            language={t("knowledge.hun")}
+            level={t("knowledge.hun_level")}
+            numlevel={100}
+          ></LanguageSkillCard>
+          <LanguageSkillCard
+            language={t("knowledge.eng")}
+            level={t("knowledge.eng_level")}
+            numlevel={90}
+          ></LanguageSkillCard>
+          <LanguageSkillCard
+            language={t("knowledge.ita")}
+            level={t("knowledge.ita_level")}
+            numlevel={22}
+          ></LanguageSkillCard>
+          <LanguageSkillCard
+            language={t("knowledge.ger")}
+            level={t("knowledge.ita_level")}
+            numlevel={10}
+          ></LanguageSkillCard>
+        </SkillCard>
       </div>
     </div>
   );
