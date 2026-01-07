@@ -11,7 +11,7 @@ export default function Project({ id }) {
   return (
     <section
       id={id}
-      className="flex justify-center w-full bg-[#fdfbf7] py-[10vh] px-12 md:px-32"
+      className="flex justify-center w-full bg-[#fdfbf7] py-[10vh] px-4 md:px-32"
     >
       <motion.div
         ref={ref}

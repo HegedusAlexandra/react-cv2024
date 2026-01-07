@@ -109,10 +109,10 @@ const resources = {
       menu: {
         home: "főoldal",
         "about me": "rólam",
-        projects: "fejlesztéseim",
+        projects: "munkáim",
         contact: "kontakt",
         wdp: "webfejlesztő portfólió",
-        skills: "Készségek",
+        skills: "készségek",
         knowledge: "tapasztalat, nyelvek, képzettség",
         introduction: "bemutatkozás"
       },

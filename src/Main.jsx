@@ -10,6 +10,7 @@ import Project from "./screens/Project";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import HelmetComp from "./components/HelmetComponent";
+import Footer from "./components/Footer";
 
 function Main() {
   const { slug } = useParams();
@@ -39,6 +40,7 @@ function Main() {
       <Introduction id={"introduction"} />
       <Skills id={"skills"} />
       <Project id={"project"} />
+      <Footer></Footer>
     </div>
   );
 }

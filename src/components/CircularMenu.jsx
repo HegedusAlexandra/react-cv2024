@@ -42,9 +42,9 @@ function CircularMenu() {
         id="circularMenu1"
         className={`circular-menu md:hidden ${isVisible && "visible"}`}
       >
-        {isVisible && <div className={`circular-menu-2`}> </div>}
-        {isVisible && <div className={`circular-menu-3`}> </div>}
-        {isVisible && <div className={`circular-menu-4`}> </div>}
+       {/*  {isVisible && <div className={`circular-menu-2`}> </div>}
+        {isVisible && <div className={`circular-menu-3`}> </div>} 
+        {isVisible && <div className={`circular-menu-4`}> </div>}*/}
 
         <motion.button
           whileHover={{ scale: 0.9, rotate: 10 }}
@@ -79,8 +79,8 @@ function CircularMenu() {
           className="items-wrapper"
         >
           {edge("about me")}
+          {edge("skills")}
           {edge("projects")}
-          {edge("contact")}
           <motion.a
             
             className="menu-item"
