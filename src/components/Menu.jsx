@@ -44,10 +44,10 @@ function Menu({screen}) {
           <motion.div
             whileHover={{ scale: 1.035, color: "#ffa" }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
-            key={"contact"}
+            key={"skills"}
             className={`${screen === 'projects' ? 'text-white' : 'text-black'} uppercase text-[2vh] invisible md:visible mx-auto`}
           >
-            <NavLink to="/contact">{t("menu.contact")}</NavLink>
+            <NavLink to="/skills">{t("menu.skills")}</NavLink>
           </motion.div>
         </ul>
         <div className="w-[22%] flex justify-end">
