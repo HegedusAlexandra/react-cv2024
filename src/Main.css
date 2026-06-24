@@ -103,8 +103,8 @@ svg {
     position: absolute;
     z-index: 1002;
     display: block;
-    width:8vh;
-    height: 8vh;
+    width:6vh;
+    height: 6.5vh;
     border-radius: 50%;
     color: hsl(0, 0%, 100%);
     text-align: center;

@@ -12,7 +12,7 @@ const LanguageDropdown = ({screen}) => {
   // Assuming Language enum is imported or defined somewhere in this file
   return (
     <select
-      className={`text-black md:absolute static z-30 text-right text-[2vh] flex-1 p-4 flex justify-end items-end border-none uppercase`}
+      className={`text-black md:absolute static z-30 text-right text-[2vh] flex-1 p-4 border-none uppercase`}
       value={selectedLanguage}
       onChange={handleChange}
     >

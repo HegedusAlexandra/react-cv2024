@@ -79,6 +79,12 @@ export default function Introduction({ id }) {
             <p>{t("introduction.2")}</p>
 
             <p>{t("introduction.3")}</p>
+
+            <p>{t("introduction.4")}</p>
+
+            <p>{t("introduction.5")}</p>
+
+            <p>{t("introduction.6")}</p>
           </div>
         </section>
       </div>

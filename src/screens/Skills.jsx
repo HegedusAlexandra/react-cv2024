@@ -8,45 +8,55 @@ export default function Skills({ id }) {
 
   return (
     <div id={id} className="w-[100%] bg-gray-100">
-      <div id={id} className="flex flex-col w-[100%] text-lg md:px-16 px-1">
+      <div id={id} className="flex flex-col w-[100%] md:px-16 px-1 text-sm">
         <Headline
           title={t("menu.skills")}
           description={t("knowledge.description")}
         />
         <div className="flex flex-col w-[100%] bg-gray-100 border-x-2 border-b-2 border-gray-700 ">
           <SkillCard title={t("knowledge.technical_skills")}>
-            <div className="h-[100%] flex md:flex-row  flex-col ">
-              <div className="hidden md:flex flex-col md:w-[10vw] h-full border-r-2 border-gray-300">
-                <h3 className="flex-1 text-center content-center p-4 border-b-2 border-gray-700">
-                  Experienced
-                </h3>
-                <h3 className="flex-1 text-center content-center p-4">
-                  Familiar
-                </h3>
-              </div>
-              <div className="flex flex-col">
-                <h3 className=" static md:hidden flex-1  content-center p-4 border-b-2 border-gray-200 md:text-base text-sm">
-                  Experienced
-                </h3>
+            <div className="h-[100%] flex  flex-col ">
+              <h3 className=" static  flex-1  content-center p-4 border-b-2 border-gray-200  text-sm h-[50%]">
+                Programming
+              </h3>
 
-                <h5 className="flex-1 content-center p-4 border-b-2 border-gray-700 md:text-base text-sm">
-                  JavaScript, TypeScript, HTML5, React, React Native, CSS3,
-                  SASS, Tailwind, Node.js, Figma, GraphQL, Apollo, Redux,
-                  Performance Optimization, SEO Basics, Responsive design
-                </h5>
-                <h3 className=" static md:hidden flex-1  content-center p-4 border-b-2 border-gray-200 md:text-base text-sm">
-                  Familiar
-                </h3>
-                <h5 className="flex-1 content-center p-4 md:text-base text-sm">
-                  Python, PHP, SQL / MySQL, Docker,AWS, OAuth & JWT{" "}
-                </h5>
-              </div>
+              <h5 className="flex-1 content-center p-4 border-b-2 border-gray-700 text-sm w-full">
+                JavaScript, TypeScript, <br />
+                React, React Native, <br />
+                HTML5, CSS3, SASS, Tailwind, <br />
+                Figma,Responsive design, <br />
+                GraphQL, Next.js, Redux, <br />
+                Supabase, PostgreSQL <br />
+                Git, GitLab, GitHub <br />
+                Agile / Scrum <br />
+                Basics : Python, PHP, Kotlin <br />
+                Performance Optimization, SEO, Webmarketing
+              </h5>
+
+              <h3 className=" static  flex-1  content-center p-4 border-b-2 border-gray-200  text-sm h-[50%]">
+                Data and Business
+              </h3>
+
+              <h5 className="flex-1 content-center p-4 text-sm h-[50%]">
+                Statistics <br /> Data Analysis <br /> Power BI <br />
+                Process Optimization
+              </h5>
             </div>
           </SkillCard>
           <SkillCard title={t("knowledge.soft_skills")}>
-            <p className="flex-1 p-4 content-center text-sm">
-              {t("knowledge.soft_skills_des")}
-            </p>
+            <div className="h-[100%] flex  flex-col ">
+              <h3 className=" static  flex-1  content-center p-4 border-b-2 border-gray-200  text-sm h-[50%]">
+                {t("knowledge.soft_skills_des")}               
+              </h3>
+              <h5 className="flex-1 content-center p-4 border-b-2 border-gray-700 text-sm w-full">
+                Problem Solving <br />
+                Leadership <br />
+                Communication <br />
+                Teamwork <br />
+                Adaptability <br />
+                Analytical Thinking
+              </h5>
+            </div>
           </SkillCard>
           <SkillCard title={t("knowledge.lang_skills")}>
             <div className="">

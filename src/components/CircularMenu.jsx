@@ -58,18 +58,18 @@ function CircularMenu() {
           <div
             className={
               isVisible
-                ? "absolute h-[10%] w-[70%] mx-[5%] bg-black rounded-lg rotate-45"
-                : "h-[10%] w-[70%] my-[10%] bg-black rounded-lg"
+                ? "absolute h-[6%] w-[70%] mx-[5%] bg-black rounded-lg rotate-45"
+                : "h-[6%] w-[70%] my-[6%] bg-black rounded-lg"
             }
           />
           {!isVisible && (
-            <div className="h-[10%] w-[70%] my-[10%]  bg-black rounded-lg " />
+            <div className="h-[6%] w-[70%] my-[10%]  bg-black rounded-lg " />
           )}
           <div
             className={
               isVisible
-                ? "absolute h-[10%] w-[70%] mx-[5%] bg-black rounded-lg -rotate-45"
-                : "h-[10%] w-[70%] my-[1%]  bg-black rounded-lg"
+                ? "absolute h-[6%] w-[70%] mx-[5%] bg-black rounded-lg -rotate-65"
+                : "h-[6%] w-[70%] my-[1%]  bg-black rounded-lg"
             }
           />
         </motion.button>

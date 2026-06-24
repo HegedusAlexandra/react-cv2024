@@ -82,7 +82,7 @@ function Menu({ screen }) {
           </motion.div>
         </ul>
 
-        <div className="border-r-2 border-black w-[6%] h-full flex justify-end items-center">
+        <div className="border-r-2 border-black w-[6%] h-full flex justify-center items-center">
           <LanguageDropdown screen={screen} />
         </div>
       </div>
