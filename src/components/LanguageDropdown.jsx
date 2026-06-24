@@ -12,13 +12,13 @@ const LanguageDropdown = ({screen}) => {
   // Assuming Language enum is imported or defined somewhere in this file
   return (
     <select
-      className={`${screen === 'projects' ? 'text-white' : 'text-black'} absolute z-30 md:static md:right-2 right-[6%] md:top-6 top-[4vh] md:w-[4vw] md:text-[12px] text-[6vw] p-2 flex justify-end items-end border-none uppercase`}
+      className={`text-black md:absolute static z-30 text-right text-[2vh] flex-1 p-4 flex justify-end items-end border-none uppercase`}
       value={selectedLanguage}
       onChange={handleChange}
     >
       
       {Object.entries(Language).map(([key, value]) => (
-        <option key={value} value={key}>{key}</option>
+        <option key={value} value={key} className=' bg-gray-200'>{key}</option>
       ))}
     </select>
   );

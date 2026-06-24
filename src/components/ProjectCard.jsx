@@ -1,11 +1,10 @@
-import React ,{useEffect} from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import githubpic from "../assets/simple_icon/github.svg";
-import { motion, useAnimation } from "framer-motion";
-import { variants } from "../utils/animations";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 export default function ProjectCard({
+
   link,
   github,
   background,
@@ -13,52 +12,54 @@ export default function ProjectCard({
   description
 }) {
   const { t } = useTranslation();
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visibleCard");
-    }
-  }, [controls, inView]);
 
   return (
-    <motion.a
-    target="blank"
-    ref={ref}
-    initial="hidden"
-    animate={controls}
-    variants={variants}
-      href={link}
-      className={`bg-stone-500 p-2 mt-[20vh] mb-[5vh] mx-[4%] md:mx-[4%] rounded-md shadow-[3px_5px_16px_5px_rgba(0,0,0,0.6)] snap-child`}
-    >
-      <div
-        className={`w-[100%] md:h-[60vh] h-[40vh] ${background} bg-top bg-cover rounded-md`}
-      />
-      <div className="w-[100%] pt-1 text-stone-100 font-opensans">
-        <div className="flex justify-between items-center w-[100%] pt-1 text-stone-100 font-opensans">
-          <h2 className="font-opensans uppercase font-bold text-[4vh]">
-            {t(headline)}
-          </h2>
-          {(background === 'bg-OKS' || background === 'bg-WA' || background === 'bg-BANK' || background === 'bg-SP') && <motion.a
-           target="blank"
-            whileHover={{ scale: 1.6, backgroundColor: "#F7C003" }}
-            className=" flex justify-center items-center size-[3.8vh] rounded-full mr-[2vh] "
-            transition={{ type: "spring", stiffness: 400, damping: 20 }}
-            href={github}
-          >
-            <img
-              width={150}
-              height={150}
-              loading="eager"
-              className=" size-[3.2vh]"
-              alt="github"
-              src={githubpic}
-            />
-          </motion.a>}
+    <div key={background} className={`${headline  ? "flex" : "hidden"} md:flex flex-col justify-between min-h-[80vh]  border border-gray-700`}>
+      <h2 className="mt-[4vh] font-bold text-[4vh] md:text-gray-800 text-gray-600 p-4 leading-10 tracking-tight">
+        {t(headline)}
+      </h2>
+      {background && (
+        <div
+          className={` md:h-[30vh] h-[30vh]  mx-4 ${background} bg-top bg-cover bg-gray-500 shadow-[0px_6px_6px_2px_rgba(0,0,0,0.6)] `}
+        />
+      )}
+      {headline && (
+        <div className="flex-1 flex flex-col items-start w-[100%] ">
+          <p className="flex-1 md:text-gray-800 text-gray-600 text-sm p-4">
+            {t(description)}
+          </p>
+          <div className=" flex flex-row justify-between items-center w-[100%] pl-4 text-gray-100  border-t-2 border-gray-800">
+            <motion.a
+              target="blank"
+              whileHover={{ scale: 1.1, backgroundColor: "#F6F6F6" }}
+              className={`flex justify-center items-center size-[3.8vh] rounded-full mr-[2vh]  ${
+                github === "" && "hidden"
+              }`}
+              transition={{ type: "spring", stiffness: 400, damping: 20 }}
+              href={github}
+            >
+              <img
+                width={150}
+                height={150}
+                loading="lazy"
+                className=" size-[3.2vh]"
+                alt="github"
+                src={githubpic}
+              />
+            </motion.a>
+
+            <a target="blank" href={link}>
+              <motion.button
+                whileHover={{ scale: 1.05, backgroundColor: "#464646" }}
+                className="flex flex-row justify-center items-center bg-gray-900 px-6 py-2 text-gray-100 uppercase gap-4"
+              >
+                {t("projects.check")}
+                <span className="material-symbols-outlined">arrow_outward</span>
+              </motion.button>
+            </a>
+          </div>
         </div>
-        <p className="text-stone-400">{t(description)}</p>
-      </div>
-    </motion.a>
+      )}
+    </div>
   );
 }

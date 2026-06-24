@@ -28,5 +28,7 @@ export const allCardDetails = [
       github: "https://github.com/HegedusAlexandra/small_projects",
       background: "bg-SP",
       headline: "projects.SP-headline",
-      description:"projects.SP-description"}
+      description:"projects.SP-description"},
+    {
+      }
   ];

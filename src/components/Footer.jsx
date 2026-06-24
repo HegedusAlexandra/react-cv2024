@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Footer({id}) {
   return (
-     <footer id={id} className="flex flex-col justify-center items-center  w-[100%] px-[4%] h-[32vh] bg-stone-600">
-      <h2 className="md:text-[14vh] text-[3vh] font-bold text-yellow-50" style={window.innerWidth > 780 ? { textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" } : {textShadow: '2px 2px 1px rgba(0, 0, 0, 0.6)'}}>Alexandra's Portfolio</h2>
+     <footer id={id} className="flex flex-col justify-center items-center w-[100%] px-[4%] h-[50vh] bg-gray-800 text-gray-100">
+      <h2 className="md:text-[14vh] text-[3vh] font-bold " >Alexandra's Portfolio</h2>
       <p className="pb-[1vh]">email: h.alexa.dev@gmail.com</p>
-      <p className="pb-[1vh]">&copy; Copyright 2024 Hegedüs Alexandra</p>
+      <p className="pb-[1vh]">&copy; Copyright 2026 Hegedüs Alexandra</p>
     </footer>
   )
 }

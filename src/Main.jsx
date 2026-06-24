@@ -2,19 +2,18 @@
 import { useEffect } from "react";
 import "./Main.css";
 import Landing from "./screens/Landing";
-import Skills from "./screens/Skills";
 import Menu from "./components/Menu";
 import CircularMenu from "./components/CircularMenu";
 import Introduction from "./screens/Introduction";
-import Project from "./screens/Project";
 import { useParams } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 import HelmetComp from "./components/HelmetComponent";
 import Footer from "./components/Footer";
+import Projects from "./screens/Projects";
+import Skills from "./screens/Skills"
 
 function Main() {
   const { slug } = useParams();
-  const { t } = useTranslation();
+
 
   console.log(
     "Welcome to my page, if you have any question or just want to say hello, please don't hesitate to contact me! :)"
@@ -22,10 +21,10 @@ function Main() {
   console.log("====================================");
 
   useEffect(() => {
-    scrollToSection(slug);
+    scrollToarticle(slug);
   }, [slug]);
 
-  const scrollToSection = (slug) => {
+  const scrollToarticle = (slug) => {
     const element = document.getElementById(slug);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -33,15 +32,31 @@ function Main() {
   };
 
   return (
-    <div className="flex flex-col w-[100%]  ">
+    <main className="flex flex-col w-full font-opensans">
       <HelmetComp title={"helmet.main"} url="" content={"helmet.pro_desc"} />
-      {window.innerWidth > 780 ? <Menu /> : <CircularMenu />}
-      <Landing id={"landing"} />
-      <Introduction id={"introduction"} />
-      <Skills id={"skills"} />
-      <Project id={"project"} />
+      
+       <Menu />  
+       <CircularMenu />
+      
+      <article id="landing">
+        <Landing />
+      </article>
+
+      <article id="introduction">
+        <Introduction />
+      </article>
+
+    <article id="skills">
+        <Skills />
+      </article> 
+
+      <article id="projects">
+        <Projects />
+      </article>
+     
       <Footer></Footer>
-    </div>
+
+    </main>
   );
 }
 

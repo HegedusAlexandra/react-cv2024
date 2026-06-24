@@ -1,7 +1,7 @@
 const fs = require('fs');
 const xmlbuilder = require('xmlbuilder');
 
-const routes = ['/','/projects']; // List your routes here
+const routes = ['/',]; // List your routes here
 const domain = 'https://www.alexahegedus.com';
 
 const urlset = xmlbuilder.create('urlset', { encoding: 'UTF-8' })

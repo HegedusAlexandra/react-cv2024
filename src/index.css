@@ -13,7 +13,6 @@ html,body {
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   outline: none;
   box-sizing: border-box;
   background: transparent;
@@ -51,4 +50,12 @@ textarea,
 select {
   appearance: none !important;
   border-radius: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }

@@ -17,57 +17,25 @@ const resources = {
       },
       landing: {
         hello: "Hello, I’m Alexandra",
-        developer: "frontend developer",
+        developer: "junior programmer & analyst",
         ecoinfo: "with a business informatics background",
         long: "I specialize in building clear, responsive web interfaces with a focus on usability and structure. Explore my projects and feel free to get in touch."
       },
       introduction: {
+        description:"Frontend developer passionate about building modern, user-focused web applications. Always eager to learn new technologies and improve my skills.",
         more: "read more",
         1: "My name is Alexandra, and as an enthusiastic beginner frontend developer, I have more than a year of experience in the world of web technologies. I am currently actively expanding my knowledge in both practical and theoretical areas while studying business informatics at university. Over the past year, I have participated in numerous projects. I am proud to be able to create dynamic and responsive websites that are not only aesthetically appealing but also cater to user needs.",
         2: "I continuously strive to stay up-to-date with the latest frontend technologies and trends, regularly participating in online courses and workshops. I believe that continuous learning and development are crucial in the technology sector, and I am motivated to further expand my professional knowledge. My goal is to be part of a team where I can share my experiences and work together on exciting projects while gaining further experience. I believe that the combination of creativity, teamwork, and technological innovation can achieve truly impressive results. I am excited to see what challenges and opportunities I will encounter in the future in the field of frontend development."
       },
-      contact: {
-        namemust: "name is required",
-        nameshort: "name is too short",
-        onlyalpha:
-          "only alphanumeric characters and spaces are allowed in the name",
-        invalidemail: "invalid email",
-        emailmust: "email is required",
-        invalidtelephone: "Invalid telephone number",
-        telephoneshort: "telephone number is too short",
-        telephonelong: "telephone number is too long",
-        telephonemust: "telephone is required for call preference",
-        onlyreg: "only regular characters are allowed in the message",
-        "privacy policy not accepted": "Privacy policy not accepted",
-        "captcha not solved": "Captcha not solved",
-        "form submitted successfully": "Form Successfully Submitted",
-        "an error occurred'! Please try again in few minutes":
-          "Error Occurred. Please Retry Shortly",
-        "submission failed, please try again":
-          "Submission Failed. Please Retry",
-        name: "name",
-        text: "text",
-        email: "email",
-        tel: "tel",
-        mobile: "mobile",
-        message: "message",
-        pref: "Please let us know how you'd prefer to be contacted",
-        understand: "I Agree to the",
-        "privacy policy": "privacy policy",
-        "the privacy policy": "privacy policy",
-        submit: "submit",
-        "CONTACT ME": "CONTACT ME",
-        lets: "let's speak",
-        thank: "Thank you for the interest soon I will get in touch with you!"
-      },
       helmet: {
-        main: "Portfolio",
+        main: "Alexandra Hegedüs | Front-End Developer & Data Analyst",
         projects: "Projects",
         pro_desc:
           "Explore my portfolio, showcases my initial projects, each crafted to provide a glimpse into my journey and growth in web development. ",
         h1: "I warmly invite you to explore my projects."
       },
       knowledge: {
+        description:"Beyond technical expertise, I value continuous learning, problem-solving, and effective collaboration. The skills listed here represent the areas I rely on in my daily work and continuously improve as I grow as a developer.",
         technical_skills: "Technical Skills",
         soft_skills: "Soft Skills",
         lang_skills: "Language Skills",
@@ -86,6 +54,8 @@ const resources = {
         frontend: "Frontend Development - Mobile app and Website"
       },
       projects: {
+        description:"These private projects reflect my development journey and the technologies I enjoy working with most. Each application was built to solve a real-world problem while providing an opportunity to learn and apply new tools, frameworks, and best practices.",
+        "check":"check it out",
         "PAT-headline": "My Patissier Portfolio",
         "PAT-description":
           "This is my own Patissier Portfolio site made with React and a lot of white chocolate",
@@ -118,60 +88,26 @@ const resources = {
       },
       landing: {
         hello: "Üdvözöllek, Alexandra vagyok",
-        developer: "frontend fejlesztő",
+        developer: "junior programozó & analyst",
         ecoinfo: "gazdaságinformatikai háttérrel",
         long: "Frontend fejlesztéssel foglalkozom, átlátható és felhasználóbarát felületeket tervezek és fejlesztek. Nézd meg a projektjeimet, és vedd fel velem a kapcsolatot."
       },
       introduction: {
+        description:"Frontend fejlesztőként modern, felhasználóközpontú webalkalmazások készítésére törekszem. Szenvedélyem az új technológiák felfedezése és a folyamatos fejlődés.",
         more: "tovább olvasom",
-        1: "A nevem Alexandra, és kezdő frontend fejlesztőként több mint egy éves tapasztalattal rendelkezem a webes technológiák világában. A harmadik évemet fejezem be az egyetemen ahol gazdaságinformatikát tanulok és várhatóan 2026 végén végzek. Régebben cukrász vezetőként és menedzserként dolgoztam, de mindig nagyobb kihívásra vágytam. Angolul folyékonyan beszélek, főleg mivel mindennap használom és jelenleg az olaszt tanulom.",
+        1: "A nevem Alexandra, és kezdő software developer ként több mint egy éves tapasztalattal rendelkezem a webes technológiák világában. A harmadik évemet fejezem be az egyetemen ahol gazdaságinformatikát tanulok és várhatóan 2026 végén végzek. Régebben cukrász vezetőként és menedzserként dolgoztam, de mindig nagyobb kihívásra vágytam. Angolul folyékonyan beszélek, főleg mivel mindennap használom és jelenleg az olaszt tanulom.",
         2: "Folyamatosan törekszem arra, hogy naprakész maradjak a legújabb frontend technológiák és trendek terén. Hiszem, hogy a folyamatos tanulás és fejlődés kulcsfontosságú , és motivált vagyok abban, hogy tovább bővítsem szakmai tudásomat. ",
         3: "Hosszabb távon a frontend fejlesztés mellett a mesterséges intelligencia és az adatelemzés irányába szeretném bővíteni szakmai tudásomat."
       },
-      contact: {
-        namemust: "A név megadása kötelező",
-        nameshort: "A név túl rövid",
-        onlyalpha:
-          "A névben csak alfanumerikus karakterek és szóközök engedélyezettek",
-        invalidemail: "Érvénytelen e-mail cím",
-        emailmust: "E-mail megadása kötelező",
-        invalidtelephone: "Érvénytelen telefonszám",
-        telephoneshort: "A telefonszám túl rövid",
-        telephonelong: "A telefonszám túl hosszú",
-        telephonemust:
-          "Hívási preferencia esetén a telefonszám megadása kötelező",
-        onlyreg: "Az üzenetben csak normál karakterek engedélyezettek",
-        "privacy policy not accepted":
-          "Adatvédelmi irányelvek nincsenek elfogadva",
-        "captcha not solved": "Captcha nincs megoldva",
-        "form submitted successfully": "Az űrlap sikeresen elküldve",
-        "an error occurred! Please try again in few minutes":
-          "Hiba történt! Kérjük, próbálja újra néhány perc múlva",
-        "submission failed, please try again":
-          "A beküldés nem sikerült, kérjük, próbálja újra",
-        name: "név",
-        text: "szöveg",
-        email: "e-mail",
-        tel: "telefon",
-        mobile: "mobil",
-        message: "üzenet",
-        pref: "E-mailben vagy telefonon , szeretné felvenni a kapcsolatot?",
-        understand: "Igen, megértettem és elfogadom az",
-        "privacy policy": "adatvédelmi irányelvek",
-        "the privacy policy": "adatvédelmi irányelveket",
-        submit: "küldés",
-        "CONTACT ME": "Lépjünk kapcsolatba",
-        lets: "Beszéljünk!",
-        thank: "Köszönöm az érdeklődést,hamarosan jelentkezem!"
-      },
       helmet: {
         projects: "Projektek",
-        main: "Portfolio",
+        main: "Alexandra Hegedüs | Front-End Developer & Data Analyst",
         pro_desc:
           "Fedezd fel a portfólióm amely bemutatja kezdeti projektjeimet, mindegyiket úgy alkottam meg, hogy betekintést nyújtsanak a fejlődésemben a webfejlesztés terén. ​",
         h1: "Szeretettel meghívlak, hogy nézd meg projektjeimet."
       },
       knowledge: {
+        description:"A technikai tudás mellett fontosnak tartom a folyamatos fejlődést, a problémamegoldást és a hatékony együttműködést. Az itt felsorolt készségek azok a területek, amelyekre a mindennapi munkám során építek, és amelyeket folyamatosan fejlesztek.",
         technical_skills: "Technikai kompetenciák",
         soft_skills: "Soft Skillek",
         lang_skills: "Nyelvtudás",
@@ -190,6 +126,8 @@ const resources = {
         frontend: "Frontend Fejlesztés - Mobil app és Weblap"
       },
       projects: {
+        description:"Ezek a privát projektek tükrözik kezdő fejlesztői utamat és azokat a technológiákat, amelyekkel a legszívesebben dolgozom. Minden alkalmazás egy-egy valós probléma megoldására készült, miközben lehetőséget adott új eszközök és módszerek elsajátítására. A munkahelyeimen végzett munkámat nem oszthatom meg. ",
+        "check":"megnézem",
         "GF-headline": "GolfRacks",
         "GF-description":
           "A GolfRacks egy mobilalkalmazás-projekt (React Native-ben készült), amelyben aktívan részt vettem mint a Vamosoft fejlesztője. A projekt túlmutat magán az alkalmazáson, egy egyszerű weboldalt is magában foglal, amelynek célja az alkalmazás letöltésének megkönnyítése asztali környezetből.",
@@ -225,58 +163,25 @@ const resources = {
       },
       landing: {
         hello: "Ciao, sono Alexandra",
-        developer: "frontend developer",
+        developer: "junior programmatrice & analista",
         ecoinfo: "con background in informatica gestionale",
         long: "Mi occupo di sviluppo frontend, creando interfacce web chiare e responsive con attenzione all’usabilità. Esplora i miei progetti e contattami liberamente."
       },
       introduction: {
+        description:"Sviluppatrice frontend appassionata della creazione di applicazioni web moderne e orientate all'utente. Sempre motivata a imparare nuove tecnologie e a migliorare le mie competenze.",
         more: "continuo a leggere",
         1: "Mi chiamo Alexandra e, come sviluppatrice frontend principiante entusiasta, ho più di un anno di esperienza nel mondo delle tecnologie web. Attualmente sto attivamente ampliando le mie conoscenze sia nelle aree pratiche che teoriche mentre studio informatica aziendale all'università. Nell'ultimo anno, ho partecipato a numerosi progetti. Sono orgogliosa di essere in grado di creare siti web dinamici e responsivi che non sono solo esteticamente attraenti ma si adattano anche alle esigenze degli utenti.",
         2: "Mi impegno costantemente a rimanere aggiornata sulle ultime tecnologie e tendenze frontend, partecipando regolarmente a corsi online e workshop. Credo che l'apprendimento continuo e lo sviluppo siano cruciali nel settore tecnologico, e sono motivata ad ampliare ulteriormente le mie conoscenze professionali. Il mio obiettivo è far parte di un team dove posso condividere le mie esperienze precedenti e lavorare insieme su progetti eccitanti, acquisendo nel contempo ulteriore esperienza. Credo che la combinazione di creatività, lavoro di squadra e innovazione tecnologica possa raggiungere risultati veramente impressionanti. Sono entusiasta di scoprire quali sfide e opportunità incontrerò in futuro nel campo dello sviluppo frontend."
       },
-      contact: {
-        namemust: "Il nome è richiesto",
-        nameshort: "Il nome è troppo corto",
-        onlyalpha:
-          "Nel nome sono consentiti solo caratteri alfanumerici e spazi",
-        invalidemail: "E-mail non valida",
-        emailmust: "L'e-mail è richiesta",
-        invalidtelephone: "Numero di telefono non valido",
-        telephoneshort: "Il numero di telefono è troppo corto",
-        telephonelong: "Il numero di telefono è troppo lungo",
-        telephonemust: "Il telefono è richiesto per la preferenza di chiamata",
-        onlyreg: "Nel messaggio sono consentiti solo caratteri regolari",
-        "privacy policy not accepted":
-          "Informativa sulla privacy non accettata",
-        "captcha not solved": "Captcha non risolto",
-        "form submitted successfully":
-          "La richiesta è stata inviata con successo",
-        "an error occurred! Please try again in few minutes":
-          "Si è verificato un errore! Riprova tra qualche minuto",
-        "submission failed, please try again": "Invio non riuscito, riprova",
-        name: "nome",
-        text: "testo",
-        email: "email",
-        tel: "telefono",
-        mobile: "cellulare",
-        message: "messaggio",
-        pref: "Fateci sapere come preferireste essere contattati",
-        understand: "Capisco e accetto l'",
-        "privacy policy": "informativa sulla privacy",
-        "the privacy policy": "informativa sulla privacy",
-        submit: "invia",
-        "CONTACT ME": "CONTATTI",
-        lets: "sentiamoci",
-        thank: "grazie per l'interesse, presto sarai ricontattato"
-      },
       helmet: {
         projects: "Progetti",
-        main: "Portfolio",
+        main: "Alexandra Hegedüs | Front-End Developer & Data Analyst",
         pro_desc:
           "Esplora il mio portfolio mette in mostra i miei primi progetti, ognuno creato per offrire uno sguardo al mio viaggio e alla mia crescita nello sviluppo web. ​",
         h1: "Vi invito calorosamente a esplorare i miei progetti ​"
       },
       knowledge: {
+        description:"Oltre alle competenze tecniche, considero fondamentali l'apprendimento continuo, la capacità di risolvere problemi e la collaborazione efficace. Le competenze elencate qui rappresentano le aree su cui faccio affidamento ogni giorno e che continuo a sviluppare nel mio percorso professionale.",
         technical_skills: "Competenze Tecniche",
         soft_skills: "Competenze Trasversali",
         lang_skills: "Competenze Linguistiche",
@@ -295,6 +200,8 @@ const resources = {
         frontend: "Sviluppo Frontend - App mobile e Sito web"
       },
       projects: {
+        description:"Questi progetti rappresentano il mio percorso come sviluppatrice e le tecnologie con cui mi piace lavorare. Ogni applicazione è stata creata per risolvere problemi reali e allo stesso tempo approfondire nuove competenze e strumenti di sviluppo.",
+        "check":"check it out",
         "GF-headline": "GolfRacks",
         "GF-description":
           "GolfRacks rappresenta un progetto di applicazione mobile (realizzato con React Native) in cui ho partecipato attivamente come sviluppatore di Vamosoft. Il progetto va oltre l'applicazione stessa, incorporando un sito web semplice progettato per facilitare il download dell'app da un ambiente desktop.",

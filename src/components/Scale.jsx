@@ -7,8 +7,8 @@ export default function Scale({
   scaleWidth = 60,
   containerHeight = 4,
   scaleHeight = 80,
-  containerColor = "#1f2933",
-  scaleColor = "#faf7f2"
+  containerColor = "#374151",
+  scaleColor = "#F3F4F6"
 }) {
   const [scaleRef, scaleInView] = useInView({
     threshold: 0.3
@@ -27,7 +27,7 @@ export default function Scale({
 
   return (
     <div
-      className="flex items-center px-1 rounded-full"
+      className="min-h-[5vh] flex items-center px-1"
       style={{
         width: `${containerWidth}%`,
         height: `${containerHeight}vh`,
@@ -43,7 +43,7 @@ export default function Scale({
         style={{
           height: `${scaleHeight}%`
         }}
-        className="rounded-full"
+        className="bg-concrete2 bg-cover"
       />
     </div>
   );

@@ -1,7 +1,6 @@
 import React, { useState, useCallback, memo, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import LanguageDropdown from "./LanguageDropdown";
 import { useScrollPosition } from "../hooks/position";
 import { NavLink } from "react-router-dom";
 import linkedin from "../assets/simple_icon/linkedin.svg";
@@ -36,7 +35,7 @@ function CircularMenu() {
 
   return (
     <div
-      className={`flex flex-row w-[100%] justify-between items-center md:hidden`}
+      className={`flex md:flex-row  flex-col w-[100%] justify-between items-center md:hidden`}
     >
       <div
         id="circularMenu1"
@@ -60,17 +59,17 @@ function CircularMenu() {
             className={
               isVisible
                 ? "absolute h-[10%] w-[70%] mx-[5%] bg-black rounded-lg rotate-45"
-                : "h-[10%] w-[70%] my-[10%] mx-[16px] bg-black rounded-lg"
+                : "h-[10%] w-[70%] my-[10%] bg-black rounded-lg"
             }
           />
           {!isVisible && (
-            <div className="h-[10%] w-[70%] my-[10%] mx-[5%] bg-black rounded-lg " />
+            <div className="h-[10%] w-[70%] my-[10%]  bg-black rounded-lg " />
           )}
           <div
             className={
               isVisible
                 ? "absolute h-[10%] w-[70%] mx-[5%] bg-black rounded-lg -rotate-45"
-                : "h-[10%] w-[70%] my-[1%] mx-[16px] bg-black rounded-lg"
+                : "h-[10%] w-[70%] my-[1%]  bg-black rounded-lg"
             }
           />
         </motion.button>
@@ -90,7 +89,7 @@ function CircularMenu() {
             <img
               width={150}
               height={150}
-              loading="eager"
+              loading="lazy"
               className=" size-[2.5vh]"
               alt="github"
               src={github}
@@ -105,7 +104,7 @@ function CircularMenu() {
             <img
               width={150}
               height={150}
-              loading="eager"
+              loading="lazy"
               className=" size-[2.5vh]"
               alt="linkedin"
               src={linkedin}
@@ -113,7 +112,7 @@ function CircularMenu() {
           </motion.a>
         </menu>
       </div>
-      <LanguageDropdown />
+      
     </div>
   );
 }

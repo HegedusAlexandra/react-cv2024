@@ -3,10 +3,10 @@ import Scale from "./Scale";
 
 export default function LanguageSkillCard({language,level,numlevel}) {
   return (
-    <span className="flex md:flex-row flex-col w-[100%] h-[100%] gap-[2vh]">
-      <div className="flex flex-row md:w-[40%]">
-        <p className=" w-[50%] text-base ">{language}</p>
-        <p className="w-[50%] text-base ">{level}</p>
+    <span className="flex md:md:flex-row min-h-[5vh] flex-col w-[100%]">
+      <div className="flex flex-row md:w-[20%]">
+        <p className=" w-[50%] border-4 border-gray-700 content-center text-center">{language}</p>
+        <p className="w-[50%] border-4 border-gray-700 content-center text-center">{level}</p>
       </div>
       <Scale scaleWidth={numlevel} />
     </span>

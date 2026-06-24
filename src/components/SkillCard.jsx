@@ -2,13 +2,13 @@ import React from "react";
 
 export default function SkillCard({ children, title }) {
   return (
-    <div className="w-[100%] flex md:flex-row flex-col mb-24 gap-[10%]">
-      <h2 className=" flex justify-start items-center md:text-5xl text-4xl font-bold text-stone-600 w-[90%] md:w-[30%] md:rotate-0 md:mb-0 mb-12">
+    <div className="w-full md:min-h-[20vh] flex md:flex-row flex-col border border-gray-700 md:text-gray-800 text-gray-600">
+      <h2 className=" flex justify-start items-center md:text-5xl text-2xl font-bold p-4 md:w-[30%] md:border-r-2 md:border-b-0 border-b-2 border-gray-700">
         {title}
       </h2>
-      <span className="flex flex-col md:w-[70%] w-[100%] h-[100%] gap-[2vh]">
+      <div className="flex flex-col w-[100%] gap-[2vh] ">
         {children}
-      </span>
+      </div>
     </div>
   );
 }

@@ -1,55 +1,131 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Explore my front-end portfolio: a blend of creativity, coding passion, and user interface design showcasing my skills."
-      data-rh="true"
-    />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Hegedüs Alexandra frontend developer portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Alexandra Hegedüs - A Humble Journey Through the World of Front-End Development"/>
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="language" content="English"/>
-    <meta name="revisit-after" content="1 day"/>
-    <meta name="author" content="Alexandra Hegedüs" />
-    <meta name='copyright' content='Alexandra Hegedüs'>
-    <meta name='owner' content='Alexandra Hegedüs'>
-    <meta name='url' content='http://www.alexahegedus.com'>
-    <meta name='identifier-URL' content='http://www.alexahegedus.com'>
-    <link rel="canonical" href="https://www.alexahegedus.com/">
-    <link rel="icon" type="image/png" href="dev.png">
-    <link rel="apple-touch-icon" type="image/png" href="dev.png">
-    <meta property="og:title" content="Alexandra Hegedüs - A Humble Journey Through the World of Front-End Development" />
-    <meta property="og:description" content="Welcome to the digital canvas of a Front-End Developer where creativity meets functionality. I'm a passionate coder with a flair for designing seamless, dynamic user interfaces that not only look stunning but also provide intuitive navigation for an unforgettable user experience. Dive into my portfolio to explore a curated collection of projects that showcase my expertise in HTML, CSS, JavaScript, and modern frameworks like React. Each project is a testament to my dedication to excellence, attention to detail, and commitment to pushing the boundaries of web development. Whether you're in search of a collaborator for your next project or just browsing for inspiration, let's embark on this digital journey together and bring your ideas to life." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.alexahegedus.com" />
-    <meta name='og:locality' content='Budapest'>
-    <meta name='og:country-name' content='Hungary'>
-    <meta property="og:image"  content="dev.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:image:alt" content="main" />
-    <meta property="og:locale"  content={en_US} />
-    <meta property="og:locale:alternate" content={it_IT} />
-    <meta property="og:locale:alternate" content={hu_HU} />
-    <meta name="twitter:card" content="dev.png" />
-    <meta name="twitter:title" content="Alexandra Hegedüs - A Humble Journey Through the World of Front-End Development" />
-    <meta name="twitter:description" content="Welcome to the digital canvas of a Front-End Developer where creativity meets functionality. I'm a passionate coder with a flair for designing seamless, dynamic user interfaces that not only look stunning but also provide intuitive navigation for an unforgettable user experience. Dive into my portfolio to explore a curated collection of projects that showcase my expertise in HTML, CSS, JavaScript, and modern frameworks like React. Each project is a testament to my dedication to excellence, attention to detail, and commitment to pushing the boundaries of web development. Whether you're in search of a collaborator for your next project or just browsing for inspiration, let's embark on this digital journey together and bring your ideas to life." />
-    <meta name="twitter:image" content="dev.png" />
-    <meta http-equiv='Page-Enter' content='RevealTrans(Duration=2.0,Transition=2)'>
-    <meta http-equiv='Page-Exit' content='RevealTrans(Duration=3.0,Transition=12)'>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+<head>
+  <!-- Character Encoding -->
+  <meta charset="UTF-8" />
+
+  <!-- Responsive Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>
+    Alexandra Hegedüs | Front-End Developer & Data Analyst | React, TypeScript, SQL & Power BI
+  </title>
+
+  <meta
+    name="description"
+    content="Portfolio of Alexandra Hegedüs, Front-End Developer and Data Analyst specializing in React, TypeScript, JavaScript, SQL, Python, Power BI, Business Intelligence, and modern web applications."
+  />
+
+  <meta
+    name="keywords"
+    content="Alexandra Hegedüs, Front-End Developer, Data Analyst, React Developer, TypeScript Developer, JavaScript Developer, SQL Developer, Python Developer, Power BI Developer, Business Intelligence, Portfolio"
+  />
+
+  <meta name="author" content="Alexandra Hegedüs" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.alexahegedus.com/" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/dev_logo.png" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/dev_logo.png" />
+
+  <!-- Google Fonts Icons -->
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Alexandra Hegedüs Portfolio" />
+  <meta property="og:url" content="https://www.alexahegedus.com/" />
+
+  <meta
+    property="og:title"
+    content="Alexandra Hegedüs | Front-End Developer & Data Analyst"
+  />
+
+  <meta
+    property="og:description"
+    content="Explore projects in React, TypeScript, JavaScript, SQL, Python, Power BI, Business Intelligence, and modern web development."
+  />
+
+  <meta
+    property="og:image"
+    content="https://www.alexahegedus.com/dev.jpg"
+  />
+
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Alexandra Hegedüs Portfolio" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="Alexandra Hegedüs | Front-End Developer & Data Analyst Junior"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Portfolio showcasing React, TypeScript, SQL, Python, Power BI and Business Intelligence projects."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://www.alexahegedus.com/dev.jpg"
+  />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alexandra Hegedüs",
+    "url": "https://www.alexahegedus.com",
+    "image": "https://www.alexahegedus.com/dev.jpg",
+    "jobTitle": [
+      "Front-End Developer",
+      "Data Analyst"
+    ],
+    "description": "Front-End Developer and Data Analyst specializing in React, TypeScript, SQL, Python, Power BI and Business Intelligence.",
+    "knowsAbout": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "SQL",
+      "Python",
+      "Power BI",
+      "Business Intelligence",
+      "Data Analysis",
+      "Data Visualization",
+      "Dashboard Development",
+      "Frontend Development"
+    ]
+  }
+  </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
+
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this application.
+  </noscript>
+
+  <div id="root"></div>
+</body>
 </html>
+
